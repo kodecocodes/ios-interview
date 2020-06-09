@@ -1,6 +1,72 @@
-Questions
+Higher Level
 ================================== 
 
+### Higher Level Topics
+
+Here are the higher level topics you might be asked to discuss at your iOS interview.
+
+- Dependency Injection
+	- Why? 3rd parties? Testability?
+- Data passing and Communication
+	- Delegation, observation, KVO, notifications, singletons
+- Swift & Objective C
+	- Tradeoffs, positives, negatives about both
+	- When to transition?
+	- Interoperability
+- Autolayout
+	- Storyboard vs programmatic UI
+	- Backend-driven UI
+	- Positive, negatives of each approach
+- Testing
+	- UI, Unit
+	- QA processes
+	- TDD
+- Debugging
+	- Instruments, breakpoints, lldb
+- Databases
+	- Native? CoreData
+	- 3rd Party? Realm
+- Networking
+	- 3rd party vs native?
+	- Architecting a networking layer
+- Architecture Patterns
+	- MVC, MVVM, Coordinator...
+	- Tradeoffs?
+	- How would you decide wheat to adopt or change and plan for the refactor?
+- Persist, Cache, Sync Data
+	- CoreData, archiving, UserDefaults, UIDocument
+	- What to cache, what not to?
+- Education
+	- What do you do to stay current?
+	- Conferences, blogs, podcasts, books?
+- Community Engagement
+	- Open source, speaking, local groups
+- Concurrency & Multithreading
+	- Concurrent vs parallel processing
+	- Semaphores
+	- Dispatch groups
+	- Deallocation
+- Continuous Integration
+	- Buddybuild, Testflight, Fastlane
+- Experiments
+	- A/B Testing process
+	- In-house vs external tools
+- Analytics
+	- Tools like Mixapanel, App Annie
+	- Pixel logging
+- Package Managers
+	- Cocoapods
+	- Swift Package Manager (SPM)
+	- Carthage
+- 3rd Party Libraries
+	- When to use them?
+	- When to roll your own?
+	- Which ones have you used?
+	- What have you learned?
+- How would you design X?
+	- Replace X for some mobile application like Twitter, Gmail, Instagram...
+
+### Questions
 These are all the higher level questions we've gathered from the iOS community. Some have comments as to why the question is asked, or hints for the answer. Enjoy! And if you want a question included here, please submit a PR!
 
 What is MVC?
