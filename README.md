@@ -1,55 +1,11 @@
-
-Raywenderlich.com iOS interview practice project
+Navigating the iOS Interview Addendum
 ================================== 
-Welcome to the iOS interview practice project. 
+This is a repo containing supplementary materials to accompany the [Navigating the iOS Interview article](https://www.raywenderlich.com/10625296-navigating-the-ios-interview).
 
-### Your Task
-
-On a high level, your task is to create an app that fetches and displays raywenderlich.com articles and video courses. 
-
-Check out the [official raywenderlich.com app](https://apps.apple.com/us/app/raywenderlich-com/id1481444772#?platform=iphone) for inspiration:
-
-![App Photos](assets/appPhotos.png)
-
-
-### Data
-First, you're going to need some data.
-* Articles JSON is available here https://api.jsonbin.io/b/5ed679357741ef56a566a67f
-* Videos JSON is available here https://api.jsonbin.io/b/5ed67c667741ef56a566a831
-* The data structure follows the [JSON API specifications](https://jsonapi.org/)
-
-### App
-To pass the test, the app has to include the following:
-* Fetch articles and video courses and display them once both networking calls have finished. 
-* For each item (article or video course) you have to display **at least**:
-	* Name
-	* Artwork
-	* Description
-	* Type (article or video)
-* The results should be sorted by release date
-* There should be a way to view:
-	* Only articles
-	* Only videos
-	* Both
-
-## Requirements
-* Use Swift 5.0 or above.
-* Use autolayout
-* There should be no errors, warnings or crashes
-* The app should compile and run. If it needs additional setup, include instructions in the README
-
-## Guidelines
-* Keep your files short and sweet, use extensions and breakout helpers when appropriate
-* Make sure the main functionality of the app is tested (or at least testable)
-* It's important that the app follows a clear architecture pattern
-* Comment and document your code where appropriate
-* Feel free to use 3rd party libraries, but make sure to justify why you've used them in the README
-* Be consistent with your coding style. Feel free to adhere to the  [raywenderlich's swift style guide](https://github.com/raywenderlich/swift-style-guide)
-* Remove any unused or Apple-generated code
-
-## Submission
-* Clone this repo, create your own branch and submit it as a PR
-* In the PR description, include whether
+Here you will find:
+- [Behavioural question example](https://github.com/raywenderlich/ios-interview/blob/master/Behavioral)
+- [CS fundamentals question example](https://github.com/raywenderlich/ios-interview/blob/master/Behavioral)
+- A [practice challenge](https://github.com/raywenderlich/ios-interview/blob/master/Behavioral) for you to submit to us for review
 
 ## Questions
-If you have any questions, open a Github Issue on this repository.
+If you have any questions, comments or concerns, open a Github Issue on this repository.
