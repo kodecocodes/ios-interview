@@ -54,6 +54,8 @@ Stacks are a first in, last out (FILO) data structure, so my plan is that every 
 
 **Answer:**  Yep, go ahead.
 
+!!!IMG interviewer at a table looking quizzically, interviewee at whiteboard explaining enthusiastically, maybe add lots of word bubbles.!!!
+
 ### 3. Propose and Discuss Solution
 Once you feel like you know what you need to know, and the interviewer has given you their go-ahead on your direction, start laying out the solution.
 
@@ -98,6 +100,8 @@ extension String {
   var hasBalancedParentheses: Bool {}
 }
 ```
+
+!!!IMG of how a stack works.!!!
 
 ### 4. Write and Test Code
 
