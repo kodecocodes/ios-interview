@@ -1,4 +1,4 @@
-Navigating the iOS Interview Addendum
+Navigating the iOS Interview
 ================================== 
 This is a repo containing supplementary materials to accompany the [Navigating the iOS Interview article](https://www.raywenderlich.com/10625296-navigating-the-ios-interview).
 
