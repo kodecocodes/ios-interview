@@ -1,4 +1,4 @@
-Higher Level
+Behavioral Competencies
 ================================== 
 
 Below is a list of some of the core comptencies an interviewer might be looking for in a behavioral interview:
