@@ -195,5 +195,5 @@ Here are a few additional tips for performing well in these types of interviews:
 -   Don’t get distracted if your interviewer isn’t showing any emotions. They’re supposed to look nonplussed to not sway you in any way.
 -   Ask if they want your code to compile at the end. When writing pseudo code, we don’t necessarily adhere to the syntactic rules of the language, even though the interviewer might be expecting it.
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

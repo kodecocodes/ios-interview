@@ -10,5 +10,5 @@ Here you will find:
 - [Higher Level Questions](https://github.com/raywenderlich/ios-interview/tree/master/Higher%20Level)
 - All the questions [all interview questions](https://github.com/raywenderlich/ios-interview/tree/master/All%20Questions) we've sourced from the iOS community
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

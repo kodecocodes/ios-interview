@@ -51,5 +51,5 @@ To pass the test, the app has to include the following:
 * Clone this repo, create your own branch and submit it as a PR
 * In the PR description, include whether
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

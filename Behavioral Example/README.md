@@ -25,5 +25,5 @@ This is a solid answer that reveals enough detail to avoid being too generic, an
 -   [30 Behavioural Interview Questions](https://www.themuse.com/advice/30-behavioral-interview-questions-you-should-be-ready-to-answer)
 -   [41 Common Interview Questions](https://www.themuse.com/advice/30-behavioral-interview-questions-you-should-be-ready-to-answer)
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

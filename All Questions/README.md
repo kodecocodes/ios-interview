@@ -284,5 +284,5 @@ Create a social media app from a json hosted online. The json had 4 endpoints, u
 > users’ names and avatar, and when clicked on user name a user profile
 > screen would show with user’s information.
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

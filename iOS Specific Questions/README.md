@@ -148,5 +148,5 @@ Are arrays value types or reference types in swift?
 
 What's the different between atomic and nonatomic?
 
-## Questions
+## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.
