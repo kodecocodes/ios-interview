@@ -1,5 +1,5 @@
 
-# Example CS Fundamentals Questions & Answer
+# Example CS Fundamentals Question & Answer
 
 Here's an example question and answer for a CS fundamentals interview question.
 
