@@ -67,16 +67,16 @@ Ok, so I think I want to create the  `Stack`  as a struct backed by an array. I�
 
 ```swift 
 struct Stack<T> {
-	private var array: [T] = []
+  private var array: [T] = []
 
-	// Remove an element from the stack and return it 
-	func pop() -> T? {}
+  // Remove an element from the stack and return it
+  func pop() -> T? {}
 
-	// Add element to stack
-	func push(element: T) {}
+  // Add element to stack
+  func push(element: T) {}
 
-	// Look at what element is at the top
-	func peek() -> T? {}
+  // Look at what element is at the top
+  func peek() -> T? {}
 }
 ```
 
@@ -86,15 +86,16 @@ Then I think I need to know how the open and closing parentheses characters matc
 
 ```swift
 extension Character {
-	func isMatchingPair(closing: Character) -> Bool {}
+  func isMatchingPair(closing: Character) -> Bool {}
 }
+
 ```
 
 Finally, I think I’m going to create another extension, this time on the `String` class that will tell me if the `String` has balanced parentheses.
 
 ```swift
 extension String {
-	var hasBalancedParentheses: Bool {}
+  var hasBalancedParentheses: Bool {}
 }
 ```
 
@@ -104,72 +105,72 @@ Now that you have the structure of what you want to build, it’s time to transl
 
 ```swift
 struct Stack<T> {
-	private var array: [T] = []
+  private var array: [T] = []
 
-	@discardableResult mutating func pop() -> T? {
-		array.popLast()
-	}
+  @discardableResult mutating func pop() -> T? {
+    array.popLast()
+  }
 
-	mutating func push(element: T) {
-		array.append(element)
-	}
+  mutating func push(element: T) {
+    array.append(element)
+  }
 
-	func peek() -> T? {
-		return array.last
-	}
+  func peek() -> T? {
+    return array.last
+  }
 
-	var isEmpty: Bool {
-		return array.isEmpty
-	}
+  var isEmpty: Bool {
+    return array.isEmpty
+  }
 }
 
 extension Character {
-	func isMatchingPair(closing: Character) -> Bool {
-		switch self {
-		case "(":
-			return closing == ")"
-		case "[":
-			return closing == "]"
-		case "{":
-			return closing == "}"
-		default:
-			return false
-		}
-	}
+  func isMatchingPair(closing: Character) -> Bool {
+    switch self {
+    case "(":
+      return closing == ")"
+    case "[":
+      return closing == "]"
+    case "{":
+      return closing == "}"
+    default:
+      return false
+    }
+  }
 }
 
 extension String {
-	var openingParentheses: [String] {
-		return ["(", "[", "{"]
-	}
+  var openingParentheses: [String] {
+    return ["(", "[", "{"]
+  }
 
-	var closingParentheses: [String] {
-		return [")", "}", "]"]
-	}
+  var closingParentheses: [String] {
+    return [")", "}", "]"]
+  }
 
-	var hasBalancedParentheses: Bool {
-		var parentheses: Stack<Character> = Stack()
+  var hasBalancedParentheses: Bool {
+    var parentheses: Stack<Character> = Stack()
 
-		for char in self {
+    for char in self {
 
-			if parentheses.isEmpty {
-				if openingParentheses.contains("\(char)") {
-					parentheses.push(element: char)
-				} else if closingParentheses.contains("\(char)") {
-					return false
-				}
-			} else {
-				if let top = parentheses.peek() {
-					if top.isMatchingPair(closing: char) {
-						parentheses.pop()
-					} else if openingParentheses.contains("\(char)") {
-						parentheses.push(element: char)
-					}
-				}
-			}
-		}
-		return parentheses.isEmpty
-	}
+      if parentheses.isEmpty {
+        if openingParentheses.contains("\(char)") {
+          parentheses.push(element: char)
+        } else if closingParentheses.contains("\(char)") {
+          return false
+        }
+      } else {
+        if let top = parentheses.peek() {
+          if top.isMatchingPair(closing: char) {
+            parentheses.pop()
+          } else if openingParentheses.contains("\(char)") {
+            parentheses.push(element: char)
+          }
+        }
+      }
+    }
+    return parentheses.isEmpty
+  }
 }
 ```
 
