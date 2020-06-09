@@ -65,105 +65,113 @@ Ok, so I think I want to create the  `Stack`  as a struct backed by an array. I�
 
 **Answer:**  Sounds like a good start.
 
-	struct Stack<T> {
-		private var array: [T] = []
-	
-		// Remove an element from the stack and return it 
-		func pop() -> T? {}
-		
-		// Add element to stack
-		func push(element: T) {}
-	
-		// Look at what element is at the top
-		func peek() -> T? {}
-	}
+```swift 
+struct Stack<T> {
+	private var array: [T] = []
+
+	// Remove an element from the stack and return it 
+	func pop() -> T? {}
+
+	// Add element to stack
+	func push(element: T) {}
+
+	// Look at what element is at the top
+	func peek() -> T? {}
+}
+```
 
 Then I think I need to know how the open and closing parentheses characters match. I’m thinking of creating an extension on the `Character` class. It would check whether the `Character` is `"("`, `"{"` or `"["` and return their closing parentheses.
 
 **Answer:**  Yep, go ahead.
 
-	extension Character {
-		func isMatchingPair(closing: Character) -> Bool {}
-	}
+```swift
+extension Character {
+	func isMatchingPair(closing: Character) -> Bool {}
+}
+```
 
 Finally, I think I’m going to create another extension, this time on the `String` class that will tell me if the `String` has balanced parentheses.
 
-	extension String {
-		var hasBalancedParentheses: Bool {}
-	}
+```swift
+extension String {
+	var hasBalancedParentheses: Bool {}
+}
+```
 
 ### 4. Write and Test Code
 
 Now that you have the structure of what you want to build, it’s time to translate what you described previously into code. Continue speaking out loud as you write out the code. Once you’re happy with the outcome, go through the test cases you were given to check if your algorithm check out. Try out a couple of edge cases as well, to show that you’re thinking beyond what you were given and fix your code before ultimately putting it up for tribute!
 
-	struct Stack<T> {
-		private var array: [T] = []
-		
-		@discardableResult mutating func pop() -> T? {
-			array.popLast()
-		}
-		
-		mutating func push(element: T) {
-			array.append(element)
-		}
-		
-		func peek() -> T? {
-			return array.last
-		}
-		
-		var isEmpty: Bool {
-			return array.isEmpty
+```swift
+struct Stack<T> {
+	private var array: [T] = []
+
+	@discardableResult mutating func pop() -> T? {
+		array.popLast()
+	}
+
+	mutating func push(element: T) {
+		array.append(element)
+	}
+
+	func peek() -> T? {
+		return array.last
+	}
+
+	var isEmpty: Bool {
+		return array.isEmpty
+	}
+}
+
+extension Character {
+	func isMatchingPair(closing: Character) -> Bool {
+		switch self {
+		case "(":
+			return closing == ")"
+		case "[":
+			return closing == "]"
+		case "{":
+			return closing == "}"
+		default:
+			return false
 		}
 	}
-	
-	extension Character {
-		func isMatchingPair(closing: Character) -> Bool {
-			switch self {
-			case "(":
-				return closing == ")"
-			case "[":
-				return closing == "]"
-			case "{":
-				return closing == "}"
-			default:
-				return false
-			}
-		}
+}
+
+extension String {
+	var openingParentheses: [String] {
+		return ["(", "[", "{"]
 	}
-	
-	extension String {
-		var openingParentheses: [String] {
-			return ["(", "[", "{"]
-		}
-		
-		var closingParentheses: [String] {
-			return [")", "}", "]"]
-		}
-		
-		var hasBalancedParentheses: Bool {
-			var parentheses: Stack<Character> = Stack()
-			
-			for char in self {
-				
-				if parentheses.isEmpty {
-					if openingParentheses.contains("\(char)") {
+
+	var closingParentheses: [String] {
+		return [")", "}", "]"]
+	}
+
+	var hasBalancedParentheses: Bool {
+		var parentheses: Stack<Character> = Stack()
+
+		for char in self {
+
+			if parentheses.isEmpty {
+				if openingParentheses.contains("\(char)") {
+					parentheses.push(element: char)
+				} else if closingParentheses.contains("\(char)") {
+					return false
+				}
+			} else {
+				if let top = parentheses.peek() {
+					if top.isMatchingPair(closing: char) {
+						parentheses.pop()
+					} else if openingParentheses.contains("\(char)") {
 						parentheses.push(element: char)
-					} else if closingParentheses.contains("\(char)") {
-						return false
-					}
-				} else {
-					if let top = parentheses.peek() {
-						if top.isMatchingPair(closing: char) {
-							parentheses.pop()
-						} else if openingParentheses.contains("\(char)") {
-							parentheses.push(element: char)
-						}
 					}
 				}
 			}
-			return parentheses.isEmpty
 		}
+		return parentheses.isEmpty
 	}
+}
+```
 
 ### 5. Optimize and Improve
 
