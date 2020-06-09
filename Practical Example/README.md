@@ -9,7 +9,7 @@ On a high level, your task is to create an app that fetches and displays raywend
 
 Check out the [official raywenderlich.com app](https://apps.apple.com/us/app/raywenderlich-com/id1481444772#?platform=iphone) for inspiration:
 
-![App Photos](assets/appPhotos.png)
+![App Photos](..assets/appPhotos.png)
 
 
 ### Data
