@@ -147,8 +147,8 @@ What are memory leaks and how we should avoid them?
 > Strong relationship between 2 classes referencing each others b)
 > Strong relationship between a protocol and a class (example in
 > delegation pattern) c) Strong self inside a closure in a class.
-
-3) To avoid them we should use weak or unowned in those cases."
+>
+> 3) To avoid them we should use weak or unowned in those cases."
 
 How would you describe how an iOS application works to a five year old?
 
