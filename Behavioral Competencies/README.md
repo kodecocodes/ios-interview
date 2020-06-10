@@ -39,5 +39,9 @@ Use Gayle Laakmann's, [Behavioral Preparation Grid](http://www.thegoogleresume.c
 
 ![App Photos](../assets/BehaviorGrid.png)
 
+You can also practice with or copy our slightly more modern version in our <a href="https://airtable.com/shrTixYZjswKMzU6d" target="_blank">iOS Interview Airtable Workspace</a>!
+
+![Stack Image](../assets/competencies.png.png)
+
 ## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.
