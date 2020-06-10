@@ -5,7 +5,7 @@ These are all the questions we've gathered from the iOS community. Some have com
 
 If you don't want to browse through text, we've collected and sorted all of the resources and materials in this <a href="https://airtable.com/shrTixYZjswKMzU6d" target="_blank">Airtable Workspace</a> for you to practice with or copy!
 
-![Stack Image](../assets/airtableSample.png)
+![All questions](../assets/allQuestions.png)
 
 ### Design Patterns
 What is MVC?
