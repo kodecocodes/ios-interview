@@ -1,9 +1,8 @@
 Questions
 ================================== 
 
-These are all the questions we've gathered from the iOS community. Some have comments as to why the question is asked, or hints for the answer. Enjoy! And if you want a question included here, please submit a PR!
+These are all the questions we've gathered from the iOS community. Some have comments as to why the question is asked, or hints for the answer. Enjoy! And if you want a question included here, please [submit them through this form](https://airtable.com/shrdvv00rPZE8xfBG).
 
-<iframe class="airtable-embed" src="https://airtable.com/embed/shrikTPjGlPxeUT4S?backgroundColor=yellow&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
 
 ### Design Patterns
 What is MVC?
