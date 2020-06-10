@@ -101,7 +101,7 @@ extension String {
 }
 ```
 
-!!!IMG of how a stack works.!!!
+![Stack Image](../assets/stack.png)
 
 ### 4. Write and Test Code
 
