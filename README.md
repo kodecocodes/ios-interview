@@ -11,7 +11,7 @@ Here you will find:
 - [Behavioral competencies](https://github.com/raywenderlich/ios-interview/tree/master/Behavioral%20Competencies)
 - All the questions [all interview questions](https://github.com/raywenderlich/ios-interview/tree/master/All%20Questions) we've sourced from the iOS community
 
-If you don't want to browse through text, we've collected and sorted all of the resources and materials in some [Airtable spreadsheets](https://airtable.com/shr0SWs9HYTvRemFs) for you to practice with or copy!
+If you don't want to browse through text, we've collected and sorted all of the resources and materials in an <a href="https://airtable.com/shrTixYZjswKMzU6d" target="_blank">Airtable Workspace</a> for you to practice with or copy!
 
 ![Stack Image](assets/airtableSample.png)
 
