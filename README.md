@@ -8,7 +8,7 @@ Here you will find:
 - A [practice challenge](https://github.com/raywenderlich/ios-interview/tree/master/Practical%20Example) for you to submit to us for review
 - [iOS Specific Questions](https://github.com/raywenderlich/ios-interview/tree/master/iOS%20Specific%20Questions)
 - [Higher Level Topics & Questions](https://github.com/raywenderlich/ios-interview/tree/master/Higher%20Level)
-- [Behavioral competencies](https://github.com/raywenderlich/ios-interview/tree/master/Competencies)
+- [Behavioral competencies](https://github.com/raywenderlich/ios-interview/tree/master/Behavioral%20Competencies)
 - All the questions [all interview questions](https://github.com/raywenderlich/ios-interview/tree/master/All%20Questions) we've sourced from the iOS community
 
 ## Any Questions
