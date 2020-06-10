@@ -37,5 +37,7 @@ Below is a list of some of the core comptencies an interviewer might be looking 
 ## Resources
 Use Gayle Laakmann's, [Behavioral Preparation Grid](http://www.thegoogleresume.com/uploads/6/5/2/8/6528028/behavior_preparation_grid.xlsx) from [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/), or use the slightly more modern version we adapted from her example.
 
+![App Photos](../assets/BehaviorGrid.png)
+
 ## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.
