@@ -14,9 +14,9 @@ Check out the [official raywenderlich.com app](https://apps.apple.com/us/app/ray
 
 ### Data
 First, you're going to need some data.
-* Articles JSON is available here https://api.jsonbin.io/b/5ed679357741ef56a566a67f
-* Videos JSON is available here https://api.jsonbin.io/b/5ed67c667741ef56a566a831
-* The data structure follows the [JSON API specifications](https://jsonapi.org/)
+* Articles JSON is available here https://api.jsonbin.io/b/5ed679357741ef56a566a67f.
+* Videos JSON is available here https://api.jsonbin.io/b/5ed67c667741ef56a566a831.
+* The data structure follows the [JSON API specification](https://jsonapi.org/).
 
 ### App
 To pass the test, the app has to include the following:
@@ -26,7 +26,7 @@ To pass the test, the app has to include the following:
 	* Artwork
 	* Description
 	* Type (article or video)
-* The results should be sorted by release date
+* The results should be sorted by release date.
 * There should be a way to view:
 	* Only articles
 	* Only videos
@@ -34,22 +34,23 @@ To pass the test, the app has to include the following:
 
 ## Requirements
 * Use Swift 5.0 or above.
-* Use autolayout
+* Use Auto Layout
 * There should be no errors, warnings or crashes
-* The app should compile and run. If it needs additional setup, include instructions in the README
+* The app should compile and run. If it needs additional setup, include instructions in the README.
 
 ## Guidelines
-* Keep your files short and sweet, use extensions and breakout helpers when appropriate
-* Make sure the main functionality of the app is tested (or at least testable)
-* It's important that the app follows a clear architecture pattern
-* Comment and document your code where appropriate
-* Feel free to use 3rd party libraries, but make sure to justify why you've used them in the README
-* Be consistent with your coding style. Feel free to adhere to the  [raywenderlich's swift style guide](https://github.com/raywenderlich/swift-style-guide)
+* Keep your files short and sweet, use extensions and break out helpers when appropriate.
+* Make sure the main functionality of the app is tested (or at least testable).
+* It's important that the app follows a clear architecture pattern.
+* Comment and document your code where appropriate.
+* Feel free to use 3rd party libraries, but make sure to justify why you've used them in the README.
+* Be consistent with your coding style. Feel free to adhere to the  [raywenderlich.com swift style guide](https://github.com/raywenderlich/swift-style-guide).
 * Remove any unused or Apple-generated code
 
 ## Submission
-* Clone this repo, create your own branch and submit it as a PR
-* In the PR description, include whether
+
+* Clone this repo, create your own branch and [submit it as a PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## Any Questions
-If you have any questions, comments or concerns, open a Github Issue on this repository.
+
+If you have any questions, comments or concerns, open a GitHub issue on this repository.
