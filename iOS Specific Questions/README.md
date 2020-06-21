@@ -40,19 +40,19 @@ Explain the difference between classes and structs.
 > they truly understand the inner workings, or are repeating things
 > they've read online.
 
-What does static mean?
+What does `static` mean?
 
-Why do you like swift and what advantages or disadvantages does it have over other languages?
+Why do you like Swift and what advantages or disadvantages does it have over other languages?
 
-What is the difference between weak and unowned and when we should use which?
+What is the difference between `weak` and `unowned` and when we should use which?
 
 What is the concept of an abstract class in Swift?
 
-Do you prefer Objective C or Swift? Why?
+Do you prefer Objective-C or Swift? Why?
 
 Which part(s) of a framework have you explored that others have not?
 
-When would you use unowned VS weak self in a closure?
+When would you use `unowned` vs `weak` self in a closure?
 
 > https://stackoverflow.com/questions/24320347/shall-we-always-use-unowned-self-inside-closure-in-swift
 
@@ -63,29 +63,29 @@ How many possible states can a UIKit app be in and what are they?
 Why do you have to update the UI on the main thread?
 
 > It shows how deep the developer goes to discover the "why" of the
-> things, and he/she doesn't only read answers on StackOverflow.
+> things, and that they don't only read answers on StackOverflow.
 
 Tell me about techniques for building UI for all device types and screen sizes. 
 
-> I can find out what the interviewee knows about Storyboards, traits
-> and constraints-in-code and their relative advantages and pitfalls.I
-> can find out what the interviewee knows about Storyboards, traits and
-> constraints-in-code and their relative advantages and pitfalls.
+> I can find out what the interviewee knows about storyboards, traits
+> and constraints-in-code and their relative advantages and pitfalls.
 
-What's your opinion on using Storyboards versus programmatic UI?
+What's your opinion on using storyboards versus programmatic UI?
 
-What's Autolayout?
+What's Auto Layout?
 
-What are memory leaks and how we should avoid them?
+What are memory leaks and how should we avoid them?
 
 > 1) Talking a little bit about ARC and how it works.
-> 
-> 2) Stating the 3 main reasons for causing memory leaks which are: a)
-> Strong relationship between 2 classes referencing each others b)
-> Strong relationship between a protocol and a class (example in
-> delegation pattern) c) Strong self inside a closure in a class.
-
-3) To avoid them we should use weak or unowned in those cases."
+>
+> 2) Stating the 3 main reasons for causing memory leaks which are: 
+>
+> ​	a) Strong relationship between 2 classes referencing each other.
+> ​	b) Strong relationship between a protocol and a class (e.g. in
+> delegation pattern).
+> ​	c) Strong `self` inside a closure in a class.
+>
+> 3) To avoid them we should use `weak` or `unowned` in those cases.
 
 How would you describe how an iOS application works to a five year old?
 
@@ -93,26 +93,25 @@ Explain ARC to a five year old.
 
 How can you persist data in iOS?
 
-What happen when I set the target of a UIControl to nil?
+What happens when I set the target of a `UIControl` to `nil`?
 
-Tell me about NSPredicate.
+Tell me about `NSPredicate`.
 
 What's the difference between nonatomic, atomic and copy?
 
 What's the difference between strong, weak and unowned? 
 
-> The difference between unowned and weak is that weak is declared as an Optional while unowned is not. By declaring it weak you get to handle the case that it might be nil inside the closure at some point. If you try to access an unowned variable that happens to be nil, it will crash the whole program. So only use unowned when you are positive that variable will always be around while the closure is around.
+> The difference between unowned and weak is that weak is declared as an `Optional` while unowned is not. By declaring it weak you get to handle the case when it might be `nil` inside the closure at some point. If you try to access an unowned variable that happens to be `nil`, it will crash the whole program. So only use unowned when you are positive that a variable will always be around while the closure is around.
 > 
-> An example for unowned is that a credit card will always be associated
-> with a customer.
+> An example for unowned is that a credit card will always be associated with a customer.
 > 
 > https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html
 
 What is ARC?
 
-> Weak references don't  count in the reference count of an object.
+> Weak references don't count in the reference count of an object.
 > Unowned references also don't increase the object's reference count.
-> Unowned reference have to have a value, but weak ones can be nil.
+> Unowned references have to have a value, but weak ones can be nil.
 
 What are closures?
 
@@ -130,7 +129,7 @@ What is delegation and how does it work?
 > listening instance, delegation fits the scenario where an instance
 > only needs to send a message to a single listener (the delegate).
 
-Describe the iOS application 
+Describe the iOS application.
 
 > https://developer.apple.com/documentation/uikit
 
@@ -138,9 +137,9 @@ What is protocol oriented programming and what are the pros/cons of using it ove
 
 Can you explain the responder chain?
 
-Blocks or NSOperation?
+Blocks or `NSOperation`?
 
-Explain memory management in iOS. is it compile time or run time?
+Explain memory management in iOS. Is it compile time or run time?
 
 > Gives insight about the retain cycles, leaks and memory management.
 
@@ -148,9 +147,8 @@ Explain the different ways of passing data in iOS.
 
 What are singletons and what's a good use case for them in iOS applications?
 
-Are arrays value types or reference types in swift?
-
-What's the different between atomic and nonatomic?
+Are arrays value types or reference types in Swift?
 
 ## Any Questions
-If you have any questions, comments or concerns, open a Github Issue on this repository.
+
+If you have any questions, comments or concerns, open a GitHub issue on this repository.
