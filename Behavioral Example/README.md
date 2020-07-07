@@ -1,7 +1,7 @@
 
-# Example Behavioural Question & Answer
+# Example Behavioral Question & Answer
 
-Here's an example question and answer for a competency based behavioural interview question using the **STAR** framework.
+Here's an example question and answer for a competency based behavioral interview question using the **STAR** framework.
 
 ### "Tell me about a time you took initiative."
 
@@ -15,15 +15,6 @@ Here's an example question and answer for a competency based behavioural intervi
 
 ### Why is this a good answer?
 This is a solid answer that reveals enough detail to avoid being too generic, and at the same time doesn't overwhelm the interviewer with redundant information. The bulk of the answer is in the **Action**  bit. The **Result** bit explains several benefits to the previous company and how that can be useful for the current one.
-
-### Here are some additional questions to:
--   Describe a time when you had to convince people to agree with you.
--   Has a junior team member ever seeked advice from you?
--   How would your teamworkers describe you?
--   Tell me about a time you missed an important deadline?
--   What’s the most difficult project you’ve worked on thus far?
--   [30 Behavioural Interview Questions](https://www.themuse.com/advice/30-behavioral-interview-questions-you-should-be-ready-to-answer)
--   [41 Common Interview Questions](https://www.themuse.com/advice/30-behavioral-interview-questions-you-should-be-ready-to-answer)
 
 ## Any Questions
 If you have any questions, comments or concerns, open a Github Issue on this repository.

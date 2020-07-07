@@ -1,7 +1,7 @@
 Behavioral Competencies
 ================================== 
 
-Below is a list of some of the core comptencies an interviewer might be looking for in a behavioral interview:
+Below is a list of some of the core competencies an interviewer might be looking for in a behavioral interview:
 
  - Leadership 
  - Critical Thinking 

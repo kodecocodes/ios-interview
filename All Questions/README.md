@@ -51,7 +51,7 @@ Differences, use cases, benefits, negatives.
 
 ### Community Engagement
 
-Who are your favourite iOS/Swift podcasters/authors/video creators, and why?
+Who are your favorite iOS/Swift podcasters/authors/video creators, and why?
 
 > I find this to be a great way to gauge someones engagement with the
 > platform and community. It's harder than you think to recall names in
@@ -274,17 +274,17 @@ We have a codebase written in Objective-C. We would like to port it to Swift, bu
 
 Given this mockup, draw and take me through the constraints and UI elements you might use.
 
-Create a one-page app to show a list of products and their price from a json hosted either online or locally. 
+Create a one-page app to show a list of products and their price from a JSON hosted either online or locally. 
 
-> The json had an image url of a product, name, and price. For extra
+> The JSON had an image url of a product, name, and price. For extra
 > points create a way to sort the list by price or item name.
 
-Create a social media app from a json hosted online. The json had 4 endpoints, users, posts, photos, and albums. 
+Create a social media app from a JSON hosted online. The JSON had 4 endpoints, users, posts, photos, and albums. 
 
 > Users contained a lot of user information, like their name, company,
 > address, avatar image, etc. Posts had user ids and their comments.
 > Albums had their names and ids, and Photos had albums ids and picture
-> images. They wanted the ability to see homescreen of comments with
+> images. They wanted the ability to see home screen of comments with
 > users’ names and avatar, and when clicked on user name a user profile
 > screen would show with user’s information.
 

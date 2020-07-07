@@ -50,7 +50,7 @@ But, since you mentioned that they have to match, meaning that an open parenthes
 
 **Answer:**  Sounds like a good start.
 
-Stacks are a first in, last out (FILO) data structure, so my plan is that every time I see an open parenthesis, I pop it on the stack. If I find a closing parenthesis, I check if it matches the last opening one. If it matches, we pop the last item, the open parenthesis, off the stack. When we come to the end of the String, we should have no elements left, otherwise, the String is not balanced. Does that seem like a good way to proceed? 
+Stacks are a first in, last out (FILO) data structure, so my plan is that every time I see an open parenthesis, I push it on the stack. If I find a closing parenthesis, I check if it matches the last opening one. If it matches, we pop the last item, the open parenthesis, off the stack. When we come to the end of the String, we should have no elements left, otherwise, the String is not balanced. Does that seem like a good way to proceed? 
 
 ![Stack Image](../assets/stack.png)
 
