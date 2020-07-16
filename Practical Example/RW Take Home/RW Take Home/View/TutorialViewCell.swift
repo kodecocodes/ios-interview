@@ -17,8 +17,12 @@ class TutorialViewCell: UICollectionViewCell {
   let descriptionLabel = UILabel()
   let artWorkImage = UIImageView()
   
+  let typeTagView = TagView()
+  let durationTagView = TagView()
+  
   let titleStack = UIStackView()
   let artStack = UIStackView()
+  let tagStack = UIStackView()
   
   override init(frame: CGRect) {
     super.init(frame: frame)
@@ -72,25 +76,32 @@ class TutorialViewCell: UICollectionViewCell {
     artStack.addArrangedSubview(titleStack)
     artStack.addArrangedSubview(artWorkImage)
     artStack.axis = .horizontal
+    artStack.alignment = .leading
     artStack.spacing = 10
     
+    typeTagView.backgroundColor = .article
+    durationTagView.backgroundColor = .duration
     
-    let mainStack = UIStackView(arrangedSubviews: [artStack, descriptionLabel])
+    tagStack.addArrangedSubview(typeTagView)
+    tagStack.addArrangedSubview(durationTagView)
+    tagStack.alignment = .leading
+    tagStack.distribution = .fill
+    tagStack.spacing = 10
+    
+    
+    let mainStack = UIStackView(arrangedSubviews: [artStack, descriptionLabel, tagStack])
     mainStack.axis = .vertical
     mainStack.spacing = 10
+    mainStack.alignment = .leading
     mainStack.translatesAutoresizingMaskIntoConstraints = false
     
     contentView.addSubview(mainStack)
     
-    mainStack.isLayoutMarginsRelativeArrangement = true
-    mainStack.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
-
-    
     NSLayoutConstraint.activate([
-      mainStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-      mainStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-      mainStack.topAnchor.constraint(equalTo: contentView.topAnchor),
-      mainStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+      mainStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+      mainStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+      mainStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+      mainStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
     ])
     
   }
@@ -103,11 +114,11 @@ class TutorialViewCell: UICollectionViewCell {
     
     if isLargeTextOn {
       artStack.axis = .vertical
-      artStack.alignment = .leading
+      tagStack.axis = .vertical
     } else{
       
       artStack.axis = .horizontal
-      artStack.alignment = .fill
+      tagStack.axis = .horizontal
     }
     
   }
