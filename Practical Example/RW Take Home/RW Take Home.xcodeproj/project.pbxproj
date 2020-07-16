@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8995742E24C08F5C008DE8F2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8995742D24C08F5C008DE8F2 /* Color.xcassets */; };
+		8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995743024C0D224008DE8F2 /* TutorialType.swift */; };
 		89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7D33924BF6514009AA50F /* AppDelegate.swift */; };
 		89A7D33C24BF6514009AA50F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7D33B24BF6514009AA50F /* SceneDelegate.swift */; };
 		89A7D33E24BF6514009AA50F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7D33D24BF6514009AA50F /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		8995742D24C08F5C008DE8F2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		8995743024C0D224008DE8F2 /* TutorialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialType.swift; sourceTree = "<group>"; };
 		89A7D33624BF6514009AA50F /* RW Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RW Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A7D33924BF6514009AA50F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89A7D33B24BF6514009AA50F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8995742F24C0D20E008DE8F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8995743024C0D224008DE8F2 /* TutorialType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		89A7D32D24BF6514009AA50F = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		89A7D33824BF6514009AA50F /* RW Take Home */ = {
 			isa = PBXGroup;
 			children = (
+				8995742F24C0D20E008DE8F2 /* Model */,
 				89E5C81024C020E300026F2B /* Utility */,
 				89E5C80D24C00BE900026F2B /* View */,
 				89E5C80C24C009DB00026F2B /* App Delegate */,
@@ -178,6 +189,7 @@
 				89E5C81224C020FA00026F2B /* Utility.swift in Sources */,
 				89E5C80F24C00C5F00026F2B /* TutorialViewCell.swift in Sources */,
 				89A7D33E24BF6514009AA50F /* ViewController.swift in Sources */,
+				8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */,
 				89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */,
 				89A7D33C24BF6514009AA50F /* SceneDelegate.swift in Sources */,
 				89E5C81424C06E7C00026F2B /* TagView.swift in Sources */,

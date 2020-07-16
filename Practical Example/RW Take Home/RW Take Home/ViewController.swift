@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     collectionView.register(TutorialViewCell.self, forCellWithReuseIdentifier: TutorialViewCell.reuseIdentifier)
     collectionView.collectionViewLayout = createCompositionalLayout()
+    collectionView.contentInset.bottom = 120
+    collectionView.contentInset.top = 20
     createDataSource()
     reloadData()
   }
@@ -63,6 +65,14 @@ class ViewController: UIViewController {
         fatalError("Unable to dequeue")
       }
       
+      cell.updateCellData(
+        release: "23 Jul 2020",
+        title: "Your second kotlin Android App Your second kotlin Android App",
+        details: "Your second kotlin Android AppYour second kotlin Android App second kotlin Android App second Your second kotlin Android AppYour second kotlin Android App second kotlin Android App secondYour second kotlin Andro",
+        artImageUrl: "url",
+        tutorialType: .article,
+        durationTxt: "2 hrs, 6 mins"
+      )
       
       return cell
     }
