@@ -14,7 +14,7 @@ class TutorialViewCell: UICollectionViewCell {
   
   let releaseLabel = UILabel()
   let titleLabel = UILabel()
-  let descriptionLabel = UILabel()
+  let detailLabel = UILabel()
   let artWorkImage = UIImageView()
   
   let typeTagView = TagView()
@@ -23,77 +23,20 @@ class TutorialViewCell: UICollectionViewCell {
   let titleStack = UIStackView()
   let artStack = UIStackView()
   let tagStack = UIStackView()
+  let mainStack = UIStackView()
+  
+  let dummyView = UILabel()
   
   override init(frame: CGRect) {
+    
     super.init(frame: frame)
     
-    
-    backgroundView = UIView()
-    backgroundView?.backgroundColor = .secondarySystemBackground
-    backgroundView?.layer.cornerRadius = 10
-    backgroundView?.layer.shadowColor = UIColor.black.cgColor
-    backgroundView?.layer.shadowRadius = 5
-    backgroundView?.layer.shadowOpacity = 0.2
-    backgroundView?.layer.shadowOffset = CGSize(width: 0, height: 5)
-    
-    
-    releaseLabel.text = "Released on 23 Jul 2020"
-    releaseLabel.font = .preferredFont(forTextStyle: .caption1)
-    releaseLabel.adjustsFontForContentSizeCategory = true
-    releaseLabel.textColor = .secondaryLabel
-    releaseLabel.setContentHuggingPriority(.defaultLow + 1, for: .vertical)
-    releaseLabel.numberOfLines = 1
-    
-    
-    titleLabel.text = "Your second kotlin Android App Your second kotlin Android App"
-    titleLabel.font = .preferredFont(forTextStyle: .headline)
-    titleLabel.adjustsFontForContentSizeCategory = true
-    titleLabel.textColor = .label
-    titleLabel.numberOfLines = 2
-    
-    
-    descriptionLabel.text = "Your second kotlin Android AppYour second kotlin Android App second kotlin Android App second Your second kotlin Android AppYour second kotlin Android App second kotlin Android App secondYour second kotlin Andro"
-    descriptionLabel.font = .preferredFont(forTextStyle: .caption1)
-    descriptionLabel.adjustsFontForContentSizeCategory = true
-    descriptionLabel.textColor = .label
-    descriptionLabel.numberOfLines = 2
-    
-    artWorkImage.image = #imageLiteral(resourceName: "artwork")
-    artWorkImage.layer.cornerRadius = 6
-    artWorkImage.clipsToBounds = true
-    NSLayoutConstraint.activate([
-      artWorkImage.heightAnchor.constraint(equalToConstant: 60),
-      artWorkImage.widthAnchor.constraint(equalToConstant: 60)
-    ])
-    
-    titleStack.addArrangedSubview(releaseLabel)
-    titleStack.addArrangedSubview(titleLabel)
-    titleStack.axis = .vertical
-    titleStack.alignment = .leading
-    titleStack.distribution = .fill
-    titleStack.spacing = 0
-    
-    artStack.addArrangedSubview(titleStack)
-    artStack.addArrangedSubview(artWorkImage)
-    artStack.axis = .horizontal
-    artStack.alignment = .leading
-    artStack.spacing = 10
-    
-    typeTagView.backgroundColor = .article
-    durationTagView.backgroundColor = .duration
-    
-    tagStack.addArrangedSubview(typeTagView)
-    tagStack.addArrangedSubview(durationTagView)
-    tagStack.alignment = .leading
-    tagStack.distribution = .fill
-    tagStack.spacing = 10
-    
-    
-    let mainStack = UIStackView(arrangedSubviews: [artStack, descriptionLabel, tagStack])
-    mainStack.axis = .vertical
-    mainStack.spacing = 10
-    mainStack.alignment = .leading
-    mainStack.translatesAutoresizingMaskIntoConstraints = false
+    setupShadow()
+    setupTitleStack()
+    setupArtStack()
+    setupTagStack()
+    setupTagStack()
+    setupMainStack()
     
     contentView.addSubview(mainStack)
     
@@ -103,28 +46,120 @@ class TutorialViewCell: UICollectionViewCell {
       mainStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
       mainStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
     ])
-    
-  }
-  
-  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-    
-    let isLargeTextOn = traitCollection.preferredContentSizeCategory.isAccessibilityCategory
-    
-    
-    
-    if isLargeTextOn {
-      artStack.axis = .vertical
-      tagStack.axis = .vertical
-    } else{
-      
-      artStack.axis = .horizontal
-      tagStack.axis = .horizontal
-    }
-    
   }
   
   required init?(coder: NSCoder) {
     fatalError("storyboard is not supported")
   }
   
+  func setupShadow() {
+    backgroundView = UIView()
+    backgroundView?.backgroundColor = .secondarySystemBackground
+    backgroundView?.layer.cornerRadius = 10
+    backgroundView?.layer.shadowColor = UIColor.black.cgColor
+    backgroundView?.layer.shadowRadius = 5
+    backgroundView?.layer.shadowOpacity = 0.2
+    backgroundView?.layer.shadowOffset = CGSize(width: 0, height: 5)
+  }
+  
+  func setupTitleStack() {
+    releaseLabel.setContentHuggingPriority(.defaultLow + 1, for: .vertical)
+    releaseLabel.setupLabel(withTextStyle: .caption1, textColor: .secondaryLabel)
+    
+    titleLabel.setupLabel(withTextStyle: .headline, numberOfLines: 2)
+    
+    titleStack.addArrangedSubview(releaseLabel)
+    titleStack.addArrangedSubview(titleLabel)
+    
+    titleStack.axis = .vertical
+    titleStack.alignment = .leading
+    titleStack.distribution = .fill
+    titleStack.setCustomSpacing(5, after: releaseLabel)
+  }
+  
+  func setupArtStack() {
+    artWorkImage.layer.cornerRadius = 6
+    artWorkImage.clipsToBounds = true
+    
+    NSLayoutConstraint.activate([
+      artWorkImage.heightAnchor.constraint(equalToConstant: 65),
+      artWorkImage.widthAnchor.constraint(equalToConstant: 65)
+    ])
+    
+    artStack.addArrangedSubview(titleStack)
+    artStack.addArrangedSubview(artWorkImage)
+    
+    artStack.axis = .horizontal
+    artStack.alignment = .leading
+    artStack.spacing = 10
+  }
+  
+  func setupTagStack() {
+    
+    typeTagView.setContentHuggingPriority(.defaultHigh + 2, for: .horizontal)
+    durationTagView.setContentHuggingPriority(.defaultHigh + 1, for: .horizontal)
+    
+    tagStack.addArrangedSubview(typeTagView)
+    tagStack.addArrangedSubview(durationTagView)
+    // DummyLabel is Added just to align the two Tag Views to the leading
+    tagStack.addArrangedSubview(dummyView)
+    
+    tagStack.alignment = .fill
+    tagStack.distribution = .fill
+    tagStack.setCustomSpacing(10, after: typeTagView)
+  }
+  
+  func setupMainStack() {
+    detailLabel.setupLabel(withTextStyle: .caption1, numberOfLines: 2)
+    
+    mainStack.addArrangedSubview(artStack)
+    mainStack.addArrangedSubview(detailLabel)
+    mainStack.addArrangedSubview(tagStack)
+    
+    mainStack.axis = .vertical
+    mainStack.spacing = 10
+    mainStack.alignment = .fill
+    mainStack.distribution = .fill
+    mainStack.translatesAutoresizingMaskIntoConstraints = false
+  }
+  
+  func updateCellData(
+    release: String,
+    title: String,
+    details: String,
+    artImageUrl: String,
+    tutorialType: TutorialType,
+    durationTxt: String
+  ) {
+    releaseLabel.text = "Released on \(release)"
+    
+    titleLabel.text = title
+    
+    // TODO: Need to implement to download image from server
+    artWorkImage.image = #imageLiteral(resourceName: "artwork")
+    
+    detailLabel.text = details
+    
+    switch tutorialType {
+    case .article:
+      typeTagView.iconImage = UIImage(systemName: "book.circle")
+      typeTagView.backgroundColor = .article
+    case .video:
+      typeTagView.iconImage = UIImage(systemName: "video.circle")
+      typeTagView.backgroundColor = .video
+    }
+    typeTagView.title = tutorialType.rawValue
+    
+    durationTagView.iconImage = UIImage(systemName: "clock")
+    durationTagView.title = durationTxt
+    durationTagView.backgroundColor = .duration
+  }
+  
+  override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    let isLargeTextOn = traitCollection.preferredContentSizeCategory.isAccessibilityCategory
+    let orientation: NSLayoutConstraint.Axis = isLargeTextOn ? .vertical: .horizontal
+    
+    artStack.axis = orientation
+    tagStack.axis = orientation
+  }
 }
