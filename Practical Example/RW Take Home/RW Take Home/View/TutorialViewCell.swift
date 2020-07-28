@@ -147,6 +147,8 @@ class TutorialViewCell: UICollectionViewCell {
     case .video:
       typeTagView.iconImage = UIImage(systemName: "video.circle")
       typeTagView.backgroundColor = .video
+    case .both:
+      break
     }
     typeTagView.title = tutorialType.rawValue
     

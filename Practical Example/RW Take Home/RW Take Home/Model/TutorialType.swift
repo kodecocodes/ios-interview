@@ -9,5 +9,5 @@
 import Foundation
 
 enum TutorialType: String {
-  case article, video
+  case article, video, both
 }
