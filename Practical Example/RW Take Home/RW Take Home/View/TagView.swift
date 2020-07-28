@@ -17,6 +17,7 @@ class TagView: UIView {
   var title: String? {
     didSet {
       titleLabel.text = title
+      invalidateIntrinsicContentSize()
     }
   }
   
