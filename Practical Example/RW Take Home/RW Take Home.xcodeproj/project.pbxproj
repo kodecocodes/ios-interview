@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8993E70E24D0879D0091D20D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E70D24D0879D0091D20D /* UIColor+Extension.swift */; };
+		8993E71024D08A6D0091D20D /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E70F24D08A6D0091D20D /* Tutorial.swift */; };
+		8993E71224D08C9D0091D20D /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E71124D08C9D0091D20D /* TutorialViewModel.swift */; };
+		8993E71424D08D430091D20D /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E71324D08D430091D20D /* Async.swift */; };
 		8995742E24C08F5C008DE8F2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8995742D24C08F5C008DE8F2 /* Color.xcassets */; };
 		8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995743024C0D224008DE8F2 /* TutorialType.swift */; };
 		89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7D33924BF6514009AA50F /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		8993E70D24D0879D0091D20D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8993E70F24D08A6D0091D20D /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		8993E71124D08C9D0091D20D /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
+		8993E71324D08D430091D20D /* Async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
 		8995742D24C08F5C008DE8F2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		8995743024C0D224008DE8F2 /* TutorialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialType.swift; sourceTree = "<group>"; };
 		89A7D33624BF6514009AA50F /* RW Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RW Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				8995743024C0D224008DE8F2 /* TutorialType.swift */,
+				8993E70F24D08A6D0091D20D /* Tutorial.swift */,
+				8993E71124D08C9D0091D20D /* TutorialViewModel.swift */,
+				8993E71324D08D430091D20D /* Async.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,10 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				89E5C81224C020FA00026F2B /* UILabel+Extension.swift in Sources */,
+				8993E71024D08A6D0091D20D /* Tutorial.swift in Sources */,
+				8993E71424D08D430091D20D /* Async.swift in Sources */,
 				89E5C80F24C00C5F00026F2B /* TutorialViewCell.swift in Sources */,
 				89A7D33E24BF6514009AA50F /* ViewController.swift in Sources */,
 				8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */,
 				89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */,
+				8993E71224D08C9D0091D20D /* TutorialViewModel.swift in Sources */,
 				89A7D33C24BF6514009AA50F /* SceneDelegate.swift in Sources */,
 				89E5C81424C06E7C00026F2B /* TagView.swift in Sources */,
 				8993E70E24D0879D0091D20D /* UIColor+Extension.swift in Sources */,

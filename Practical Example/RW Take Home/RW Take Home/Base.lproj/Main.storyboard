@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NDA-MG-awB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NDA-MG-awB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -34,13 +34,22 @@
                                     <segment title="Video"/>
                                     <segment title="Both"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onTutorialTypeChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="zTd-a7-UBf"/>
+                                </connections>
                             </segmentedControl>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KNt-FW-9Wm">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Fe8-PZ-D1i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L4P-60-s51"/>
                             <constraint firstItem="lHx-28-QBG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OaF-yy-tjn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lHx-28-QBG" secondAttribute="trailing" constant="20" id="Poj-xI-x0b"/>
+                            <constraint firstItem="KNt-FW-9Wm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bMW-mH-jfK"/>
+                            <constraint firstItem="KNt-FW-9Wm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cxk-AM-ZcT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lHx-28-QBG" secondAttribute="bottom" constant="44" id="f6Q-Jr-rhP"/>
                             <constraint firstItem="Fe8-PZ-D1i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jsi-zv-IBb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Fe8-PZ-D1i" secondAttribute="bottom" id="lTH-eD-0CY"/>
@@ -50,6 +59,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Library" id="HC6-nR-Z7t"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="KNt-FW-9Wm" id="eJy-5f-uYl"/>
                         <outlet property="collectionView" destination="Fe8-PZ-D1i" id="PzT-lw-0Uc"/>
                         <outlet property="segmentedControl" destination="lHx-28-QBG" id="fhI-OT-2Nk"/>
                     </connections>

@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var segmentedControl: UISegmentedControl!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
-  var dataSource: UICollectionViewDiffableDataSource<String, Int>?
+  var dataSource: UICollectionViewDiffableDataSource<String, Tutorial>?
+  
+  let viewModel = TutorialViewModel()
+  
+  var cancellables: Set<AnyCancellable> = []
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -22,9 +28,55 @@ class ViewController: UIViewController {
     collectionView.contentInset.bottom = 120
     collectionView.contentInset.top = 20
     createDataSource()
-    reloadData()
+    
+    viewModel.$tutorials.sink { (tutorialResult) in
+      switch tutorialResult {
+        
+      case .unInitialized:
+        self.viewModel.fetchTutorial()
+      case .loading:
+        DispatchQueue.main.async {
+          self.activityIndicator.isHidden = false
+        }
+      case .success(let tutorials):
+        DispatchQueue.main.async {
+          self.reloadData(tutorials)
+          self.activityIndicator.isHidden = true
+        }
+      case .failure(let error):
+        print("\(error)")
+        DispatchQueue.main.async {
+          self.activityIndicator.isHidden = true
+        }
+      }
+    }.store(in: &cancellables)
+    
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    switch viewModel.selectedTutorialType {
+    case .article:
+      segmentedControl.selectedSegmentIndex = 0
+    case .video:
+      segmentedControl.selectedSegmentIndex = 1
+    case .both:
+      segmentedControl.selectedSegmentIndex = 2
+    }
+  }
+  
+  @IBAction func onTutorialTypeChange(_ sender: Any) {
+    
+    let index = segmentedControl.selectedSegmentIndex
+    
+    switch index {
+    case 0:
+      viewModel.selectedTutorialType = .article
+    case 1:
+      viewModel.selectedTutorialType = .video
+    default:
+      viewModel.selectedTutorialType = .both
+    }
+  }
   
   func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
     
@@ -59,35 +111,31 @@ class ViewController: UIViewController {
   }
   
   func createDataSource() {
-    dataSource = UICollectionViewDiffableDataSource<String, Int>(collectionView: collectionView) { collectionView, indexPath, app in
+    dataSource = UICollectionViewDiffableDataSource<String, Tutorial>(collectionView: collectionView) { collectionView, indexPath, tutorial in
       
       guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TutorialViewCell.reuseIdentifier, for: indexPath) as? TutorialViewCell else {
         fatalError("Unable to dequeue")
       }
       
       cell.updateCellData(
-        release: "23 Jul 2020",
-        title: "Your second kotlin Android App Your second kotlin Android App",
-        details: "Your second kotlin Android AppYour second kotlin Android App second kotlin Android App second Your second kotlin Android AppYour second kotlin Android App second kotlin Android App secondYour second kotlin Andro",
-        artImageUrl: "url",
-        tutorialType: .article,
-        durationTxt: "2 hrs, 6 mins"
+        release: tutorial.attributes.releaseTxt,
+        title: tutorial.attributes.name,
+        details: tutorial.attributes.descriptionPlainText,
+        artImageUrl: tutorial.attributes.cardArtworkURL,
+        tutorialType: tutorial.attributes.contentType == "article" ? .article : .video,
+        durationTxt: tutorial.attributes.durationTxt
       )
       
       return cell
     }
   }
   
-  func reloadData() {
+  func reloadData(_ tutorials: [Tutorial]) {
+    let section = "sections"
     
-    let sections = ["sections"]
-    
-    var snapshot = NSDiffableDataSourceSnapshot<String, Int>()
-    snapshot.appendSections(sections)
-    
-    for section in sections {
-      snapshot.appendItems([1,2,3,4,5,6,7,8,9], toSection: section)
-    }
+    var snapshot = NSDiffableDataSourceSnapshot<String, Tutorial>()
+    snapshot.appendSections([section])
+    snapshot.appendItems(tutorials, toSection: section)
     
     dataSource?.apply(snapshot)
   }
