@@ -8,12 +8,6 @@
 
 import UIKit
 
-extension UIColor {
-  static let article = UIColor(named: "article")!
-  static let video = UIColor(named: "video")!
-  static let duration = UIColor(named: "duration")!
-}
-
 extension UILabel {
   
   func setupLabel(

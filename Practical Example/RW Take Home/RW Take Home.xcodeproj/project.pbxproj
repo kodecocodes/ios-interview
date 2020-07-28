@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8993E70E24D0879D0091D20D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E70D24D0879D0091D20D /* UIColor+Extension.swift */; };
 		8995742E24C08F5C008DE8F2 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8995742D24C08F5C008DE8F2 /* Color.xcassets */; };
 		8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8995743024C0D224008DE8F2 /* TutorialType.swift */; };
 		89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7D33924BF6514009AA50F /* AppDelegate.swift */; };
@@ -16,11 +17,12 @@
 		89A7D34324BF6516009AA50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A7D34224BF6516009AA50F /* Assets.xcassets */; };
 		89A7D34624BF6516009AA50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89A7D34424BF6516009AA50F /* LaunchScreen.storyboard */; };
 		89E5C80F24C00C5F00026F2B /* TutorialViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5C80E24C00C5F00026F2B /* TutorialViewCell.swift */; };
-		89E5C81224C020FA00026F2B /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5C81124C020FA00026F2B /* Utility.swift */; };
+		89E5C81224C020FA00026F2B /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5C81124C020FA00026F2B /* UILabel+Extension.swift */; };
 		89E5C81424C06E7C00026F2B /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E5C81324C06E7C00026F2B /* TagView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8993E70D24D0879D0091D20D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8995742D24C08F5C008DE8F2 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		8995743024C0D224008DE8F2 /* TutorialType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialType.swift; sourceTree = "<group>"; };
 		89A7D33624BF6514009AA50F /* RW Take Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RW Take Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +34,7 @@
 		89A7D34524BF6516009AA50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89A7D34724BF6516009AA50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89E5C80E24C00C5F00026F2B /* TutorialViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewCell.swift; sourceTree = "<group>"; };
-		89E5C81124C020FA00026F2B /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		89E5C81124C020FA00026F2B /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 		89E5C81324C06E7C00026F2B /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8995742F24C0D20E008DE8F2 /* Model */,
-				89E5C81024C020E300026F2B /* Utility */,
+				89E5C81024C020E300026F2B /* Extension */,
 				89E5C80D24C00BE900026F2B /* View */,
 				89E5C80C24C009DB00026F2B /* App Delegate */,
 				89A7D33D24BF6514009AA50F /* ViewController.swift */,
@@ -106,12 +108,13 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		89E5C81024C020E300026F2B /* Utility */ = {
+		89E5C81024C020E300026F2B /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				89E5C81124C020FA00026F2B /* Utility.swift */,
+				89E5C81124C020FA00026F2B /* UILabel+Extension.swift */,
+				8993E70D24D0879D0091D20D /* UIColor+Extension.swift */,
 			);
-			path = Utility;
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,13 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E5C81224C020FA00026F2B /* Utility.swift in Sources */,
+				89E5C81224C020FA00026F2B /* UILabel+Extension.swift in Sources */,
 				89E5C80F24C00C5F00026F2B /* TutorialViewCell.swift in Sources */,
 				89A7D33E24BF6514009AA50F /* ViewController.swift in Sources */,
 				8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */,
 				89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */,
 				89A7D33C24BF6514009AA50F /* SceneDelegate.swift in Sources */,
 				89E5C81424C06E7C00026F2B /* TagView.swift in Sources */,
+				8993E70E24D0879D0091D20D /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
