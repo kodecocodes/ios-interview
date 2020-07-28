@@ -31,22 +31,21 @@ class ViewController: UIViewController {
     
     viewModel.$tutorials.sink { (tutorialResult) in
       switch tutorialResult {
-        
       case .unInitialized:
         self.viewModel.fetchTutorial()
+        
       case .loading:
-        DispatchQueue.main.async {
-          self.activityIndicator.isHidden = false
-        }
+        self.activityIndicator.isHidden = false
+        
       case .success(let tutorials):
-        DispatchQueue.main.async {
-          self.reloadData(tutorials)
-          self.activityIndicator.isHidden = true
-        }
+        self.reloadData(tutorials)
+        self.activityIndicator.isHidden = true
+        
       case .failure(let error):
-        print("\(error)")
-        DispatchQueue.main.async {
-          self.activityIndicator.isHidden = true
+        self.activityIndicator.isHidden = true
+        self.showErrorAlert(for: error){
+          alertAction in
+          self.viewModel.fetchTutorial()
         }
       }
     }.store(in: &cancellables)
@@ -138,6 +137,19 @@ class ViewController: UIViewController {
     snapshot.appendItems(tutorials, toSection: section)
     
     dataSource?.apply(snapshot)
+  }
+  
+  private func showErrorAlert(for error: Error, callback: ((UIAlertAction) -> Void )?){
+    
+    let alert = UIAlertController(
+      title: "Opps!!",
+      message: "Something went wrong: \(error.localizedDescription)",
+      preferredStyle: .alert
+    )
+    let action = UIAlertAction(title: "Try Agin", style: UIAlertAction.Style.default, handler: callback)
+    alert.addAction(action)
+    
+    self.present(alert, animated: true, completion: nil)
   }
   
 }

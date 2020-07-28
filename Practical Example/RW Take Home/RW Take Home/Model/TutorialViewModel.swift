@@ -59,7 +59,6 @@ class TutorialViewModel {
         switch completion {
         case .failure(let error):
           DispatchQueue.main.async {self.tutorials = .failure(error)}
-          print("error happend \(error)")
         case .finished:
           return
         }
