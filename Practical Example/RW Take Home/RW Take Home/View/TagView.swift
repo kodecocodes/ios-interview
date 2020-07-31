@@ -37,7 +37,7 @@ class TagView: UIView {
     
     iconImageView.tintColor = .white
     
-    titleLabel.setupLabel(withTextStyle: .caption1, textColor: .white)
+    titleLabel.setupLabel(withTextStyle: .subheadline, textColor: .white)
     
     titleLabel.translatesAutoresizingMaskIntoConstraints = false
     iconImageView.translatesAutoresizingMaskIntoConstraints = false

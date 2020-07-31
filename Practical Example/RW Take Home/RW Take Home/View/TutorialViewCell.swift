@@ -54,7 +54,7 @@ class TutorialViewCell: UICollectionViewCell {
   
   func setupShadow() {
     backgroundView = UIView()
-    backgroundView?.backgroundColor = .secondarySystemBackground
+    backgroundView?.backgroundColor = .tertiarySystemBackground
     backgroundView?.layer.cornerRadius = 10
     backgroundView?.layer.shadowColor = UIColor.black.cgColor
     backgroundView?.layer.shadowRadius = 5
@@ -64,9 +64,9 @@ class TutorialViewCell: UICollectionViewCell {
   
   func setupTitleStack() {
     releaseLabel.setContentHuggingPriority(.defaultLow + 1, for: .vertical)
-    releaseLabel.setupLabel(withTextStyle: .caption1, textColor: .secondaryLabel)
+    releaseLabel.setupLabel(withTextStyle: .subheadline, textColor: .secondaryLabel)
     
-    titleLabel.setupLabel(withTextStyle: .headline, numberOfLines: 2)
+    titleLabel.setupLabel(withTextStyle: .title3, numberOfLines: 2)
     
     titleStack.addArrangedSubview(releaseLabel)
     titleStack.addArrangedSubview(titleLabel)
@@ -82,8 +82,8 @@ class TutorialViewCell: UICollectionViewCell {
     artWorkImage.clipsToBounds = true
     
     NSLayoutConstraint.activate([
-      artWorkImage.heightAnchor.constraint(equalToConstant: 65),
-      artWorkImage.widthAnchor.constraint(equalToConstant: 65)
+      artWorkImage.heightAnchor.constraint(lessThanOrEqualToConstant: 75),
+      artWorkImage.widthAnchor.constraint(equalToConstant: 80)
     ])
     
     artStack.addArrangedSubview(titleStack)
@@ -110,14 +110,14 @@ class TutorialViewCell: UICollectionViewCell {
   }
   
   func setupMainStack() {
-    detailLabel.setupLabel(withTextStyle: .caption1, numberOfLines: 2)
+    detailLabel.setupLabel(withTextStyle: .body,textColor: .secondaryLabel, numberOfLines: 2)
     
     mainStack.addArrangedSubview(artStack)
     mainStack.addArrangedSubview(detailLabel)
     mainStack.addArrangedSubview(tagStack)
     
     mainStack.axis = .vertical
-    mainStack.spacing = 10
+    mainStack.spacing = 20
     mainStack.alignment = .fill
     mainStack.distribution = .fill
     mainStack.translatesAutoresizingMaskIntoConstraints = false
