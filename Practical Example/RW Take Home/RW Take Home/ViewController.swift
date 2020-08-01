@@ -8,6 +8,7 @@
 
 import UIKit
 import Combine
+import Kingfisher
 
 class ViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
@@ -83,7 +84,7 @@ class ViewController: UIViewController {
       
       let cellSize = NSCollectionLayoutSize(
         widthDimension: .fractionalWidth(1),
-        heightDimension: .estimated(150)
+        heightDimension: .estimated(202)
       )
       
       let layoutItem = NSCollectionLayoutItem(layoutSize: cellSize)
@@ -124,6 +125,10 @@ class ViewController: UIViewController {
         tutorialType: tutorial.attributes.contentType == "article" ? .article : .video,
         durationTxt: tutorial.attributes.durationTxt
       )
+
+      let url = URL(string: tutorial.attributes.cardArtworkURL)
+      cell.artWorkImage.kf.indicatorType = .activity
+      cell.artWorkImage.kf.setImage(with: url, options: [.transition(.fade(0.4))])
       
       return cell
     }
