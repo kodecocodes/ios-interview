@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		893C1D8C24D5E04C005CB3B3 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893C1D8B24D5E04C005CB3B3 /* APIResult.swift */; };
+		893C1D8E24D5E092005CB3B3 /* Attributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893C1D8D24D5E092005CB3B3 /* Attributes.swift */; };
 		8993E70E24D0879D0091D20D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E70D24D0879D0091D20D /* UIColor+Extension.swift */; };
 		8993E71024D08A6D0091D20D /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E70F24D08A6D0091D20D /* Tutorial.swift */; };
 		8993E71224D08C9D0091D20D /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8993E71124D08C9D0091D20D /* TutorialViewModel.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		893C1D8B24D5E04C005CB3B3 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		893C1D8D24D5E092005CB3B3 /* Attributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attributes.swift; sourceTree = "<group>"; };
 		8993E70D24D0879D0091D20D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8993E70F24D08A6D0091D20D /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		8993E71124D08C9D0091D20D /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
@@ -61,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				8995743024C0D224008DE8F2 /* TutorialType.swift */,
-				8993E70F24D08A6D0091D20D /* Tutorial.swift */,
-				8993E71124D08C9D0091D20D /* TutorialViewModel.swift */,
 				8993E71324D08D430091D20D /* Async.swift */,
+				893C1D8B24D5E04C005CB3B3 /* APIResult.swift */,
+				8993E70F24D08A6D0091D20D /* Tutorial.swift */,
+				893C1D8D24D5E092005CB3B3 /* Attributes.swift */,
+				8993E71124D08C9D0091D20D /* TutorialViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,9 +215,11 @@
 				89E5C81224C020FA00026F2B /* UILabel+Extension.swift in Sources */,
 				8993E71024D08A6D0091D20D /* Tutorial.swift in Sources */,
 				8993E71424D08D430091D20D /* Async.swift in Sources */,
+				893C1D8C24D5E04C005CB3B3 /* APIResult.swift in Sources */,
 				89E5C80F24C00C5F00026F2B /* TutorialViewCell.swift in Sources */,
 				89A7D33E24BF6514009AA50F /* ViewController.swift in Sources */,
 				8995743124C0D224008DE8F2 /* TutorialType.swift in Sources */,
+				893C1D8E24D5E092005CB3B3 /* Attributes.swift in Sources */,
 				89A7D33A24BF6514009AA50F /* AppDelegate.swift in Sources */,
 				8993E71224D08C9D0091D20D /* TutorialViewModel.swift in Sources */,
 				89A7D33C24BF6514009AA50F /* SceneDelegate.swift in Sources */,
