@@ -81,8 +81,10 @@ class TutorialViewCell: UICollectionViewCell {
     artWorkImage.layer.cornerRadius = 6
     artWorkImage.clipsToBounds = true
     
+    let heightConstraint =  artWorkImage.heightAnchor.constraint(equalToConstant: 75)
+    heightConstraint.priority = .required - 1
     NSLayoutConstraint.activate([
-      artWorkImage.heightAnchor.constraint(lessThanOrEqualToConstant: 75),
+      heightConstraint,
       artWorkImage.widthAnchor.constraint(equalToConstant: 80)
     ])
     
@@ -132,12 +134,7 @@ class TutorialViewCell: UICollectionViewCell {
     durationTxt: String
   ) {
     releaseLabel.text = "Released on \(release)"
-    
     titleLabel.text = title
-    
-    // TODO: Need to implement to download image from server
-    artWorkImage.image = #imageLiteral(resourceName: "artwork")
-    
     detailLabel.text = details
     
     switch tutorialType {
