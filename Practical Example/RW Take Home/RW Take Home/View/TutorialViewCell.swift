@@ -46,6 +46,8 @@ class TutorialViewCell: UICollectionViewCell {
       mainStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
       mainStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
     ])
+    
+    isAccessibilityElement = true
   }
   
   required init?(coder: NSCoder) {
@@ -136,6 +138,7 @@ class TutorialViewCell: UICollectionViewCell {
     releaseLabel.text = "Released on \(release)"
     titleLabel.text = title
     detailLabel.text = details
+    accessibilityLabel = "\(title). \(tutorialType.rawValue)"
     
     switch tutorialType {
     case .article:
