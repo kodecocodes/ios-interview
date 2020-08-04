@@ -13,19 +13,22 @@ This is an implementation of Raywenderlich.com iOS interview practice project. F
 
 ## 📸 Screenshot
 
-<img src="./images/rw_take_home.png" alt="Raywenderlich.com iOS interview practice project">
+<img src="./images/rw_take_home.png" alt="Raywenderlich.com iOS interview practice project" width="700">
 
 
 ## Accessibility:
 - **Dynamic Type**: This app support dynamic type. When the text size gets large then all the horizontal stack become vertical stack and in the landscape mode single cell gets the full width.
-<p float="left">
-  <img src="./images/dynamic_type_portrait.png" style="width: 45%" />
-  <img src="./images/dynamic_type_landscape.png" style="width: 45%"/> 
-</p>
+
+<table>
+  <tr>
+    <td> <img src="./images/dynamic_type_portrait.png" /></td>
+    <td> <img src="./images/dynamic_type_landscape.png" /></td>
+  </tr>
+ </table>
 
 - **VoiceOver**: In this app each CollectionViewCell act like a single element when the Voice over is activated. The `accessibilityLabel` of each Cell is consists of the title and type (artticle/video) of the Cell data.
 <p float="left">
-  <img src="./images/voiceover.png" style="width: 45%" />
+  <img src="./images/voiceover.png" width="500"/>
 </p>
 
 
@@ -41,7 +44,3 @@ This is an implementation of Raywenderlich.com iOS interview practice project. F
 - [raywenderlich.com](https://www.raywenderlich.com/) for the amazing **RW Community Care!**
 - All the mentors of **RW Bootcamp**
 - All the fellow students of **RW Bootcamp**
-
-<p>
-Don't forget to star ⭐ the repo it motivates me to share more open source projects
-</p>
