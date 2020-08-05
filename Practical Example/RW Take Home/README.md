@@ -32,7 +32,7 @@ This is an implementation of Raywenderlich.com iOS interview practice project. F
 </p>
 
 
-## APIs/Libraris, I have used in this project
+## APIs/Libraries, I have used in this project
 - Auto Layout
 - Custom UIView
 - CollectionView with DiffableDataSource & CompositionalLayout
