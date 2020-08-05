@@ -17,18 +17,19 @@ This is an implementation of Raywenderlich.com iOS interview practice project. F
 
 
 ## Accessibility:
-- **Dynamic Type**: This app support dynamic type. When the text size gets large then all the horizontal stack become vertical stack and in the landscape mode single cell gets the full width.
+- **Dynamic Type:** This app supports dynamic type. When the text size gets large, all the horizontal stacks become vertical stacks and single cell gets full width in the landscape mode.
 
 <table>
   <tr>
-    <td> <img src="./images/dynamic_type_portrait.png" /></td>
-    <td> <img src="./images/dynamic_type_landscape.png" /></td>
+    <td> <img src="./images/dynamic_type_portrait.png" alt="Dynamic Type in portrait"/></td>
+    <td> <img src="./images/dynamic_type_landscape.png" alt="Dynamic Type in landscape" /></td>
   </tr>
  </table>
 
-- **VoiceOver**: In this app each CollectionViewCell act like a single element when the Voice over is activated. The `accessibilityLabel` of each Cell is consists of the title and type (artticle/video) of the Cell data.
+- **VoiceOver:** In this app, each CollectionViewCell acts like a single element when the VoiceOver is activated. The `accessibilityLabel` of each Cell consists of the title and type (artticle/video) of the Cell data.
+
 <p float="left">
-  <img src="./images/voiceover.png" width="500"/>
+  <img src="./images/voiceover.png" width="500" alt="VoiceOver support"/>
 </p>
 
 
@@ -37,10 +38,11 @@ This is an implementation of Raywenderlich.com iOS interview practice project. F
 - Custom UIView
 - CollectionView with DiffableDataSource & CompositionalLayout
 - Combine & URLSession
-- **Kingfisher**: Downloading image for the CollectionViewCell is a common problem in the iOS Community and the community came up with mutliple solutions. Kingfisher is one of the most popular solutions. It is open sourced and actively maintained. That's why I have choosen this library to download the images. </br> ( RW iOS App also use this library )
+- **Kingfisher**: Downloading image for the CollectionViewCell is a common problem in the iOS community and the community came up with mutliple solutions. Kingfisher is one of the most popular solutions. It is open sourced and actively maintained. That's why I have choosen this library to download the images. </br> (RW iOS App also uses this library)
+- SwiftLint
 
 
 ## Speacial Thanks To
 - [raywenderlich.com](https://www.raywenderlich.com/) for the amazing **RW Community Care!**
-- All the mentors of **RW Bootcamp**
+- [Audrey Tam](https://twitter.com/mataharimau) and all the mentors of **RW Bootcamp**
 - All the fellow students of **RW Bootcamp**
