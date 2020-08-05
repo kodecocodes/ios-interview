@@ -144,6 +144,7 @@
 				89A7D33224BF6514009AA50F /* Sources */,
 				89A7D33324BF6514009AA50F /* Frameworks */,
 				89A7D33424BF6514009AA50F /* Resources */,
+				899EDD1924DA78FB007DF182 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +207,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		899EDD1924DA78FB007DF182 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89A7D33224BF6514009AA50F /* Sources */ = {

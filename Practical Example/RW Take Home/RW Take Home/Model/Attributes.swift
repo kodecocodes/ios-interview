@@ -15,9 +15,9 @@ struct Attributes: Codable, Hashable {
   let descriptionPlainText: String
   let cardArtworkURL: String
   let duration: Int
-  
+
   enum CodingKeys: String, CodingKey {
-    case uri, name,duration
+    case uri, name, duration
     case attributesDescription = "description"
     case releasedAt = "released_at"
     case contentType = "content_type"
@@ -31,19 +31,19 @@ extension Attributes {
     let dateFormatter = DateFormatter()
     dateFormatter.locale = Locale(identifier: "en_US")
     dateFormatter.setLocalizedDateFormatFromTemplate("MMMdyyyy")
-    
+
     return dateFormatter.string(from: releasedAt)
   }
-  
+
   var durationTxt: String {
     var minutes = duration / 60
-    
+
     let hours = minutes / 60
     minutes = minutes % 60
-    
+
     if hours > 0 {
       return "\(hours) hrs, \(minutes) mins"
-    } else{
+    } else {
       return "\(minutes) mins"
     }
   }

@@ -9,12 +9,11 @@
 import UIKit
 
 extension UILabel {
-  
   func setupLabel(
     withTextStyle style: UIFont.TextStyle,
     textColor: UIColor = .label,
     numberOfLines: Int = 1
-  ){
+  ) {
     font = .preferredFont(forTextStyle: style)
     adjustsFontForContentSizeCategory = true
     self.textColor = textColor

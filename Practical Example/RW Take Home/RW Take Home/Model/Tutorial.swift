@@ -12,7 +12,7 @@ struct Tutorial: Codable, Hashable, Equatable {
   static func == (lhs: Tutorial, rhs: Tutorial) -> Bool {
     return lhs.id == rhs.id
   }
-  
+
   let id, type: String
   let attributes: Attributes
 }
