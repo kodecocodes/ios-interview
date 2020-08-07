@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LibraryVC: UIViewController {
+class LibraryVC: RWDataLoadingVC {
     
     enum Section { case main }
     
@@ -43,8 +43,7 @@ class LibraryVC: UIViewController {
         configureDataSource()
         configureSearchController()
         
-        fetchArticles()
-        fetchVideos()
+        fetchContent()
         sortByDate()
     }
     
@@ -183,28 +182,31 @@ class LibraryVC: UIViewController {
         sortButton.setTitle("Newest", for: .normal)
     }
     
-    func fetchArticles() {
+    func fetchContent() {
+        showLoadingView()
+        
         NetworkManager.shared.getArticles { [weak self] result in
             guard let self = self else { return }
+            
+            self.dismissLoadingView()
             
             switch result {
             case .success(let articles):
                 self.fetchedItems.append(contentsOf: articles.data)
                 self.updateUI(with: articles.data)
-            case .failure(let error):
-                DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
-            }
-        }
-    }
-    
-    func fetchVideos() {
-        NetworkManager.shared.getVideos { [weak self] result in
-            guard let self = self else { return }
-            
-            switch result {
-            case .success(let videos):
-                self.fetchedItems.append(contentsOf: videos.data)
-                self.updateUI(with: videos.data)
+
+                NetworkManager.shared.getVideos { [weak self] result in
+                    guard let self = self else { return }
+                    
+                    switch result {
+                    case .success(let videos):
+                        self.fetchedItems.append(contentsOf: videos.data)
+                        self.updateUI(with: videos.data)
+                    case .failure(let error):
+                        DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
+                    }
+                }
+                
             case .failure(let error):
                 DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
             }
@@ -331,8 +333,7 @@ extension LibraryVC: FiltersVCDelegate {
         
         if filter == "All" {
             items.removeAll()
-            fetchArticles()
-            fetchVideos()
+            fetchContent()
             contentLabel.text = "All"
             isFiltered = false
             return

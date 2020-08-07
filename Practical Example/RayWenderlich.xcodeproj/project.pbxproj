@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F22A428624DD9D37006C61E1 /* RWSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428524DD9D37006C61E1 /* RWSplitViewController.swift */; };
 		F22A428824DDB79C006C61E1 /* RWItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428724DDB79C006C61E1 /* RWItemsVC.swift */; };
+		F22A428A24DDE262006C61E1 /* RWDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428924DDE262006C61E1 /* RWDataLoadingVC.swift */; };
 		F252C4CD24D70C4B00E543A0 /* BookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */; };
 		F28668CD24D882530024353B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668CC24D882530024353B /* ContentType.swift */; };
 		F28668D124D8AFC40024353B /* InProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D024D8AFC40024353B /* InProgressVC.swift */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		F22A428524DD9D37006C61E1 /* RWSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWSplitViewController.swift; sourceTree = "<group>"; };
 		F22A428724DDB79C006C61E1 /* RWItemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWItemsVC.swift; sourceTree = "<group>"; };
+		F22A428924DDE262006C61E1 /* RWDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWDataLoadingVC.swift; sourceTree = "<group>"; };
 		F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVC.swift; sourceTree = "<group>"; };
 		F28668CC24D882530024353B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		F28668D024D8AFC40024353B /* InProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressVC.swift; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */,
 				F28668D024D8AFC40024353B /* InProgressVC.swift */,
 				F28668D224D8AFCD0024353B /* CompletedVC.swift */,
+				F22A428924DDE262006C61E1 /* RWDataLoadingVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			files = (
 				F28F4A3F24D621AC00313EA9 /* ItemCell.swift in Sources */,
 				F28F4A4824D6276400313EA9 /* RWLabel.swift in Sources */,
+				F22A428A24DDE262006C61E1 /* RWDataLoadingVC.swift in Sources */,
 				F28F4A3024D5E3D900313EA9 /* MyTutorialsVC.swift in Sources */,
 				F28F4A2C24D5E27A00313EA9 /* Constants.swift in Sources */,
 				F28F4A2924D5E03C00313EA9 /* RWTabBarController.swift in Sources */,
