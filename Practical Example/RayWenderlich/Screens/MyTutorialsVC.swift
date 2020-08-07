@@ -43,7 +43,7 @@ class MyTutorialsVC: UIViewController {
     
     func configureViewController() {
         view.backgroundColor = .secondarySystemBackground
-        navigationController?.navigationBar.tintColor = .secondaryLabel
+        navigationController?.navigationBar.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let changeUsername = UIAction(title: "Change username", image: Images.username) { action in

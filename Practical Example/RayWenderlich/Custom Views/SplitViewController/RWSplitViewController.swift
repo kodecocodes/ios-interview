@@ -8,6 +8,8 @@
 import UIKit
 
 class RWSplitViewController: UISplitViewController {
+    
+    var secondaryViewTitle = "Library"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,48 +20,51 @@ class RWSplitViewController: UISplitViewController {
     func configureViewController() {
         view.backgroundColor = .secondarySystemBackground
         
-        viewControllers = [createLibraryVC(), createTabBarController()]
+        preferredSplitBehavior = .displace
+        preferredPrimaryColumnWidthFraction = 1/6
         preferredDisplayMode = .oneBesideSecondary
+        navigationController?.isNavigationBarHidden = true
+        
+        setViewController(createListViewController(), for: .primary)
+        setViewController(createSecondaryViewController(with: secondaryViewTitle), for: .secondary)
     }
     
-    func createListViewController() -> UICollectionViewController {
-        let layout = UICollectionViewFlowLayout()
+    func createListViewController() -> RWItemsVC {
         
-        
-        let collectionVC = UICollectionViewController(collectionViewLayout: layout)
+        let collectionVC = RWItemsVC()
+        collectionVC.delegate = self
         
         return collectionVC
     }
     
-    func createTabBarController() -> RWTabBarController {
-        let tabBarController = RWTabBarController()
-        view.backgroundColor = .secondarySystemBackground
-        UITabBar.appearance().tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
+    func createSecondaryViewController(with title: String) -> UINavigationController {
+        var navController = UINavigationController()
         
-        return tabBarController
+        if title == "Library" {
+            let libraryVC = LibraryVC()
+            libraryVC.title = title
+            
+            navController = UINavigationController(rootViewController: libraryVC)
+        } else if title == "Downloads" {
+            let downloadsVC = DownloadsVC()
+            downloadsVC.title = title
+            
+            navController = UINavigationController(rootViewController: downloadsVC)
+        } else if title == "My Tutorials" {
+            let myTutorialsVC = MyTutorialsVC()
+            myTutorialsVC.title = title
+            
+            navController = UINavigationController(rootViewController: myTutorialsVC)
+        }
+        
+        return navController
     }
-    
-    func createLibraryVC() -> UINavigationController {
-        let libraryVC = LibraryVC()
-        libraryVC.title = "Library"
-        libraryVC.tabBarItem = UITabBarItem(title: "Library", image: Images.library, tag: 0)
-        
-        return UINavigationController(rootViewController: libraryVC)
-    }
-    
-    func createDownloadsVC() -> UINavigationController {
-        let downloadsVC = DownloadsVC()
-        downloadsVC.title = "Downloads"
-        downloadsVC.tabBarItem = UITabBarItem(title: "Downloads", image: Images.downloads, tag: 1)
-        
-        return UINavigationController(rootViewController: downloadsVC)
-    }
-    
-    func createMyTurorialsVC() -> UINavigationController {
-        let myTutorialsVC = MyTutorialsVC()
-        myTutorialsVC.title = "My Tutorials"
-        myTutorialsVC.tabBarItem = UITabBarItem(title: "My Tutorials", image: Images.person, tag: 2)
-        
-        return UINavigationController(rootViewController: myTutorialsVC)
+}
+
+extension RWSplitViewController: RWItemsVCDelegate {
+    func didSelectVC(with title: String) {
+        secondaryViewTitle = title
+
+        self.setViewController(createSecondaryViewController(with: title), for: .secondary)
     }
 }

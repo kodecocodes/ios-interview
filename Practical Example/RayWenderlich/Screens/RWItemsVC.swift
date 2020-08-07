@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol RWItemsVCDelegate: class {
+    func didSelectVC(with title: String)
+}
+
 class RWItemsVC: UIViewController {
+    
+    weak var delegate: RWItemsVCDelegate!
     
     var collectionView: UICollectionView!
     
@@ -24,8 +30,12 @@ class RWItemsVC: UIViewController {
     func configureViewController() {
         
         view.backgroundColor = .secondarySystemBackground
+        navigationController?.navigationBar.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
+        title = "raywenderlich.com"
         
-        
+        items.append("Library")
+        items.append("Downloads")
+        items.append("My Tutorials")
     }
     
     func configureCollectionView() {
@@ -53,7 +63,17 @@ extension RWItemsVC: UICollectionViewDataSource {
         var contentConfiguration = UIListContentConfiguration.cell()
         contentConfiguration.text = items[indexPath.row]
         
+        if indexPath.row == 0 {
+            contentConfiguration.image = Images.library
+        } else if indexPath.row == 1 {
+            contentConfiguration.image = Images.downloads
+        } else {
+            contentConfiguration.image = Images.person
+        }
+        
         cell.contentConfiguration = contentConfiguration
+        cell.backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
+        cell.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
         
         return cell
     }
@@ -63,6 +83,8 @@ extension RWItemsVC: UICollectionViewDataSource {
 
 extension RWItemsVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let destVCTitle = items[indexPath.item]
+        print(destVCTitle)
+        delegate.didSelectVC(with: destVCTitle)
     }
 }

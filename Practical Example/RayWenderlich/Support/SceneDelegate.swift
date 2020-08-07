@@ -20,10 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
 //        if windowScene.interfaceOrientation.isPortrait {
-            window?.rootViewController = RWTabBarController()
+//            window?.rootViewController = RWTabBarController()
 //        } else if windowScene.interfaceOrientation.isLandscape {
 //        window?.rootViewController = RWSplitViewController(style: .doubleColumn)
 //        }
+        window?.rootViewController = RWMainVC()
         
         window?.makeKeyAndVisible()
         
