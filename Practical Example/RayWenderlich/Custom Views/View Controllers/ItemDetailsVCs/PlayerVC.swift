@@ -44,15 +44,6 @@ class PlayerVC: UIViewController {
         view.addSubview(playerImageView)
         playerImageView.pinToEdges(of: view)
 
-//        let gradient = CAGradientLayer()
-//        gradient.frame = playerImageView.bounds
-//        gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
-//        gradient.endPoint = CGPoint(x: 0.5, y: 0.6)
-//        let white = UIColor.white
-//        gradient.colors = [white.withAlphaComponent(0.0).cgColor, white.withAlphaComponent(1.0).cgColor, white.withAlphaComponent(1.0).cgColor]
-//        gradient.locations = [NSNumber(value: 0.0),NSNumber(value: 0.2),NSNumber(value: 1.0)]
-//        playerImageView.layer.mask = gradient
-
         view.addSubview(playButton)
         playButton.alpha = 1
         
@@ -67,7 +58,7 @@ class PlayerVC: UIViewController {
     }
     
     @objc func playButtonTapped() {
-        let videoURL = URL(string: "https://i.imgur.com/V6VfD9G.mp4")
+        let videoURL = URL(string: "videoUrl")
         let player = AVPlayer(url: videoURL!)
         
         let playerVC = AVPlayerViewController()

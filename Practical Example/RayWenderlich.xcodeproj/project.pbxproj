@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F252C4CD24D70C4B00E543A0 /* BookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */; };
-		F2735F6924DB078700AB7D18 /* RWContextMenusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2735F6824DB078700AB7D18 /* RWContextMenusVC.swift */; };
 		F28668CD24D882530024353B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668CC24D882530024353B /* ContentType.swift */; };
 		F28668D124D8AFC40024353B /* InProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D024D8AFC40024353B /* InProgressVC.swift */; };
 		F28668D324D8AFCD0024353B /* CompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D224D8AFCD0024353B /* CompletedVC.swift */; };
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVC.swift; sourceTree = "<group>"; };
-		F2735F6824DB078700AB7D18 /* RWContextMenusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContextMenusVC.swift; sourceTree = "<group>"; };
 		F28668CC24D882530024353B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		F28668D024D8AFC40024353B /* InProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressVC.swift; sourceTree = "<group>"; };
 		F28668D224D8AFCD0024353B /* CompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedVC.swift; sourceTree = "<group>"; };
@@ -250,7 +248,6 @@
 				F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */,
 				F28668D024D8AFC40024353B /* InProgressVC.swift */,
 				F28668D224D8AFCD0024353B /* CompletedVC.swift */,
-				F2735F6824DB078700AB7D18 /* RWContextMenusVC.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -332,7 +329,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2735F6924DB078700AB7D18 /* RWContextMenusVC.swift in Sources */,
 				F28F4A3F24D621AC00313EA9 /* ItemCell.swift in Sources */,
 				F28F4A4824D6276400313EA9 /* RWLabel.swift in Sources */,
 				F28F4A3024D5E3D900313EA9 /* MyTutorialsVC.swift in Sources */,
