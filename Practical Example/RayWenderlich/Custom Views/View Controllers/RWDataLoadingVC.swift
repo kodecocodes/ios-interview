@@ -24,6 +24,7 @@ class RWDataLoadingVC: UIViewController {
         containerView.addSubview(activityIndicator)
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.color = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
         
         NSLayoutConstraint.activate([
             activityIndicator.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
