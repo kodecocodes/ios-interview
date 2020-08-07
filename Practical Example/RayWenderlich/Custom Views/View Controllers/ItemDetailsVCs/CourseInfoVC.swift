@@ -9,7 +9,7 @@ import UIKit
 
 class CourseInfoVC: UIViewController {
     
-    var item: Item!
+    static var item: Item!
     
     var technologyLabel = RWLabel(textAlignment: .left, fontSize: 14, weight: .regular, textColor: .secondaryLabel)
     var titleLabel = RWLabel(textAlignment: .left, fontSize: 24, weight: .bold, textColor: .label)
@@ -21,7 +21,7 @@ class CourseInfoVC: UIViewController {
 
     init(with item: Item) {
         super.init(nibName: nil, bundle: nil)
-        self.item = item
+        CourseInfoVC.item = item
         
         technologyLabel.text = item.attributes.technologyTripleString.uppercased()
         titleLabel.text = item.attributes.name
@@ -113,35 +113,30 @@ class CourseInfoVC: UIViewController {
     }
     
     func updateUI() {
-        if !item.isDownloaded! {
+        if CourseInfoVC.item.isDownloaded! {
             downloadButton.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
-            item.isDownloaded = true
         } else {
-            DownloadsVC.items.removeAll { $0.id == item.id }
             downloadButton.tintColor = .secondaryLabel
-            item.isDownloaded = false
         }
         
-        if !item.isBookmarked! {
+        if CourseInfoVC.item.isBookmarked! {
             bookmarkButton.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
-            item.isBookmarked = true
         } else {
             bookmarkButton.tintColor = .secondaryLabel
-            item.isBookmarked = false
         }
     }
 
     @objc func downloadButtonTapped() {
-        if !item.isDownloaded! {
-            DownloadsVC.items.append(self.item)
+        if !CourseInfoVC.item.isDownloaded! {
+            DownloadsVC.items.append(CourseInfoVC.item)
             downloadButton.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
-            item.isDownloaded = true
-            addToDownloads(with: item)
+            CourseInfoVC.item.isDownloaded = true
+            addToDownloads(with: CourseInfoVC.item)
         } else {
-            DownloadsVC.items.removeAll { $0.id == item.id }
+            DownloadsVC.items.removeAll { $0.id == CourseInfoVC.item.id }
             downloadButton.tintColor = .secondaryLabel
-            item.isDownloaded = false
-            removeFromDownloads(with: item)
+            CourseInfoVC.item.isDownloaded = false
+            removeFromDownloads(with: CourseInfoVC.item)
         }
     }
     
@@ -172,16 +167,16 @@ class CourseInfoVC: UIViewController {
     }
     
     @objc func bookmarkButtonTapped() {
-        if !item.isBookmarked! {
-            MyTutorialsVC.bookmarkedItems.append(self.item)
+        if !CourseInfoVC.item.isBookmarked! {
+            MyTutorialsVC.bookmarkedItems.append(CourseInfoVC.item)
             bookmarkButton.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
-            item.isBookmarked = true
-            addToBookmarks(with: item)
+            CourseInfoVC.item.isBookmarked = true
+            addToBookmarks(with: CourseInfoVC.item)
         } else {
-            MyTutorialsVC.bookmarkedItems.removeAll { $0.id == item.id }
+            MyTutorialsVC.bookmarkedItems.removeAll { $0.id == CourseInfoVC.item.id }
             bookmarkButton.tintColor = .secondaryLabel
-            item.isBookmarked = false
-            removeFromBookmarks(with: item)
+            CourseInfoVC.item.isBookmarked = false
+            removeFromBookmarks(with: CourseInfoVC.item)
         }
     }
     

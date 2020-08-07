@@ -1,20 +1,42 @@
 //
-//  RWTabBarController.swift
+//  RWSplitViewController.swift
 //  RayWenderlich
 //
-//  Created by Giuliano Soria Pazos on 2020-08-01.
+//  Created by Giuliano Soria Pazos on 2020-08-07.
 //
 
 import UIKit
 
-class RWTabBarController: UITabBarController {
-    
+class RWSplitViewController: UISplitViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        configureViewController()
+    }
+    
+    func configureViewController() {
+        view.backgroundColor = .secondarySystemBackground
+        
+        viewControllers = [createLibraryVC(), createTabBarController()]
+        preferredDisplayMode = .oneBesideSecondary
+    }
+    
+    func createListViewController() -> UICollectionViewController {
+        let layout = UICollectionViewFlowLayout()
+        
+        
+        let collectionVC = UICollectionViewController(collectionViewLayout: layout)
+        
+        return collectionVC
+    }
+    
+    func createTabBarController() -> RWTabBarController {
+        let tabBarController = RWTabBarController()
         view.backgroundColor = .secondarySystemBackground
         UITabBar.appearance().tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
-        viewControllers = [createLibraryVC(), createDownloadsVC(), createMyTurorialsVC()]
+        
+        return tabBarController
     }
     
     func createLibraryVC() -> UINavigationController {

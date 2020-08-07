@@ -186,6 +186,8 @@ extension BookmarksVC: UIContextMenuInteractionDelegate {
                     
                     DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
                 }
+                
+                CourseInfoVC.item = updatedBookmark
             }
             
             let destructive = UIMenu(title: "Remove", image: nil, options: .displayInline, children: [remove])

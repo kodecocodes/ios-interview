@@ -35,8 +35,10 @@ class LibraryVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         configureRefreshControl()
+        
         configureContentLabel()
         configureSortButton()
+        
         configureCollectionView()
         configureDataSource()
         configureSearchController()
@@ -249,7 +251,20 @@ extension LibraryVC: UICollectionViewDelegate {
         let activeItems = isSearching ? filteredItems : items
         let item = activeItems[indexPath.item]
         
-        let savedItem = Item(id: item.id, type: item.type, attributes: item.attributes, isDownloaded: false, isBookmarked: false)
+        var savedItem = Item(id: item.id, type: item.type, attributes: item.attributes, isDownloaded: false, isBookmarked: false)
+        
+        for downloadedItem in downloadedItems {
+            for bookmarkedItem in bookmarkedItems {
+                if (bookmarkedItem.id == savedItem.id) && (downloadedItem.id == savedItem.id) {
+                    savedItem = Item(id: item.id, type: item.type, attributes: item.attributes, isDownloaded: true, isBookmarked: true)
+                    break
+                } else if downloadedItem.id == savedItem.id {
+                    savedItem = Item(id: item.id, type: item.type, attributes: item.attributes, isDownloaded: true, isBookmarked: false)
+                } else if bookmarkedItem.id == savedItem.id {
+                    savedItem = Item(id: item.id, type: item.type, attributes: item.attributes, isDownloaded: false, isBookmarked: true)
+                }
+            }
+        }
             
         let destVC = ItemDetailVC(with: savedItem)
         

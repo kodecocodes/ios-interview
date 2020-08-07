@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F22A428624DD9D37006C61E1 /* RWSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428524DD9D37006C61E1 /* RWSplitViewController.swift */; };
+		F22A428824DDB79C006C61E1 /* RWItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428724DDB79C006C61E1 /* RWItemsVC.swift */; };
 		F252C4CD24D70C4B00E543A0 /* BookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */; };
 		F28668CD24D882530024353B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668CC24D882530024353B /* ContentType.swift */; };
 		F28668D124D8AFC40024353B /* InProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D024D8AFC40024353B /* InProgressVC.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F22A428524DD9D37006C61E1 /* RWSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWSplitViewController.swift; sourceTree = "<group>"; };
+		F22A428724DDB79C006C61E1 /* RWItemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWItemsVC.swift; sourceTree = "<group>"; };
 		F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVC.swift; sourceTree = "<group>"; };
 		F28668CC24D882530024353B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		F28668D024D8AFC40024353B /* InProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressVC.swift; sourceTree = "<group>"; };
@@ -91,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F22A428424DD9D1A006C61E1 /* SplitViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F22A428524DD9D37006C61E1 /* RWSplitViewController.swift */,
+			);
+			path = SplitViewController;
+			sourceTree = "<group>";
+		};
 		F26D80F124DCDB1A0034342C /* ItemDetailsVCs */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				F28F4A2F24D5E3D900313EA9 /* MyTutorialsVC.swift */,
 				F28F4A5124D649CA00313EA9 /* ItemDetailVC.swift */,
 				F28F4A5D24D65EA600313EA9 /* FiltersVC.swift */,
+				F22A428724DDB79C006C61E1 /* RWItemsVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -158,6 +171,7 @@
 		F28F4A2624D5E00D00313EA9 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				F22A428424DD9D1A006C61E1 /* SplitViewController */,
 				F28F4A2724D5E01400313EA9 /* TabBarController */,
 				F28F4A5324D64BF500313EA9 /* View Controllers */,
 				F28F4A4624D626E000313EA9 /* Image Views */,
@@ -339,6 +353,7 @@
 				F252C4CD24D70C4B00E543A0 /* BookmarksVC.swift in Sources */,
 				F28F4A4224D6223800313EA9 /* UIView+Ext.swift in Sources */,
 				F28F4A4A24D6277000313EA9 /* RWImageView.swift in Sources */,
+				F22A428624DD9D37006C61E1 /* RWSplitViewController.swift in Sources */,
 				F28668D324D8AFCD0024353B /* CompletedVC.swift in Sources */,
 				F28F4A2E24D5E3C800313EA9 /* DownloadsVC.swift in Sources */,
 				F28F4A5224D649CA00313EA9 /* ItemDetailVC.swift in Sources */,
@@ -350,6 +365,7 @@
 				F28F4A6024D686ED00313EA9 /* PersistenceManager.swift in Sources */,
 				F28F4A5C24D653D700313EA9 /* RWButton.swift in Sources */,
 				F28F4A5924D64FB600313EA9 /* PlayerVC.swift in Sources */,
+				F22A428824DDB79C006C61E1 /* RWItemsVC.swift in Sources */,
 				F28668CD24D882530024353B /* ContentType.swift in Sources */,
 				F28F4A4E24D6397500313EA9 /* String+Ext.swift in Sources */,
 				F28F4A3824D5E9E100313EA9 /* Results.swift in Sources */,

@@ -18,7 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = RWTabBarController()
+        
+//        if windowScene.interfaceOrientation.isPortrait {
+            window?.rootViewController = RWTabBarController()
+//        } else if windowScene.interfaceOrientation.isLandscape {
+//        window?.rootViewController = RWSplitViewController(style: .doubleColumn)
+//        }
+        
         window?.makeKeyAndVisible()
         
         configureNavBar()

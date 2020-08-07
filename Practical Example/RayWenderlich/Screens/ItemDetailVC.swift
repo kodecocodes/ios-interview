@@ -30,12 +30,14 @@ class ItemDetailVC: UIViewController {
         configureCourseInfoVC(with: item)
         configurePlayerVC()
         layoutUI()
-        addToInProgress()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationItem.largeTitleDisplayMode = .never
     }
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
-        navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
     }
     
@@ -63,20 +65,5 @@ class ItemDetailVC: UIViewController {
     
     func configureCourseInfoVC(with item: Item) {
         self.add(childVC: CourseInfoVC(with: item), to: self.courseInfoView)
-    }
-    
-    func addToInProgress() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            PersistenceManager.updateItems(for: Keys.inProgress, with: self.item, actionType: .add) { [weak self] error in
-                guard let self = self else { return }
-                
-                guard let error = error else {
-                    DispatchQueue.main.async { UIHelper.createAlertController(title: "Added!", message: "Successfully added to in progress!", in: self) }
-                    return
-                }
-                
-                DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
-            }
-        }
     }
 }

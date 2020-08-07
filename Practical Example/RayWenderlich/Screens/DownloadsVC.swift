@@ -179,7 +179,7 @@ extension DownloadsVC: UIContextMenuInteractionDelegate {
             }
 
             
-            let remove = UIAction(title: "Remove from Downloads", image: Images.removeCompleted, attributes: .destructive) { action in
+            let remove = UIAction(title: "Remove from Downloads", image: Images.removeDownload, attributes: .destructive) { action in
                 let updatedDownload = Item(id: download.id, type: download.type, attributes: download.attributes, isDownloaded: false, isBookmarked: download.isBookmarked!)
                 
                 PersistenceManager.updateItems(for: Keys.downloads, with: updatedDownload, actionType: .remove) { [weak self] error in
@@ -196,6 +196,8 @@ extension DownloadsVC: UIContextMenuInteractionDelegate {
                     
                     DispatchQueue.main.async { UIHelper.createAlertController(title: "Error", message: error.rawValue, in: self) }
                 }
+                
+                CourseInfoVC.item = updatedDownload
             }
             
             return UIMenu(title: "Menu", children: [share, remove])
