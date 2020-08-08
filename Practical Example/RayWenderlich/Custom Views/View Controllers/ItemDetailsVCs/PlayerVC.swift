@@ -42,7 +42,14 @@ class PlayerVC: UIViewController {
         
         
         view.addSubview(playerImageView)
-        playerImageView.pinToEdges(of: view)
+//        playerImageView.pinToEdges(of: view)
+        
+        NSLayoutConstraint.activate([
+            playerImageView.topAnchor.constraint(equalTo: view.topAnchor),
+            playerImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            playerImageView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            playerImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
 
         view.addSubview(playButton)
         playButton.alpha = 1

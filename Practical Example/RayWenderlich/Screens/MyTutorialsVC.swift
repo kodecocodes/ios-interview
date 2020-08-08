@@ -78,18 +78,18 @@ class MyTutorialsVC: UIViewController {
         
         NSLayoutConstraint.activate([
             bookmarksView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20),
-            bookmarksView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bookmarksView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            bookmarksView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            bookmarksView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             bookmarksView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             inProgressView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20),
-            inProgressView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            inProgressView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            inProgressView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            inProgressView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             inProgressView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             completedView.topAnchor.constraint(equalTo: segmentedControl.bottomAnchor, constant: 20),
-            completedView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            completedView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            completedView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            completedView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
             completedView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
@@ -117,9 +117,9 @@ class MyTutorialsVC: UIViewController {
         let padding: CGFloat = 20
         
         NSLayoutConstraint.activate([
-            segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            segmentedControl.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-            segmentedControl.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            segmentedControl.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
+            segmentedControl.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
+            segmentedControl.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding),
             segmentedControl.heightAnchor.constraint(equalToConstant: 30)
         ])
     }

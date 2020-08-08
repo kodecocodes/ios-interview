@@ -48,9 +48,15 @@ class DownloadsVC: UIViewController {
     func configureCollectionView() {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: UIHelper.createCollectionViewFlowLayout(in: view))
         view.addSubview(collectionView)
-        collectionView.pinToEdges(of: view)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .secondarySystemBackground
+        
+        NSLayoutConstraint.activate([
+            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
         
         collectionView.register(ItemCell.self, forCellWithReuseIdentifier: ItemCell.reuseID)
         collectionView.delegate = self
@@ -131,7 +137,7 @@ extension DownloadsVC: UICollectionViewDelegate {
 
 extension DownloadsVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.width - 20
+        let width = collectionView.frame.width
         let height: CGFloat = 170
         
         return CGSize(width: width, height: height)

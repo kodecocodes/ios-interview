@@ -82,7 +82,7 @@ class LibraryVC: RWDataLoadingVC {
         
         NSLayoutConstraint.activate([
             sortButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
-            sortButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            sortButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding),
             sortButton.heightAnchor.constraint(equalToConstant: 44),
             sortButton.widthAnchor.constraint(equalToConstant: 100)
         ])
@@ -96,7 +96,7 @@ class LibraryVC: RWDataLoadingVC {
         
         NSLayoutConstraint.activate([
             contentLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: padding),
-            contentLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            contentLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
             contentLabel.widthAnchor.constraint(equalToConstant: 150),
             contentLabel.heightAnchor.constraint(equalToConstant: 44)
         ])
@@ -109,9 +109,9 @@ class LibraryVC: RWDataLoadingVC {
         
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: sortButton.bottomAnchor, constant: 10),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            collectionView.leadingAnchor.constraint(equalTo: contentLabel.leadingAnchor),
+            collectionView.trailingAnchor.constraint(equalTo: sortButton.trailingAnchor),
+            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
         collectionView.addSubview(refreshControl)
@@ -276,7 +276,7 @@ extension LibraryVC: UICollectionViewDelegate {
 
 extension LibraryVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = view.frame.width - 20
+        let width = collectionView.frame.width
         let height: CGFloat = 170
         
         return CGSize(width: width, height: height)

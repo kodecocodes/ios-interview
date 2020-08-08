@@ -9,9 +9,15 @@ import UIKit
 
 class ItemDetailVC: UIViewController {
     
+    private var windowInterfaceOrientation: UIInterfaceOrientation? {
+        return UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
+    }
+    
     var item: Item!
     
     var playerView = UIView()
+    var scrollView = UIScrollView()
+    var contentView = UIView()
     var courseInfoView = UIView()
     
     init(with item: Item) {
@@ -29,11 +35,12 @@ class ItemDetailVC: UIViewController {
         configureViewController()
         configureCourseInfoVC(with: item)
         configurePlayerVC()
-        layoutUI()
+        configureScrollView()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationItem.largeTitleDisplayMode = .never
+        view.backgroundColor = .secondarySystemBackground
     }
     
     func configureViewController() {
@@ -41,7 +48,29 @@ class ItemDetailVC: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor(hue:0.365, saturation:0.527, brightness:0.506, alpha:1)
     }
     
-    func layoutUI() {
+    func configureScrollView() {
+        view.addSubview(scrollView)
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        scrollView.addSubview(contentView)
+        contentView.pinToEdges(of: scrollView)
+        
+        NSLayoutConstraint.activate([
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: 650)
+        ])
+        
+        layoutUI(in: contentView)
+    }
+    
+    func layoutUI(in view: UIView) {
         view.addSubviews(playerView, courseInfoView)
         playerView.translatesAutoresizingMaskIntoConstraints = false
         courseInfoView.translatesAutoresizingMaskIntoConstraints = false

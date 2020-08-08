@@ -75,8 +75,8 @@ class CourseInfoVC: UIViewController {
         
         NSLayoutConstraint.activate([
             technologyLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: padding),
-            technologyLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-            technologyLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            technologyLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: padding),
+            technologyLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -padding),
             technologyLabel.heightAnchor.constraint(equalToConstant: 18),
             
             titleLabel.topAnchor.constraint(equalTo: technologyLabel.bottomAnchor, constant: padding),

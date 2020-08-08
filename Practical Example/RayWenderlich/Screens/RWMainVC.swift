@@ -23,34 +23,34 @@ class RWMainVC: UIViewController {
     }
     
     override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-            super.willTransition(to: newCollection, with: coordinator)
+        super.willTransition(to: newCollection, with: coordinator)
 
-            coordinator.animate(alongsideTransition: { (context) in
-                guard let windowInterfaceOrientation = self.windowInterfaceOrientation else { return }
+        coordinator.animate(alongsideTransition: { (context) in
+            guard let windowInterfaceOrientation = self.windowInterfaceOrientation else { return }
 
-                if windowInterfaceOrientation.isLandscape {
-                    self.splitView.isHidden = false
-                    self.view.addSubview(self.splitView)
-                    self.splitView.translatesAutoresizingMaskIntoConstraints = false
-                    self.splitView.pinToEdges(of: self.view)
-                    
-                    self.add(childVC: RWSplitViewController(style: .doubleColumn), to: self.splitView)
-                    
-                    self.tabBarView.isHidden = true
-                            
-                } else {
-                    self.tabBarView.isHidden = false
-                    self.view.addSubview(self.tabBarView)
-                    self.tabBarView.translatesAutoresizingMaskIntoConstraints = false
-                    self.tabBarView.pinToEdges(of: self.view)
-                    
-                    self.self.add(childVC: RWTabBarController(), to: self.tabBarView)
-                    
-                    self.splitView.isHidden = true
+            if windowInterfaceOrientation.isLandscape {
+                self.splitView.isHidden = false
+                self.view.addSubview(self.splitView)
+                self.splitView.translatesAutoresizingMaskIntoConstraints = false
+                self.splitView.pinToEdges(of: self.view)
+                
+                self.add(childVC: RWSplitViewController(style: .doubleColumn), to: self.splitView)
+                
+                self.tabBarView.isHidden = true
                         
-                }
-            })
-        }
+            } else {
+                self.tabBarView.isHidden = false
+                self.view.addSubview(self.tabBarView)
+                self.tabBarView.translatesAutoresizingMaskIntoConstraints = false
+                self.tabBarView.pinToEdges(of: self.view)
+                
+                self.self.add(childVC: RWTabBarController(), to: self.tabBarView)
+                
+                self.splitView.isHidden = true
+                    
+            }
+        })
+    }
     
     func configureViewController() {
         view.addSubview(tabBarView)
