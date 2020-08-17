@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol DownloadsVCDelegate: class {
+  func didPassItem(item: Item)
+}
+
 class DownloadsVC: UIViewController {
+  
+  weak var delegate: DownloadsVCDelegate!
     
     enum Section { case main }
     
@@ -133,7 +139,11 @@ extension DownloadsVC: UICollectionViewDelegate {
         let activeItems = isSearching ? filteredItems : DownloadsVC.items
         let destVC = ItemDetailVC(with: activeItems[indexPath.row])
         
+      if SceneDelegate.windowInterfaceOrientation!.isPortrait {
         navigationController?.pushViewController(destVC, animated: true)
+      } else {
+        delegate.didPassItem(item: activeItems[indexPath.row])
+      }
     }
 }
 

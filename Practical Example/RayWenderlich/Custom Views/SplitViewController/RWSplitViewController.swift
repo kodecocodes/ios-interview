@@ -8,63 +8,100 @@
 import UIKit
 
 class RWSplitViewController: UISplitViewController {
+  
+  enum SuplementaryViewType { case library, downloads, myTutorials }
+  
+  var suplementaryViewTitle = "Library"
+  var item: Item!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    var secondaryViewTitle = "Library"
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        configureViewController()
+    configureViewController()
+  }
+  
+  func configureViewController() {
+    view.backgroundColor = .secondarySystemBackground
+    
+    preferredSplitBehavior = .displace
+    preferredPrimaryColumnWidthFraction = 1/4
+    preferredDisplayMode = .twoOverSecondary
+    navigationController?.isNavigationBarHidden = true
+    
+    setViewController(createListViewController(), for: .primary)
+    setViewController(createSuplementaryViewController(with: suplementaryViewTitle), for: .supplementary)
+    setViewController(createEmptyStateViewController(), for: .secondary)
+  }
+  
+  func createListViewController() -> RWItemsVC {
+    
+    let collectionVC = RWItemsVC()
+    collectionVC.delegate = self
+    
+    return collectionVC
+  }
+  
+  func createSuplementaryViewController(with title: String) -> UIViewController {
+    var destVC = UIViewController()
+    
+//    switch type {
+//    case .library:
+//      break
+//    case .downloads:
+//      break
+//    case .myTutorials:
+//      break
+//    }
+    
+    if title == "Library" {
+      let libraryVC = LibraryVC()
+      libraryVC.title = title
+      libraryVC.delegate = self
+      
+      destVC = libraryVC
+    } else if title == "Downloads" {
+      let downloadsVC = DownloadsVC()
+      downloadsVC.title = title
+      downloadsVC.delegate = self
+      
+      destVC = downloadsVC
+    } else if title == "My Tutorials" {
+      let myTutorialsVC = MyTutorialsVC()
+      myTutorialsVC.title = title
+      myTutorialsVC.delegate = self
+      
+      destVC = myTutorialsVC
     }
     
-    func configureViewController() {
-        view.backgroundColor = .secondarySystemBackground
-        
-        preferredSplitBehavior = .displace
-        preferredPrimaryColumnWidthFraction = 1/6
-        preferredDisplayMode = .oneBesideSecondary
-        navigationController?.isNavigationBarHidden = true
-        
-        setViewController(createListViewController(), for: .primary)
-        setViewController(createSecondaryViewController(with: secondaryViewTitle), for: .secondary)
-    }
+    return destVC
+  }
+  
+  func createEmptyStateViewController() -> UIViewController {
+    let destVC = RWEmptyStateVC()
     
-    func createListViewController() -> RWItemsVC {
-        
-        let collectionVC = RWItemsVC()
-        collectionVC.delegate = self
-        
-        return collectionVC
-    }
+    return destVC
+  }
+  
+  func createSecondaryViewController(with item: Item) -> UIViewController {
+    let destVC = ItemDetailVC(with: item)
     
-    func createSecondaryViewController(with title: String) -> UINavigationController {
-        var navController = UINavigationController()
-        
-        if title == "Library" {
-            let libraryVC = LibraryVC()
-            libraryVC.title = title
-            
-            navController = UINavigationController(rootViewController: libraryVC)
-        } else if title == "Downloads" {
-            let downloadsVC = DownloadsVC()
-            downloadsVC.title = title
-            
-            navController = UINavigationController(rootViewController: downloadsVC)
-        } else if title == "My Tutorials" {
-            let myTutorialsVC = MyTutorialsVC()
-            myTutorialsVC.title = title
-            
-            navController = UINavigationController(rootViewController: myTutorialsVC)
-        }
-        
-        return navController
-    }
+    return destVC
+  }
+  
 }
 
 extension RWSplitViewController: RWItemsVCDelegate {
-    func didSelectVC(with title: String) {
-        secondaryViewTitle = title
+  func didSelectVC(with title: String) {
+    suplementaryViewTitle = title
+    
+    self.setViewController(createSuplementaryViewController(with: title), for: .supplementary)
+  }
+}
 
-        self.setViewController(createSecondaryViewController(with: title), for: .secondary)
-    }
+extension RWSplitViewController: LibraryVCDelegate, DownloadsVCDelegate, MyTutorialsVCDelegate {
+  func didPassItem(item: Item) {
+    self.item = item
+    
+    showDetailViewController(createSecondaryViewController(with: self.item), sender: self)
+  }
 }

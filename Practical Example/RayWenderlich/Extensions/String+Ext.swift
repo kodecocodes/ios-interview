@@ -10,10 +10,14 @@ import Foundation
 extension String {
     
     func convertToDate() -> Date? {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        formatter.locale = Locale(identifier: "en_US_POSIX")
-        formatter.timeZone = .current
+        let formatter = ISO8601DateFormatter()
+      formatter.formatOptions = [
+        .withInternetDateTime,
+        .withDashSeparatorInDate,
+        .withFullDate,
+        .withFractionalSeconds,
+        .withColonSeparatorInTimeZone
+      ]
         
         return formatter.date(from: self)
     }

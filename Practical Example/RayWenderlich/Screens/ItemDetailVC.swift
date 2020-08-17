@@ -19,6 +19,7 @@ class ItemDetailVC: UIViewController {
     var scrollView = UIScrollView()
     var contentView = UIView()
     var courseInfoView = UIView()
+  var emptyStateView = RWEmptyStateView(frame: .zero)
     
     init(with item: Item) {
         super.init(nibName: nil, bundle: nil)
@@ -31,11 +32,16 @@ class ItemDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+      if !item.id.isEmpty {
         configureViewController()
         configureCourseInfoVC(with: item)
         configurePlayerVC()
         configureScrollView()
+      } else {
+        configureViewController()
+        view.addSubview(emptyStateView)
+        emptyStateView.pinToEdges(of: view)
+      }
     }
     
     override func viewWillAppear(_ animated: Bool) {

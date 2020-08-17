@@ -35,7 +35,7 @@ enum PersistenceManager {
             defaults.set(encodedItems, forKey: key)
             return nil
         } catch {
-            return .unableToPersisItems
+            return .unableToPersistItems
         }
     }
     

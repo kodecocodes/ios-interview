@@ -12,6 +12,8 @@
 		F22A428A24DDE262006C61E1 /* RWDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428924DDE262006C61E1 /* RWDataLoadingVC.swift */; };
 		F22A428C24DDF9D0006C61E1 /* RWMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22A428B24DDF9D0006C61E1 /* RWMainVC.swift */; };
 		F252C4CD24D70C4B00E543A0 /* BookmarksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */; };
+		F2669CB324EA323D0094D667 /* RWEmptyStateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2669CB224EA323D0094D667 /* RWEmptyStateVC.swift */; };
+		F27DBEED24E98FE5006B4AD5 /* RWEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27DBEEC24E98FE5006B4AD5 /* RWEmptyStateView.swift */; };
 		F28668CD24D882530024353B /* ContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668CC24D882530024353B /* ContentType.swift */; };
 		F28668D124D8AFC40024353B /* InProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D024D8AFC40024353B /* InProgressVC.swift */; };
 		F28668D324D8AFCD0024353B /* CompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28668D224D8AFCD0024353B /* CompletedVC.swift */; };
@@ -52,6 +54,8 @@
 		F22A428924DDE262006C61E1 /* RWDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWDataLoadingVC.swift; sourceTree = "<group>"; };
 		F22A428B24DDF9D0006C61E1 /* RWMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWMainVC.swift; sourceTree = "<group>"; };
 		F252C4CC24D70C4B00E543A0 /* BookmarksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksVC.swift; sourceTree = "<group>"; };
+		F2669CB224EA323D0094D667 /* RWEmptyStateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWEmptyStateVC.swift; sourceTree = "<group>"; };
+		F27DBEEC24E98FE5006B4AD5 /* RWEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWEmptyStateView.swift; sourceTree = "<group>"; };
 		F28668CC24D882530024353B /* ContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentType.swift; sourceTree = "<group>"; };
 		F28668D024D8AFC40024353B /* InProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressVC.swift; sourceTree = "<group>"; };
 		F28668D224D8AFCD0024353B /* CompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedVC.swift; sourceTree = "<group>"; };
@@ -116,6 +120,14 @@
 			path = ItemDetailsVCs;
 			sourceTree = "<group>";
 		};
+		F27DBEEB24E98FD1006B4AD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F27DBEEC24E98FE5006B4AD5 /* RWEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F28F4A0424D5DD0D00313EA9 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +181,7 @@
 				F28F4A5D24D65EA600313EA9 /* FiltersVC.swift */,
 				F22A428724DDB79C006C61E1 /* RWItemsVC.swift */,
 				F22A428B24DDF9D0006C61E1 /* RWMainVC.swift */,
+				F2669CB224EA323D0094D667 /* RWEmptyStateVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -176,6 +189,7 @@
 		F28F4A2624D5E00D00313EA9 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				F27DBEEB24E98FD1006B4AD5 /* Views */,
 				F22A428424DD9D1A006C61E1 /* SplitViewController */,
 				F28F4A2724D5E01400313EA9 /* TabBarController */,
 				F28F4A5324D64BF500313EA9 /* View Controllers */,
@@ -374,12 +388,14 @@
 				F28F4A5C24D653D700313EA9 /* RWButton.swift in Sources */,
 				F28F4A5924D64FB600313EA9 /* PlayerVC.swift in Sources */,
 				F22A428824DDB79C006C61E1 /* RWItemsVC.swift in Sources */,
+				F27DBEED24E98FE5006B4AD5 /* RWEmptyStateView.swift in Sources */,
 				F28668CD24D882530024353B /* ContentType.swift in Sources */,
 				F28F4A4E24D6397500313EA9 /* String+Ext.swift in Sources */,
 				F28F4A3824D5E9E100313EA9 /* Results.swift in Sources */,
 				F28F4A5024D640DB00313EA9 /* Int+Ext.swift in Sources */,
 				F28F4A5E24D65EA600313EA9 /* FiltersVC.swift in Sources */,
 				F28F4A1524D5DD0D00313EA9 /* LibraryVC.swift in Sources */,
+				F2669CB324EA323D0094D667 /* RWEmptyStateVC.swift in Sources */,
 				F28F4A1124D5DD0D00313EA9 /* AppDelegate.swift in Sources */,
 				F28F4A5524D64CBB00313EA9 /* CourseInfoVC.swift in Sources */,
 				F28F4A1324D5DD0D00313EA9 /* SceneDelegate.swift in Sources */,
@@ -529,10 +545,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soriagc.RayWenderlich;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soria.gc.RayWenderlich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -548,10 +564,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.soriagc.RayWenderlich;
+				PRODUCT_BUNDLE_IDENTIFIER = com.soria.gc.RayWenderlich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -8,57 +8,43 @@
 import UIKit
 
 class RWMainVC: UIViewController {
+  
+  let windowInterfaceOrientation = SceneDelegate.windowInterfaceOrientation!
+  
+  var tabBarView = UIView()
+  var splitView = UIView()
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-    private var windowInterfaceOrientation: UIInterfaceOrientation? {
-        return UIApplication.shared.windows.first?.windowScene?.interfaceOrientation
+    configureViewController()
+  }
+  
+  override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
+    super.willTransition(to: newCollection, with: coordinator)
+    
+    coordinator.animate(alongsideTransition: { [weak self] context in
+      guard let self = self else{ return }
+      
+      self.configureViewController()
+    })
+  }
+  
+  func configureViewController() {
+    guard let interfaceOrientation = SceneDelegate.windowInterfaceOrientation else { return }
+    
+    if interfaceOrientation.isPortrait {
+      self.splitView.removeFromSuperview()
+      self.view.addSubview(self.tabBarView)
+      self.tabBarView.pinToEdges(of: self.view)
+      
+      self.add(childVC: RWTabBarController(), to: self.tabBarView)
+    } else {
+      self.tabBarView.removeFromSuperview()
+      self.view.addSubview(self.splitView)
+      self.splitView.pinToEdges(of: self.view)
+      
+      self.add(childVC: RWSplitViewController(style: .tripleColumn), to: self.splitView)
     }
-    
-    var tabBarView = UIView()
-    var splitView = UIView()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
-        configureViewController()
-    }
-    
-    override func willTransition(to newCollection: UITraitCollection, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.willTransition(to: newCollection, with: coordinator)
-
-        coordinator.animate(alongsideTransition: { (context) in
-            guard let windowInterfaceOrientation = self.windowInterfaceOrientation else { return }
-
-            if windowInterfaceOrientation.isLandscape {
-                self.splitView.isHidden = false
-                self.view.addSubview(self.splitView)
-                self.splitView.translatesAutoresizingMaskIntoConstraints = false
-                self.splitView.pinToEdges(of: self.view)
-                
-                self.add(childVC: RWSplitViewController(style: .doubleColumn), to: self.splitView)
-                
-                self.tabBarView.isHidden = true
-                        
-            } else {
-                self.tabBarView.isHidden = false
-                self.view.addSubview(self.tabBarView)
-                self.tabBarView.translatesAutoresizingMaskIntoConstraints = false
-                self.tabBarView.pinToEdges(of: self.view)
-                
-                self.self.add(childVC: RWTabBarController(), to: self.tabBarView)
-                
-                self.splitView.isHidden = true
-                    
-            }
-        })
-    }
-    
-    func configureViewController() {
-        view.addSubview(tabBarView)
-        tabBarView.translatesAutoresizingMaskIntoConstraints = false
-        tabBarView.pinToEdges(of: view)
-        
-        self.add(childVC: RWTabBarController(), to: self.tabBarView)
-        
-        splitView.isHidden = true
-    }
+  }
 }

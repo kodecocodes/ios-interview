@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol MyTutorialsVCDelegate: class {
+  func didPassItem(item: Item)
+}
+
 class MyTutorialsVC: UIViewController {
+  
+  weak var delegate: MyTutorialsVCDelegate!
     
     var segmentedControl: UISegmentedControl!
     var inProgressView = UIView()
@@ -95,7 +101,7 @@ class MyTutorialsVC: UIViewController {
     }
     
     func configureBookmarksVC(with bookmarks: [Item]) {
-        self.add(childVC: BookmarksVC(with: bookmarks), to: self.bookmarksView)
+        self.add(childVC: BookmarksVC(with: bookmarks, delegate: self), to: self.bookmarksView)
     }
     
     func configureInProgressVC(with inProgress: [Item]) {
@@ -103,7 +109,7 @@ class MyTutorialsVC: UIViewController {
     }
     
     func configureCompletedVC(with completed: [Item]) {
-        self.add(childVC: CompletedVC(with: completed), to: self.completedView)
+        self.add(childVC: CompletedVC(with: completed, delegate: self), to: self.completedView)
     }
     
     func configureSegmentedControl() {
@@ -176,4 +182,10 @@ class MyTutorialsVC: UIViewController {
             }
         }
     }
+}
+
+extension MyTutorialsVC: BookmarksVCDelegate, CompletedVCDelegate {
+  func didPassItem(item: Item) {
+    delegate.didPassItem(item: item)
+  }
 }

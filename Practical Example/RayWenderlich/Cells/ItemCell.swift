@@ -76,7 +76,7 @@ class ItemCell: UICollectionViewCell {
             
             titleLabel.topAnchor.constraint(equalTo: artworkImageView.topAnchor),
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
-            titleLabel.widthAnchor.constraint(equalToConstant: 300),
+            titleLabel.widthAnchor.constraint(equalToConstant: 290),
             titleLabel.heightAnchor.constraint(lessThanOrEqualToConstant: 52),
 
             technologyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: padding),

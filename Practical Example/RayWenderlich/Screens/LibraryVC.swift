@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol LibraryVCDelegate: class {
+  func didPassItem(item: Item)
+}
+
 class LibraryVC: RWDataLoadingVC {
+  
+  weak var delegate: LibraryVCDelegate!
     
     enum Section { case main }
     
@@ -270,7 +276,11 @@ extension LibraryVC: UICollectionViewDelegate {
             
         let destVC = ItemDetailVC(with: savedItem)
         
+      if SceneDelegate.windowInterfaceOrientation!.isPortrait {
         navigationController?.pushViewController(destVC, animated: true)
+      } else {
+        delegate.didPassItem(item: savedItem)
+      }
     }
 }
 
