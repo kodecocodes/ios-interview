@@ -37,6 +37,7 @@ class RWSplitViewController: UISplitViewController {
     
     let collectionVC = RWItemsVC()
     collectionVC.delegate = self
+    collectionVC.navigationController?.navigationBar.tintColor = .secondarySystemBackground
     
     return collectionVC
   }
