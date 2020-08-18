@@ -1,15 +1,15 @@
 //
-//  RWArticlesTests.swift
-//  RWArticlesTests
+//  RWContentTests.swift
+//  RWContentTests
 //
 //  Created by Neil Hiddink on 8/17/20.
 //  Copyright © 2020 Neil Hiddink. All rights reserved.
 //
 
 import XCTest
-@testable import RWArticles
+@testable import RWContent
 
-class RWArticlesTests: XCTestCase {
+class RWContentTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

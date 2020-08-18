@@ -1,6 +1,6 @@
 //
 //  ContentTableViewCell.swift
-//  RWArticles
+//  RWContent
 //
 //  Created by Neil Hiddink on 8/17/20.
 //  Copyright © 2020 Neil Hiddink. All rights reserved.
@@ -14,5 +14,4 @@ class RWContentTableViewCell: UITableViewCell {
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var previewImage: UIImageView!
     
-
 }

@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  RWArticles
+//  ContentViewController.swift
+//  RWContent
 //
 //  Created by Neil Hiddink on 8/17/20.
 //  Copyright © 2020 Neil Hiddink. All rights reserved.
@@ -13,20 +13,29 @@ import UIKit
 // There should be no errors, warnings or crashes
 // The app should compile and run. If it needs additional setup, include instructions in the README.
 
-class ViewController: UIViewController {
+class ContentViewController: UIViewController {
     
-    private let articles: [RWArticle] = []
+    private var articles: [RWArticle] = []
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RWClient.shared.getArticleDataAsJSON()
+        RWClient.shared.getArticleDataAsJSON { (articles, error) in
+            if let _ = error {
+                // TODO: Alert the User
+            }
+            
+            self.articles = articles
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 }
 
-extension UIViewController: UITableViewDelegate, UITableViewDataSource {
+extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Delegate
     
@@ -47,7 +56,7 @@ extension UIViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.articles.count
     }
     
 }

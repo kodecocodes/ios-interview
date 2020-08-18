@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		1151BF6524EB4CBF00220071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF6424EB4CBF00220071 /* AppDelegate.swift */; };
 		1151BF6724EB4CBF00220071 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF6624EB4CBF00220071 /* SceneDelegate.swift */; };
-		1151BF6924EB4CBF00220071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF6824EB4CBF00220071 /* ViewController.swift */; };
+		1151BF6924EB4CBF00220071 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF6824EB4CBF00220071 /* ContentViewController.swift */; };
 		1151BF6C24EB4CBF00220071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6A24EB4CBF00220071 /* Main.storyboard */; };
 		1151BF6E24EB4CC000220071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6D24EB4CC000220071 /* Assets.xcassets */; };
 		1151BF7124EB4CC000220071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6F24EB4CC000220071 /* LaunchScreen.storyboard */; };
-		1151BF7C24EB4CC000220071 /* RWArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF7B24EB4CC000220071 /* RWArticlesTests.swift */; };
+		1151BF7C24EB4CC000220071 /* RWContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF7B24EB4CC000220071 /* RWContentTests.swift */; };
 		1151BF8B24EB566400220071 /* RWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8A24EB566400220071 /* RWClient.swift */; };
 		1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8C24EB59BE00220071 /* RWArticle.swift */; };
 		1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8E24EB59C700220071 /* RWVideo.swift */; };
 		1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */; };
+		1151BF9324EB624900220071 /* RWResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF9224EB624900220071 /* RWResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,21 +32,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1151BF6124EB4CBF00220071 /* RWArticles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWArticles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1151BF6124EB4CBF00220071 /* RWContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151BF6424EB4CBF00220071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1151BF6624EB4CBF00220071 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1151BF6824EB4CBF00220071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1151BF6824EB4CBF00220071 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		1151BF6B24EB4CBF00220071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1151BF6D24EB4CC000220071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1151BF7024EB4CC000220071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1151BF7224EB4CC000220071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1151BF7724EB4CC000220071 /* RWArticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWArticlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1151BF7B24EB4CC000220071 /* RWArticlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWArticlesTests.swift; sourceTree = "<group>"; };
+		1151BF7724EB4CC000220071 /* RWContentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWContentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1151BF7B24EB4CC000220071 /* RWContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContentTests.swift; sourceTree = "<group>"; };
 		1151BF7D24EB4CC000220071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1151BF8A24EB566400220071 /* RWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWClient.swift; sourceTree = "<group>"; };
 		1151BF8C24EB59BE00220071 /* RWArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWArticle.swift; sourceTree = "<group>"; };
 		1151BF8E24EB59C700220071 /* RWVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
 		1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContentTableViewCell.swift; sourceTree = "<group>"; };
+		1151BF9224EB624900220071 /* RWResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 		1151BF5824EB4CBF00220071 = {
 			isa = PBXGroup;
 			children = (
-				1151BF6324EB4CBF00220071 /* RWArticles */,
+				1151BF6324EB4CBF00220071 /* RWContent */,
 				1151BF7A24EB4CC000220071 /* RWArticlesTests */,
 				1151BF6224EB4CBF00220071 /* Products */,
 			);
@@ -78,13 +80,13 @@
 		1151BF6224EB4CBF00220071 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1151BF6124EB4CBF00220071 /* RWArticles.app */,
-				1151BF7724EB4CC000220071 /* RWArticlesTests.xctest */,
+				1151BF6124EB4CBF00220071 /* RWContent.app */,
+				1151BF7724EB4CC000220071 /* RWContentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1151BF6324EB4CBF00220071 /* RWArticles */ = {
+		1151BF6324EB4CBF00220071 /* RWContent */ = {
 			isa = PBXGroup;
 			children = (
 				1151BF6424EB4CBF00220071 /* AppDelegate.swift */,
@@ -94,13 +96,13 @@
 				1151BF8824EB4D7600220071 /* Controllers */,
 				1151BF8924EB4D8F00220071 /* Resources */,
 			);
-			path = RWArticles;
+			path = RWContent;
 			sourceTree = "<group>";
 		};
 		1151BF7A24EB4CC000220071 /* RWArticlesTests */ = {
 			isa = PBXGroup;
 			children = (
-				1151BF7B24EB4CC000220071 /* RWArticlesTests.swift */,
+				1151BF7B24EB4CC000220071 /* RWContentTests.swift */,
 				1151BF7D24EB4CC000220071 /* Info.plist */,
 			);
 			path = RWArticlesTests;
@@ -113,6 +115,7 @@
 				1151BF8C24EB59BE00220071 /* RWArticle.swift */,
 				1151BF8E24EB59C700220071 /* RWVideo.swift */,
 				1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */,
+				1151BF9224EB624900220071 /* RWResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -129,7 +132,7 @@
 		1151BF8824EB4D7600220071 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1151BF6824EB4CBF00220071 /* ViewController.swift */,
+				1151BF6824EB4CBF00220071 /* ContentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1151BF6024EB4CBF00220071 /* RWArticles */ = {
+		1151BF6024EB4CBF00220071 /* RWContent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1151BF8024EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWArticles" */;
+			buildConfigurationList = 1151BF8024EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWContent" */;
 			buildPhases = (
 				1151BF5D24EB4CBF00220071 /* Sources */,
 				1151BF5E24EB4CBF00220071 /* Frameworks */,
@@ -158,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = RWArticles;
+			name = RWContent;
 			productName = RWArticles;
-			productReference = 1151BF6124EB4CBF00220071 /* RWArticles.app */;
+			productReference = 1151BF6124EB4CBF00220071 /* RWContent.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1151BF7624EB4CC000220071 /* RWArticlesTests */ = {
+		1151BF7624EB4CC000220071 /* RWContentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1151BF8324EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWArticlesTests" */;
+			buildConfigurationList = 1151BF8324EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWContentTests" */;
 			buildPhases = (
 				1151BF7324EB4CC000220071 /* Sources */,
 				1151BF7424EB4CC000220071 /* Frameworks */,
@@ -176,9 +179,9 @@
 			dependencies = (
 				1151BF7924EB4CC000220071 /* PBXTargetDependency */,
 			);
-			name = RWArticlesTests;
+			name = RWContentTests;
 			productName = RWArticlesTests;
-			productReference = 1151BF7724EB4CC000220071 /* RWArticlesTests.xctest */;
+			productReference = 1151BF7724EB4CC000220071 /* RWContentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1151BF5C24EB4CBF00220071 /* Build configuration list for PBXProject "RWArticles" */;
+			buildConfigurationList = 1151BF5C24EB4CBF00220071 /* Build configuration list for PBXProject "RWContent" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,8 +216,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1151BF6024EB4CBF00220071 /* RWArticles */,
-				1151BF7624EB4CC000220071 /* RWArticlesTests */,
+				1151BF6024EB4CBF00220071 /* RWContent */,
+				1151BF7624EB4CC000220071 /* RWContentTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,8 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */,
-				1151BF6924EB4CBF00220071 /* ViewController.swift in Sources */,
+				1151BF6924EB4CBF00220071 /* ContentViewController.swift in Sources */,
 				1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */,
+				1151BF9324EB624900220071 /* RWResponse.swift in Sources */,
 				1151BF8B24EB566400220071 /* RWClient.swift in Sources */,
 				1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */,
 				1151BF6524EB4CBF00220071 /* AppDelegate.swift in Sources */,
@@ -258,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1151BF7C24EB4CC000220071 /* RWArticlesTests.swift in Sources */,
+				1151BF7C24EB4CC000220071 /* RWContentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +271,7 @@
 /* Begin PBXTargetDependency section */
 		1151BF7924EB4CC000220071 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1151BF6024EB4CBF00220071 /* RWArticles */;
+			target = 1151BF6024EB4CBF00220071 /* RWContent */;
 			targetProxy = 1151BF7824EB4CC000220071 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,13 +416,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4UHWJ29G;
-				INFOPLIST_FILE = RWArticles/Info.plist;
+				INFOPLIST_FILE = RWContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.RWArticles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.RWContent";
+				PRODUCT_NAME = RWContent;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -430,13 +434,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4UHWJ29G;
-				INFOPLIST_FILE = RWArticles/Info.plist;
+				INFOPLIST_FILE = RWContent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.RWArticles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Neil-Hiddink.RWContent";
+				PRODUCT_NAME = RWContent;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -489,7 +493,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1151BF5C24EB4CBF00220071 /* Build configuration list for PBXProject "RWArticles" */ = {
+		1151BF5C24EB4CBF00220071 /* Build configuration list for PBXProject "RWContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1151BF7E24EB4CC000220071 /* Debug */,
@@ -498,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1151BF8024EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWArticles" */ = {
+		1151BF8024EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWContent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1151BF8124EB4CC000220071 /* Debug */,
@@ -507,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1151BF8324EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWArticlesTests" */ = {
+		1151BF8324EB4CC000220071 /* Build configuration list for PBXNativeTarget "RWContentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1151BF8424EB4CC000220071 /* Debug */,
