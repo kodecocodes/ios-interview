@@ -14,6 +14,10 @@
 		1151BF6E24EB4CC000220071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6D24EB4CC000220071 /* Assets.xcassets */; };
 		1151BF7124EB4CC000220071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6F24EB4CC000220071 /* LaunchScreen.storyboard */; };
 		1151BF7C24EB4CC000220071 /* RWArticlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF7B24EB4CC000220071 /* RWArticlesTests.swift */; };
+		1151BF8B24EB566400220071 /* RWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8A24EB566400220071 /* RWClient.swift */; };
+		1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8C24EB59BE00220071 /* RWArticle.swift */; };
+		1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8E24EB59C700220071 /* RWVideo.swift */; };
+		1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		1151BF7724EB4CC000220071 /* RWArticlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWArticlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1151BF7B24EB4CC000220071 /* RWArticlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWArticlesTests.swift; sourceTree = "<group>"; };
 		1151BF7D24EB4CC000220071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1151BF8A24EB566400220071 /* RWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWClient.swift; sourceTree = "<group>"; };
+		1151BF8C24EB59BE00220071 /* RWArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWArticle.swift; sourceTree = "<group>"; };
+		1151BF8E24EB59C700220071 /* RWVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
+		1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,10 @@
 		1151BF8624EB4D6C00220071 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1151BF8A24EB566400220071 /* RWClient.swift */,
+				1151BF8C24EB59BE00220071 /* RWArticle.swift */,
+				1151BF8E24EB59C700220071 /* RWVideo.swift */,
+				1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -232,7 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */,
 				1151BF6924EB4CBF00220071 /* ViewController.swift in Sources */,
+				1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */,
+				1151BF8B24EB566400220071 /* RWClient.swift in Sources */,
+				1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */,
 				1151BF6524EB4CBF00220071 /* AppDelegate.swift in Sources */,
 				1151BF6724EB4CBF00220071 /* SceneDelegate.swift in Sources */,
 			);
