@@ -8,11 +8,6 @@
 
 import UIKit
 
-// Use Swift 5.0 or above.
-// Use Auto Layout
-// There should be no errors, warnings or crashes
-// The app should compile and run. If it needs additional setup, include instructions in the README.
-
 class ContentViewController: UIViewController {
     
     private var articles: [RWArticle] = []
@@ -24,7 +19,7 @@ class ContentViewController: UIViewController {
         
         RWClient.shared.getArticleDataAsJSON { (articles, error) in
             if let _ = error {
-                // TODO: Alert the User
+                // TODO: Alert the user that an error occurred.
             }
             
             self.articles = articles
@@ -47,9 +42,24 @@ extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RWContentTableViewCell") as? RWContentTableViewCell {
-            cell.titleLabel.text = "iOS Interview Prep"
-            cell.detailLabel.text = "Articles"
-            cell.imageView?.image = UIImage(named: "Swift Logo - RW")
+            let article = articles[indexPath.row]
+            cell.titleLabel.text = article.attributes.name
+            cell.detailLabel.text = article.attributes.difficulty?.uppercased() ?? "ANNOUNCEMENTS"
+            
+            
+            if let imageUrl = URL(string: article.attributes.card_artwork_url) {
+                let data: Data?
+                do {
+                    data = try Data(contentsOf: imageUrl)
+                    cell.previewImageView.image = UIImage(data: data!)
+                } catch let error {
+                    debugPrint(error)
+                    cell.previewImageView.image = UIImage(named: "Swift Logo - RW")
+                }
+            }
+            
+            cell.customizeLayer(cornerRadius: 10.0, borderColor: UIColor.black.cgColor, borderWidth: 2.0)
+            
             return cell
         }
         return UITableViewCell()

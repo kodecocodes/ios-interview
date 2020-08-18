@@ -72,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				1151BF6324EB4CBF00220071 /* RWContent */,
-				1151BF7A24EB4CC000220071 /* RWArticlesTests */,
+				1151BF7A24EB4CC000220071 /* RWContentTests */,
 				1151BF6224EB4CBF00220071 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,13 +99,13 @@
 			path = RWContent;
 			sourceTree = "<group>";
 		};
-		1151BF7A24EB4CC000220071 /* RWArticlesTests */ = {
+		1151BF7A24EB4CC000220071 /* RWContentTests */ = {
 			isa = PBXGroup;
 			children = (
 				1151BF7B24EB4CC000220071 /* RWContentTests.swift */,
 				1151BF7D24EB4CC000220071 /* Info.plist */,
 			);
-			path = RWArticlesTests;
+			path = RWContentTests;
 			sourceTree = "<group>";
 		};
 		1151BF8624EB4D6C00220071 /* Models */ = {
