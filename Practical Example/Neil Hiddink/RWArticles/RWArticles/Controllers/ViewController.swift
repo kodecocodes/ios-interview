@@ -38,8 +38,9 @@ extension UIViewController: UITableViewDelegate, UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RWContentTableViewCell") as? RWContentTableViewCell {
-            cell.title = "Test title"
-            cell.subtitle = "Test subtitle"
+            cell.titleLabel.text = "iOS Interview Prep"
+            cell.detailLabel.text = "Articles"
+            cell.imageView?.image = UIImage(named: "Swift Logo - RW")
             return cell
         }
         return UITableViewCell()
