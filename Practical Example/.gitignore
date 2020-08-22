@@ -1,0 +1,14 @@
+## Build generated
+build/
+DerivedData/
+
+## User Settings
+xcuserdata/
+xcuserstate/
+project.xcworkspace/
+*.xcuserstate
+*.pbxuser
+
+## Exclude the build directory
+build/*
+
