@@ -15,7 +15,7 @@ class RWClient {
     
     static let shared = RWClient()
     
-    func getArticleDataAsJSON(_ completion: @escaping ([RWArticle], Error?) -> Void) {
+    func getArticleDataAsJSON(_ completion: @escaping ([RWContent], Error?) -> Void) {
         guard let url = URL(string: ARTICLES_URL) else { fatalError("Url is invalid.") }
         
         let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -50,9 +50,6 @@ class RWClient {
 }
 
 /*
-Keep your files short and sweet, use extensions and break out helpers when appropriate.
-
-Make sure the main functionality of the app is tested (or at least testable).
 
 For each item (article or video course) you have to display at least:
 Name

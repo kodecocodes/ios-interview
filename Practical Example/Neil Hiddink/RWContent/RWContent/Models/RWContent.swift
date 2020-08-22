@@ -1,5 +1,5 @@
 //
-//  RWArticle.swift
+//  RWContent.swift
 //  RWContent
 //
 //  Created by Neil Hiddink on 8/17/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RWArticle: Codable {
+struct RWContent: Codable {
     let id: String
     let type: String
     let attributes: Attribute

@@ -9,7 +9,7 @@
 import Foundation
 
 struct RWResponse: Codable {
-    let data: [RWArticle]
+    let data: [RWContent]
     let included: [Included]
     let links: Link?
     let meta: Meta

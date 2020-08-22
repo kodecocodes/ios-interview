@@ -15,8 +15,7 @@
 		1151BF7124EB4CC000220071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1151BF6F24EB4CC000220071 /* LaunchScreen.storyboard */; };
 		1151BF7C24EB4CC000220071 /* RWContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF7B24EB4CC000220071 /* RWContentTests.swift */; };
 		1151BF8B24EB566400220071 /* RWClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8A24EB566400220071 /* RWClient.swift */; };
-		1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8C24EB59BE00220071 /* RWArticle.swift */; };
-		1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8E24EB59C700220071 /* RWVideo.swift */; };
+		1151BF8D24EB59BE00220071 /* RWContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF8C24EB59BE00220071 /* RWContent.swift */; };
 		1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */; };
 		1151BF9324EB624900220071 /* RWResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1151BF9224EB624900220071 /* RWResponse.swift */; };
 /* End PBXBuildFile section */
@@ -44,8 +43,7 @@
 		1151BF7B24EB4CC000220071 /* RWContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContentTests.swift; sourceTree = "<group>"; };
 		1151BF7D24EB4CC000220071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1151BF8A24EB566400220071 /* RWClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWClient.swift; sourceTree = "<group>"; };
-		1151BF8C24EB59BE00220071 /* RWArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWArticle.swift; sourceTree = "<group>"; };
-		1151BF8E24EB59C700220071 /* RWVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWVideo.swift; sourceTree = "<group>"; };
+		1151BF8C24EB59BE00220071 /* RWContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContent.swift; sourceTree = "<group>"; };
 		1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWContentTableViewCell.swift; sourceTree = "<group>"; };
 		1151BF9224EB624900220071 /* RWResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,8 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				1151BF8A24EB566400220071 /* RWClient.swift */,
-				1151BF8C24EB59BE00220071 /* RWArticle.swift */,
-				1151BF8E24EB59C700220071 /* RWVideo.swift */,
+				1151BF8C24EB59BE00220071 /* RWContent.swift */,
 				1151BF9024EB5C8E00220071 /* RWContentTableViewCell.swift */,
 				1151BF9224EB624900220071 /* RWResponse.swift */,
 			);
@@ -247,9 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1151BF8D24EB59BE00220071 /* RWArticle.swift in Sources */,
+				1151BF8D24EB59BE00220071 /* RWContent.swift in Sources */,
 				1151BF6924EB4CBF00220071 /* ContentViewController.swift in Sources */,
-				1151BF8F24EB59C700220071 /* RWVideo.swift in Sources */,
 				1151BF9324EB624900220071 /* RWResponse.swift in Sources */,
 				1151BF8B24EB566400220071 /* RWClient.swift in Sources */,
 				1151BF9124EB5C8E00220071 /* RWContentTableViewCell.swift in Sources */,

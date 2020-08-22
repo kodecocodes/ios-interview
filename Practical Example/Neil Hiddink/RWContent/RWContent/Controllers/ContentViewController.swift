@@ -10,19 +10,19 @@ import UIKit
 
 class ContentViewController: UIViewController {
     
-    private var articles: [RWArticle] = []
+    private var content: [RWContent] = []
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RWClient.shared.getArticleDataAsJSON { (articles, error) in
+        RWClient.shared.getArticleDataAsJSON { (content, error) in
             if let _ = error {
                 // TODO: Alert the user that an error occurred.
             }
             
-            self.articles = articles
+            self.content = content
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -40,14 +40,20 @@ extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: - Data Source
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "RWContentTableViewCell") as? RWContentTableViewCell {
-            let article = articles[indexPath.row]
-            cell.titleLabel.text = article.attributes.name
-            cell.detailLabel.text = article.attributes.difficulty?.uppercased() ?? "ANNOUNCEMENTS"
+            let contentItem = content[indexPath.row]
+            cell.titleLabel.text = contentItem.attributes.name
+            cell.detailLabel.text = "\(contentItem.attributes.content_type.uppercased()) – " +
+                                    "\(contentItem.attributes.difficulty?.uppercased() ?? "ANNOUNCEMENTS")"
+                                    
             
             
-            if let imageUrl = URL(string: article.attributes.card_artwork_url) {
+            if let imageUrl = URL(string: contentItem.attributes.card_artwork_url) {
                 let data: Data?
                 do {
                     data = try Data(contentsOf: imageUrl)
@@ -66,7 +72,7 @@ extension ContentViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.articles.count
+        return self.content.count
     }
     
 }
