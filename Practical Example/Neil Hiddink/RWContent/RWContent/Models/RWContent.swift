@@ -17,14 +17,14 @@ struct RWContent: Codable {
     
     struct Attribute: Codable {
         let uri: String
-        let name: String
+        let name: String?
         let description: String
         let released_at: String
         let free: Bool
         let difficulty: String?
         let content_type: String
         let duration: Int
-        let popularity: Int
+        let popularity: Double?
         let technology_triple_string: String
         let contributor_string: String
         let ordinal: String?
@@ -66,4 +66,3 @@ struct RWContent: Codable {
         }
     }
 }
-

@@ -20,11 +20,11 @@ struct RWResponse: Codable {
         let attributes: IncludedAttribute
         
         struct IncludedAttribute: Codable {
-            let name: String
-            let slug: String
-            let description: String
-            let level: String
-            let ordinal: Int
+            let name: String?
+            let slug: String?
+            let description: String?
+            let level: String?
+            let ordinal: Int?
         }
     }
     

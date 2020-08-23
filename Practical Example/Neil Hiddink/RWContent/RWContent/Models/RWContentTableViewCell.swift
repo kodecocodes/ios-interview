@@ -11,7 +11,8 @@ import UIKit
 class RWContentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var contentTypeLabel: UILabel!
     @IBOutlet weak var previewImageView: UIImageView!
     
     func customizeLayer(cornerRadius: CGFloat, borderColor: CGColor, borderWidth: CGFloat) {
