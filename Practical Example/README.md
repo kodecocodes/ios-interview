@@ -51,6 +51,10 @@ To pass the test, the app has to include the following:
 
 * Clone this repo, create your own branch and [submit it as a PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
+## Previous Submissions
+
+You can see the previous submissions [here](https://github.com/raywenderlich/ios-interview/issues?q=label%3A%22practical+example+submission%22+).
+
 ## Any Questions
 
 If you have any questions, comments or concerns, open a GitHub issue on this repository.
