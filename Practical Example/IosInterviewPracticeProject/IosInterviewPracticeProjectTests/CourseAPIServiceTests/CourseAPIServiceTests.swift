@@ -11,20 +11,21 @@ import XCTest
 
 class CourseAPIServiceTests: XCTestCase {
   var artworkUrl: URL?
+  var courseAPIService = CourseAPIService()
 
   override func setUpWithError() throws {
     artworkUrl = URL(string: "https://files.betamax.raywenderlich.com/attachments/collections/244/e2d20345-06fb-42f4-8366-c7ffe80b5f77.png")
   }
 
     override func tearDownWithError() throws {
+      artworkUrl = nil
     }
 
   func testFetchArticles() {
-    let courseManager = CourseAPIService()
     let expect = expectation(description: "Articles download task completed")
     var items = [Item]()
 
-    courseManager.fetchArticles { results in
+    courseAPIService.fetchArticles { results in
       switch results {
       case .success(let results):
         items = results.data
@@ -38,11 +39,10 @@ class CourseAPIServiceTests: XCTestCase {
   }
 
   func testFetchVideos() {
-    let courseManager = CourseAPIService()
     let expect = expectation(description: "Videos download task completed")
     var items = [Item]()
 
-    courseManager.fetchVideos { results in
+    courseAPIService.fetchVideos { results in
       switch results {
       case .success(let results):
         items = results.data
@@ -65,7 +65,7 @@ class CourseAPIServiceTests: XCTestCase {
     }
 
     //create a new artwork image
-    CourseAPIService.shared.fetchCardArtwork(for: artworkUrl) { result in
+    courseAPIService.fetchCardArtwork(for: artworkUrl) { result in
       switch result {
       case .success(let artworkImage):
         artwork = artworkImage
