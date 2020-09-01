@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AttributeArticle" representedClassName="AttributeArticle" syncable="YES">
+        <attribute name="card_artwork_url" optional="YES" attributeType="String"/>
+        <attribute name="content_type" optional="YES" attributeType="String"/>
+        <attribute name="contributor_string" optional="YES" attributeType="String"/>
+        <attribute name="description_plain_text" optional="YES" attributeType="String"/>
+        <attribute name="descriptionn" optional="YES" attributeType="String"/>
+        <attribute name="difficulty" optional="YES" attributeType="String"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="free" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="popularity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="released_at" optional="YES" attributeType="String"/>
+        <attribute name="technology_triple_string" optional="YES" attributeType="String"/>
+        <attribute name="uri" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="AttributeArticle" positionX="-63" positionY="-18" width="128" height="253"/>
+    </elements>
+</model>
