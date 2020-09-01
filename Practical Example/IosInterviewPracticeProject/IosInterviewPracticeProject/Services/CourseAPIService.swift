@@ -12,6 +12,18 @@ import UIKit
 class CourseAPIService {
   static let shared = CourseAPIService()
   static let artworkCache = NSCache<NSString, UIImage>()
+  private let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    return formatter
+  }()
+
+  private let decoder: JSONDecoder = {
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    return decoder
+  }()
 
   func fetchArticles(completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
     guard let articlesEndPointURL = URL(string: "https://api.jsonbin.io/b/5ed679357741ef56a566a67f") else { return }
@@ -25,10 +37,8 @@ class CourseAPIService {
       }
 
       do {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .iso8601
-        let results = try decoder.decode(Results.self, from: data)
+        self.decoder.dateDecodingStrategy = .formatted(self.dateFormatter)
+        let results = try self.decoder.decode(Results.self, from: data)
         completion(.success(results))
       } catch {
         completion(.failure(.decodingError))
@@ -49,12 +59,11 @@ class CourseAPIService {
       }
 
       do {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategy = .iso8601
-        let results = try decoder.decode(Results.self, from: data)
+        self.decoder.dateDecodingStrategy = .formatted(self.dateFormatter)
+        let results = try self.decoder.decode(Results.self, from: data)
         completion(.success(results))
       } catch {
+        print("Decoding Error: \(error.localizedDescription)")
         completion(.failure(.decodingError))
       }
     }

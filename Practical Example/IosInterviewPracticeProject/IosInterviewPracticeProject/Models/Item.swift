@@ -9,7 +9,26 @@
 import Foundation
 
 struct Item: Codable, Hashable {
-  var id: String
-    var type: String
-    var attributes: Attribute
+  let identifier = UUID()
+  let type: String
+  let attributes: Attribute
+
+  init(from decoder: Decoder) throws {
+    let values = try decoder.container(keyedBy: CodingKeys.self)
+    type = try values.decode(String.self, forKey: .type)
+    attributes = try values.decode(Attribute.self, forKey: .attributes)
+  }
+
+  enum CodingKeys: CodingKey {
+    case type
+    case attributes
+  }
+
+  static func == (lhs: Item, rhs: Item) -> Bool {
+    return lhs.identifier == rhs.identifier
+  }
+
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(identifier)
+  }
 }

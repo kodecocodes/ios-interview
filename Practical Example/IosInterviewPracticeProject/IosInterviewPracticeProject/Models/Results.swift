@@ -9,5 +9,5 @@
 import Foundation
 
 struct Results: Codable, Hashable {
-  var data: [Item]
+  let data: [Item]
 }

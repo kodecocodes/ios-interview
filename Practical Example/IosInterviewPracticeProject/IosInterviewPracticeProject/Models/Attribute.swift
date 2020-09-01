@@ -7,20 +7,19 @@
 //
 
 import Foundation
-
 struct Attribute: Codable, Hashable {
-  var uri: String
-    var name: String
-    var description: String
-    var releasedAt: String
-    var free: Bool
-    var difficulty: String?
-    var contentType: String
-    var duration: Int
-    var popularity: Double
-    var technologyTripleString: String
-    var contributorString: String
-    var professional: Bool
-    var descriptionPlainText: String
-    var cardArtworkUrl: String
+  let uri: String
+  let name: String
+  let description: String
+  let releasedAt: Date
+  let free: Bool
+  let difficulty: String?
+  let contentType: String
+  let duration: Int
+  let popularity: Double
+  let technologyTripleString: String
+  let contributorString: String
+  let professional: Bool
+  let descriptionPlainText: String
+  let cardArtworkUrl: String
 }
