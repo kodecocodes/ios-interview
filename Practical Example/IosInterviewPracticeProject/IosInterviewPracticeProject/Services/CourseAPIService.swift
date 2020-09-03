@@ -14,7 +14,7 @@ class CourseAPIService {
   static let artworkCache = NSCache<NSString, UIImage>()
   private let dateFormatter: DateFormatter = {
     let formatter = DateFormatter()
-    formatter.locale = Locale(identifier: "en_US_POSIX")
+    formatter.locale = .current
     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
     return formatter
   }()
