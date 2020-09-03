@@ -94,7 +94,6 @@ extension String {
     iso8601DateFormatter.formatOptions = .withFullDate
 
     let dateFormatter = DateFormatter()
-    dateFormatter.locale = Locale.current
     dateFormatter.dateStyle = .long
     dateFormatter.timeStyle = .none
 
