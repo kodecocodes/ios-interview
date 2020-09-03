@@ -9,27 +9,65 @@
 import UIKit
 
 class CourseListVC: UITableViewController {
-  private var dataSource: UITableViewDiffableDataSource<Section, Results>?
+  private var courses = [Item]()
+  private var dataSource: UITableViewDiffableDataSource<Section, Item>?
   private let courseManager = CourseAPIService()
+  private let timeFormatter: DateComponentsFormatter = {
+    let timeFormatter = DateComponentsFormatter()
+    timeFormatter.allowedUnits = [.hour, .minute]
+    timeFormatter.unitsStyle = .short
+    return timeFormatter
+  }()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    //fetchVideos()
-    //fetchArticles()
+    configureDataSource()
+    fetchVideos()
+    fetchArticles()
+  }
+
+  private func configureDataSource() {
+    dataSource = UITableViewDiffableDataSource<Section, Item>(tableView: tableView) { tableView, indexPath, item -> UITableViewCell in
+      guard let cell = tableView.dequeueReusableCell(withIdentifier: CourseListCell.reuseId, for: indexPath) as? CourseListCell else { return UITableViewCell() }
+      let cardArtworkUrl = URL(string: item.attributes.cardArtworkUrl)
+      let duration = self.timeFormatter.string(from: TimeInterval(Double(item.attributes.duration)))!
+      cell.courseName.text = item.attributes.name
+      cell.courseDescription.text = item.attributes.descriptionPlainText
+      cell.duration.text = "(\(duration))"
+      cell.courseType.text = item.attributes.contentType == "article" ? "Article Course" : "Video Course"
+      cell.releaseDate.text = item.attributes.releasedAt.description.formatDate()
+
+      CourseAPIService.shared.fetchCardArtwork(for: cardArtworkUrl!) { result in
+        switch result {
+        case .success(let artwork):
+          DispatchQueue.main.async {
+            cell.artwork.image = artwork
+          }
+        case .failure(let error):
+          switch error {
+          case .imageDataError:
+            print(error.localizedDescription)
+          default:
+            print("Artwork Error: \(error.localizedDescription)")
+          }
+        }
+      }
+      return cell
+    }
+  }
+
+  private func createSnapshot(from courses: [Item]) {
+    var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+    snapshot.appendSections([.main])
+    snapshot.appendItems(courses, toSection: .main)
+    dataSource?.apply(snapshot, animatingDifferences: true, completion: nil)
   }
 
   private func fetchArticles() {
-    courseManager.fetchArticles { results in
+    CourseAPIService.shared.fetchArticles { results in
       switch results {
       case .success(let results):
-        let items = results.data
-        for item in items {
-          print("Name: \(item.attributes.name)")
-          print("Description: \(item.attributes.description)")
-          print("Content Type: \(item.attributes.contentType)")
-          print("Release Date: \(item.attributes.releasedAt.formatDate(dateFormat: "MMM d, yyyy"))")
-          print("")
-        }
+        self.courses.append(contentsOf: results.data)
       case .failure(let error):
         print("Failed: \(error.localizedDescription)")
       }
@@ -37,17 +75,12 @@ class CourseListVC: UITableViewController {
   }
 
   private func fetchVideos() {
-    courseManager.fetchVideos { results in
+    CourseAPIService.shared.fetchVideos { results in
       switch results {
       case .success(let results):
-        let items = results.data
-        for item in items {
-          print("Name: \(item.attributes.name)")
-          print("Description: \(item.attributes.description)")
-          print("Content Type: \(item.attributes.contentType)")
-          print("Release Date: \(item.attributes.releasedAt.formatDate(dateFormat: "MMM d, yyyy"))")
-          print("")
-        }
+        self.courses.append(contentsOf: results.data)
+        let coursesSortedByDateDescending = self.courses.sorted(by: { $0.attributes.releasedAt > $1.attributes.releasedAt })
+        self.createSnapshot(from: coursesSortedByDateDescending)
       case .failure(let error):
         print("Failed: \(error.localizedDescription)")
       }
@@ -55,27 +88,15 @@ class CourseListVC: UITableViewController {
   }
 }
 
-extension CourseListVC {
-  // MARK: - Table view data source
-
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    return 1
-  }
-
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
-  }
-}
-
 extension String {
-  func formatDate(dateFormat: String) -> String {
+  func formatDate() -> String {
     let iso8601DateFormatter = ISO8601DateFormatter()
     iso8601DateFormatter.formatOptions = .withFullDate
 
     let dateFormatter = DateFormatter()
-    dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-    dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-    dateFormatter.dateFormat = dateFormat
+    dateFormatter.locale = Locale.current
+    dateFormatter.dateStyle = .long
+    dateFormatter.timeStyle = .none
 
     guard let isoDate = iso8601DateFormatter.date(from: self) else { return self }
 

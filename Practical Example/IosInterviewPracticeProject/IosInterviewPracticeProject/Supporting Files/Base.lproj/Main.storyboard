@@ -3,36 +3,109 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Course ListVC-->
+        <!--Course Library-->
         <scene sceneID="Vkz-UK-wV0">
             <objects>
-                <tableViewController id="hPc-wh-xxE" customClass="CourseListVC" customModule="IosInterviewPracticeProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mn9-Zd-QZr">
+                <tableViewController title="Course Library" id="hPc-wh-xxE" customClass="CourseListVC" customModule="IosInterviewPracticeProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" id="Mn9-Zd-QZr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qTD-1H-Lba"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseListCell" id="7Dp-9i-rgJ">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="CourseListCell" rowHeight="200" id="7Dp-9i-rgJ" customClass="CourseListCell" customModule="IosInterviewPracticeProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Dp-9i-rgJ" id="qms-wz-e2B">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="CourseName" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkC-4c-K6v">
+                                            <rect key="frame" x="20" y="11" width="329" height="52"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="5Gh-EY-4yZ">
+                                            <rect key="frame" x="354" y="10" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="26H-hh-izP"/>
+                                                <constraint firstAttribute="width" constant="50" id="be3-rt-x1i"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFx-Xd-zAs">
+                                            <rect key="frame" x="20" y="176" width="74.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-CP-x6y">
+                                            <rect key="frame" x="248" y="174" width="137" height="14.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxI-wu-etL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="71.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTs-oI-mB2">
+                                                    <rect key="frame" x="88.5" y="0.0" width="48.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                    <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="Course Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="39o-fb-idI">
+                                            <rect key="frame" x="20" y="68" width="384" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <color key="textColor" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="39o-fb-idI" secondAttribute="trailing" constant="10" id="1FJ-A8-ul4"/>
+                                        <constraint firstItem="2Ih-CP-x6y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mFx-Xd-zAs" secondAttribute="trailing" constant="8" symbolic="YES" id="8B9-ze-FUp"/>
+                                        <constraint firstAttribute="bottom" secondItem="mFx-Xd-zAs" secondAttribute="bottom" constant="9.5" id="8br-Dg-GmR"/>
+                                        <constraint firstAttribute="trailing" secondItem="5Gh-EY-4yZ" secondAttribute="trailing" constant="10" id="9Gf-01-ML4"/>
+                                        <constraint firstItem="mFx-Xd-zAs" firstAttribute="leading" secondItem="qms-wz-e2B" secondAttribute="leading" constant="20" id="9Nj-QB-bpk"/>
+                                        <constraint firstItem="5Gh-EY-4yZ" firstAttribute="leading" secondItem="fkC-4c-K6v" secondAttribute="trailing" constant="5" id="Cfm-Od-DRo"/>
+                                        <constraint firstItem="39o-fb-idI" firstAttribute="leading" secondItem="qms-wz-e2B" secondAttribute="leading" constant="20" id="DqR-w9-bIZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Ih-CP-x6y" secondAttribute="bottom" constant="11.5" id="LUv-oo-kzy"/>
+                                        <constraint firstItem="fkC-4c-K6v" firstAttribute="top" secondItem="qms-wz-e2B" secondAttribute="top" constant="11" id="X6E-ph-2oS"/>
+                                        <constraint firstItem="fkC-4c-K6v" firstAttribute="leading" secondItem="qms-wz-e2B" secondAttribute="leading" constant="20" id="ZDl-eB-AOo"/>
+                                        <constraint firstItem="39o-fb-idI" firstAttribute="top" secondItem="5Gh-EY-4yZ" secondAttribute="bottom" constant="8" id="bbe-9B-UI7"/>
+                                        <constraint firstItem="mFx-Xd-zAs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="39o-fb-idI" secondAttribute="bottom" priority="999" constant="5" id="c8I-eg-3ma"/>
+                                        <constraint firstAttribute="trailing" secondItem="2Ih-CP-x6y" secondAttribute="trailing" constant="29" id="chG-3F-YC5"/>
+                                        <constraint firstItem="39o-fb-idI" firstAttribute="top" secondItem="fkC-4c-K6v" secondAttribute="bottom" constant="5" id="eqP-Zg-sZA"/>
+                                        <constraint firstItem="5Gh-EY-4yZ" firstAttribute="top" secondItem="qms-wz-e2B" secondAttribute="top" constant="10" id="k2B-Mn-haS"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="artwork" destination="5Gh-EY-4yZ" id="OM2-QN-0yc"/>
+                                    <outlet property="courseDescription" destination="39o-fb-idI" id="C10-IM-MPx"/>
+                                    <outlet property="courseName" destination="fkC-4c-K6v" id="xPr-aH-lmA"/>
+                                    <outlet property="courseType" destination="bxI-wu-etL" id="bxg-BF-R8k"/>
+                                    <outlet property="duration" destination="LTs-oI-mB2" id="8OV-4D-ZyO"/>
+                                    <outlet property="releaseDate" destination="mFx-Xd-zAs" id="BcL-fN-tN3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="hPc-wh-xxE" id="cW4-Yf-Sc7"/>
                             <outlet property="delegate" destination="hPc-wh-xxE" id="ZQb-tx-6Np"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Course Library" id="tGc-Tl-hrG"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4Z-Vd-GNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43" y="101"/>
+            <point key="canvasLocation" x="-320.28985507246381" y="-201.5625"/>
         </scene>
     </scenes>
 </document>
