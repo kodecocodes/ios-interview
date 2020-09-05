@@ -29,26 +29,27 @@ class CourseListVC: UITableViewController {
   private func configureDataSource() {
     dataSource = UITableViewDiffableDataSource<Section, Item>(tableView: tableView) { tableView, indexPath, item -> UITableViewCell in
       guard let cell = tableView.dequeueReusableCell(withIdentifier: CourseListCell.reuseId, for: indexPath) as? CourseListCell else { return UITableViewCell() }
-      let cardArtworkUrl = URL(string: item.attributes.cardArtworkUrl)
-      let duration = self.timeFormatter.string(from: TimeInterval(Double(item.attributes.duration)))!
+      let duration = self.timeFormatter.string(from: TimeInterval(Double(item.attributes.duration))) ?? ""
       cell.courseName.text = item.attributes.name
       cell.courseDescription.text = item.attributes.descriptionPlainText
       cell.duration.text = "(\(duration))"
       cell.courseType.text = item.attributes.contentType == "article" ? "Article Course" : "Video Course"
       cell.releaseDate.text = item.attributes.releasedAt.description.formatDate()
 
-      CourseAPIService.shared.fetchCardArtwork(for: cardArtworkUrl!) { result in
-        switch result {
-        case .success(let artwork):
-          DispatchQueue.main.async {
-            cell.artwork.image = artwork
-          }
-        case .failure(let error):
-          switch error {
-          case .imageDataError:
-            print(error.localizedDescription)
-          default:
-            print("Artwork Error: \(error.localizedDescription)")
+      if let cardArtworkUrl = URL(string: item.attributes.cardArtworkUrl) {
+        CourseAPIService.shared.fetchCardArtwork(for: cardArtworkUrl) { result in
+          switch result {
+          case .success(let artwork):
+            DispatchQueue.main.async {
+              cell.artwork.image = artwork
+            }
+          case .failure(let error):
+            switch error {
+            case .imageDataError:
+              print(error.localizedDescription)
+            default:
+              print("Artwork Error: \(error.localizedDescription)")
+            }
           }
         }
       }
