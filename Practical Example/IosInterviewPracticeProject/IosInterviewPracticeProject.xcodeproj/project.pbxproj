@@ -52,7 +52,7 @@
 		7F7C90BF24F2DC9200ADC257 /* CourseAPIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAPIServiceError.swift; sourceTree = "<group>"; };
 		7F7ED66F24ED86A000E309D8 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		7F7ED67124ED86DA00E309D8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		7F80E93124E888B60093F6C2 /* IosInterviewPracticeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosInterviewPracticeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F80E93124E888B60093F6C2 /* raywenderlich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = raywenderlich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F80E93424E888B60093F6C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F80E93624E888B60093F6C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7F80E93B24E888B60093F6C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		7F80E93224E888B60093F6C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F80E93124E888B60093F6C2 /* IosInterviewPracticeProject.app */,
+				7F80E93124E888B60093F6C2 /* raywenderlich.app */,
 				7F863B3B24EF02ED003F807E /* IosInterviewPracticeProjectTests.xctest */,
 				7F2A6CFC24F70E290065CD56 /* IosInterviewPracticeProjectUITests.xctest */,
 			);
@@ -241,7 +241,7 @@
 			);
 			name = IosInterviewPracticeProject;
 			productName = IosInterviewPracticeProject;
-			productReference = 7F80E93124E888B60093F6C2 /* IosInterviewPracticeProject.app */;
+			productReference = 7F80E93124E888B60093F6C2 /* raywenderlich.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7F863B3A24EF02ED003F807E /* IosInterviewPracticeProjectTests */ = {
@@ -585,7 +585,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rramirez.projects.IosInterviewPracticeProject;
-				PRODUCT_NAME = IosInterviewPracticeProject;
+				PRODUCT_NAME = raywenderlich;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,7 +603,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rramirez.projects.IosInterviewPracticeProject;
-				PRODUCT_NAME = IosInterviewPracticeProject;
+				PRODUCT_NAME = raywenderlich;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
