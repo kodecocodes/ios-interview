@@ -12,6 +12,7 @@
 		7F3CFDC324E9958B00AA97D5 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3CFDC224E9958B00AA97D5 /* Results.swift */; };
 		7F3CFDC624E9AB8C00AA97D5 /* CourseListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3CFDC524E9AB8C00AA97D5 /* CourseListVC.swift */; };
 		7F3CFDC924E9AD9E00AA97D5 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3CFDC824E9AD9E00AA97D5 /* Section.swift */; };
+		7F61530B2505C874006A6DE0 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F61530A2505C874006A6DE0 /* Link.swift */; };
 		7F7C90C024F2DC9200ADC257 /* CourseAPIServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7C90BF24F2DC9200ADC257 /* CourseAPIServiceError.swift */; };
 		7F7ED67024ED86A000E309D8 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7ED66F24ED86A000E309D8 /* Attribute.swift */; };
 		7F7ED67224ED86DA00E309D8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7ED67124ED86DA00E309D8 /* Item.swift */; };
@@ -49,6 +50,7 @@
 		7F3CFDC224E9958B00AA97D5 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		7F3CFDC524E9AB8C00AA97D5 /* CourseListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseListVC.swift; sourceTree = "<group>"; };
 		7F3CFDC824E9AD9E00AA97D5 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		7F61530A2505C874006A6DE0 /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 		7F7C90BF24F2DC9200ADC257 /* CourseAPIServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAPIServiceError.swift; sourceTree = "<group>"; };
 		7F7ED66F24ED86A000E309D8 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
 		7F7ED67124ED86DA00E309D8 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				7F3CFDC224E9958B00AA97D5 /* Results.swift */,
 				7F7ED66F24ED86A000E309D8 /* Attribute.swift */,
 				7F7ED67124ED86DA00E309D8 /* Item.swift */,
+				7F61530A2505C874006A6DE0 /* Link.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				7F863B4824EF04B0003F807E /* CourseAPIService.swift in Sources */,
 				7F3CFDC924E9AD9E00AA97D5 /* Section.swift in Sources */,
 				7F3CFDC324E9958B00AA97D5 /* Results.swift in Sources */,
+				7F61530B2505C874006A6DE0 /* Link.swift in Sources */,
 				7F80E93524E888B60093F6C2 /* AppDelegate.swift in Sources */,
 				7F7C90C024F2DC9200ADC257 /* CourseAPIServiceError.swift in Sources */,
 				7F7ED67224ED86DA00E309D8 /* Item.swift in Sources */,
