@@ -22,8 +22,8 @@ class CourseListVC: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureDataSource()
-    fetchVideos()
     fetchArticles()
+    fetchVideos()
   }
 
   private func configureDataSource() {
@@ -41,6 +41,9 @@ class CourseListVC: UITableViewController {
           switch result {
           case .success(let artwork):
             DispatchQueue.main.async {
+              cell.artwork.contentMode = .scaleAspectFill
+              cell.artwork.layer.cornerRadius = 5
+              cell.artwork.layer.masksToBounds = true
               cell.artwork.image = artwork
             }
           case .failure(let error):
