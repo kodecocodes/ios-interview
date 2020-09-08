@@ -25,8 +25,8 @@ class CourseAPIService {
     return decoder
   }()
 
-  func fetchArticles(completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
-    guard let articlesEndPointURL = URL(string: "https://api.jsonbin.io/b/5ed679357741ef56a566a67f") else { return }
+  func fetchArticles(for url: String, completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
+    guard let articlesEndPointURL = URL(string: url) else { return }
 
     URLSession.shared.dataTask(with: articlesEndPointURL) { data, _, error in
       guard let data = data, error == nil else {
@@ -47,8 +47,31 @@ class CourseAPIService {
     .resume()
   }
 
-  func fetchVideos(completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
-    guard let videosEndPointURL = URL(string: "https://api.jsonbin.io/b/5ed67c667741ef56a566a831") else { return }
+  func fetchVideos(for url: String, completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
+    guard let videosEndPointURL = URL(string: url) else { return }
+
+    URLSession.shared.dataTask(with: videosEndPointURL) { data, _, error in
+      guard let data = data, error == nil else {
+        if error != nil {
+          completion(.failure(.domainError))
+        }
+        return
+      }
+
+      do {
+        self.decoder.dateDecodingStrategy = .formatted(self.dateFormatter)
+        let results = try self.decoder.decode(Results.self, from: data)
+        completion(.success(results))
+      } catch {
+        print("Decoding Error: \(error.localizedDescription)")
+        completion(.failure(.decodingError))
+      }
+    }
+    .resume()
+  }
+
+  func fetchContent(for url: String, completion: @escaping (Result<Results, CourseAPIServiceError>) -> Void) {
+    guard let videosEndPointURL = URL(string: url) else { return }
 
     URLSession.shared.dataTask(with: videosEndPointURL) { data, _, error in
       guard let data = data, error == nil else {

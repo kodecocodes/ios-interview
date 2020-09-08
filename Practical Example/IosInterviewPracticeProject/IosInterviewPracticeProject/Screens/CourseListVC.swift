@@ -68,7 +68,9 @@ class CourseListVC: UITableViewController {
   }
 
   private func fetchArticles() {
-    CourseAPIService.shared.fetchArticles { results in
+    let articleUrl = "https://api.jsonbin.io/b/5ed679357741ef56a566a67f"
+
+    CourseAPIService.shared.fetchContent(for: articleUrl) { results in
       switch results {
       case .success(let results):
         self.courses.append(contentsOf: results.data)
@@ -79,16 +81,18 @@ class CourseListVC: UITableViewController {
   }
 
   private func fetchVideos() {
-    CourseAPIService.shared.fetchVideos { results in
-      switch results {
-      case .success(let results):
-        self.courses.append(contentsOf: results.data)
-        let coursesSortedByDateDescending = self.courses.sorted(by: { $0.attributes.releasedAt > $1.attributes.releasedAt })
-        self.createSnapshot(from: coursesSortedByDateDescending)
-      case .failure(let error):
-        print("Failed: \(error.localizedDescription)")
+    let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
+
+      CourseAPIService.shared.fetchContent(for: videoUrl) { results in
+        switch results {
+        case .success(let results):
+          self.courses.append(contentsOf: results.data)
+          let coursesSortedByDateDescending = self.courses.sorted(by: { $0.attributes.releasedAt > $1.attributes.releasedAt })
+          self.createSnapshot(from: coursesSortedByDateDescending)
+        case .failure(let error):
+          print("Failed: \(error.localizedDescription)")
+        }
       }
-    }
   }
 }
 
