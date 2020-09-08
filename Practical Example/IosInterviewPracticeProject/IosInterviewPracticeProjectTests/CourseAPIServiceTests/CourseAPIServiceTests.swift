@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import IosInterviewPracticeProject
+@testable import raywenderlich
 
 class CourseAPIServiceTests: XCTestCase {
   var artworkUrl: URL?
@@ -23,9 +23,10 @@ class CourseAPIServiceTests: XCTestCase {
 
   func testFetchArticles() {
     let expect = expectation(description: "Articles download task completed")
+    let articleUrl = "https://api.jsonbin.io/b/5ed679357741ef56a566a67f"
     var items = [Item]()
 
-    courseAPIService.fetchArticles { results in
+    courseAPIService.fetchContent(for: articleUrl) { results in
       switch results {
       case .success(let results):
         items = results.data
@@ -40,9 +41,10 @@ class CourseAPIServiceTests: XCTestCase {
 
   func testFetchVideos() {
     let expect = expectation(description: "Videos download task completed")
+    let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
     var items = [Item]()
 
-    courseAPIService.fetchVideos { results in
+    courseAPIService.fetchVideos(for: videoUrl) { results in
       switch results {
       case .success(let results):
         items = results.data
