@@ -44,7 +44,7 @@ class CourseAPIServiceTests: XCTestCase {
     let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
     var items = [Item]()
 
-    courseAPIService.fetchVideos(for: videoUrl) { results in
+    courseAPIService.fetchContent(for: videoUrl) { results in
       switch results {
       case .success(let results):
         items = results.data
