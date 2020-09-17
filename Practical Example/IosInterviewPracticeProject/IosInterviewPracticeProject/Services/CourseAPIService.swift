@@ -41,7 +41,7 @@ class CourseAPIService {
         let results = try self.decoder.decode(Results.self, from: data)
         completion(.success(results))
       } catch {
-        print("Decoding Error: \(error.localizedDescription)")
+        print("Decoding Error: \(error)")
         completion(.failure(.decodingError))
       }
     }

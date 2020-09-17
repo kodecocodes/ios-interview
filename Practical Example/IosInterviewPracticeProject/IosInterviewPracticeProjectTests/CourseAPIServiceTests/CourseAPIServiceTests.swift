@@ -22,7 +22,7 @@ class CourseAPIServiceTests: XCTestCase {
     }
 
   func testFetchArticles() {
-    let expect = expectation(description: "Articles download task completed")
+    let expect = expectation(description: "Fetch Articles")
     let articleUrl = "https://api.jsonbin.io/b/5ed679357741ef56a566a67f"
     var items = [Item]()
 
@@ -40,7 +40,7 @@ class CourseAPIServiceTests: XCTestCase {
   }
 
   func testFetchVideos() {
-    let expect = expectation(description: "Videos download task completed")
+    let expect = expectation(description: "Fetch Videos")
     let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
     var items = [Item]()
 
@@ -58,7 +58,7 @@ class CourseAPIServiceTests: XCTestCase {
   }
 
   func testFetchCardArtwork() {
-    let expect = expectation(description: "Artwork download task completed")
+    let expect = expectation(description: "Fetch Artwork")
     var artwork: UIImage?
 
     guard let artworkUrl = self.artworkUrl else {
@@ -79,5 +79,24 @@ class CourseAPIServiceTests: XCTestCase {
 
     waitForExpectations(timeout: 5, handler: nil)
     XCTAssertNotNil(artwork, "Failed to fetch artwork")
+  }
+
+  func testFetchCourseContent() {
+    var items = [Item]()
+    let contentUrl = "http://api.raywenderlich.com/api/contents/10628623-mac-catalyst-with-andy-pereira-podcast-s10-e7"
+    let expect = expectation(description: "Fetch content")
+
+    courseAPIService.fetchContent(for: contentUrl) { results in
+      switch results {
+      case .success(let results):
+        items = results.data
+        print("Items: \(items)")
+        expect.fulfill()
+      case .failure(let error):
+        XCTFail(error.localizedDescription)
+      }
+    }
+    waitForExpectations(timeout: 3, handler: nil)
+    XCTAssertGreaterThan(items.count, 0, "Failed to fetch content")
   }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Link: Codable {
+struct Link: Codable, Hashable {
   var current: String?
   var first: String?
   var previous: String?

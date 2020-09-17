@@ -10,4 +10,5 @@ import Foundation
 
 struct Results: Codable, Hashable {
   let data: [Item]
+  let included: [IncludedAttributes]?
 }
