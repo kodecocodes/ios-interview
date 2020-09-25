@@ -1,0 +1,1133 @@
+{
+		"data" : [
+			{
+				"id" : "9529598",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/244",
+					"name" : "VS Code Tips & Tricks",
+					"description" : "<p>Become a VS Code power user with tips and tricks such as keyboard shortcuts, editing tips and utilizing the goodness of extensions.</p>\n",
+					"released_at" : "2020-06-02T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 3119,
+					"popularity" : 1.8,
+					"technology_triple_string" : "Dart 2.7, Flutter 1.12, VS Code 1.43",
+					"contributor_string" : "Adriana Kutenko & Emmanuel Okiche",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Become a VS Code power user with tips and tricks such as keyboard shortcuts, editing tips and utilizing the goodness of extensions.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/244/e2d20345-06fb-42f4-8366-c7ffe80b5f77.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "9",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 10
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9529598-vs-code-tips-tricks"
+				}
+			},
+			{
+				"id" : "10054540",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/245",
+					"name" : "Android Studio Tips and Tricks",
+					"description" : "<p>Master the hidden gems of Android Studio to improve the speed of your development with these Android Development tips and tricks.</p>\n",
+					"released_at" : "2020-05-28T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 3312,
+					"popularity" : 28.6470588235294,
+					"technology_triple_string" : "Kotlin 1.3, Android 5.1, Android Studio 3.6",
+					"contributor_string" : "Adriana Kutenko & Kevin Moore",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Master the hidden gems of Android Studio to improve the speed of your development with these Android Development tips and tricks.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/245/48277fc5-d2ee-45f8-91c1-702fc6c7a2d6.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 17
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10054540-android-studio-tips-and-tricks"
+				}
+			},
+			{
+				"id" : "10529094",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/259",
+					"name" : "Android Bootcamp",
+					"description" : "<p>Recordings of live sessions with RW mentors from our Android Bootcamp program.</p>\n",
+					"released_at" : "2020-05-26T18:29:00.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 5507,
+					"popularity" : 288,
+					"technology_triple_string" : "",
+					"contributor_string" : "Fuad Kamal, Luka Kordić, Filip Babić & Jenn Bailey",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Recordings of live sessions with RW mentors from our Android Bootcamp program.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/259/f3f1bae3-bf05-439b-ad61-41dc1aba4c3b.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 2
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10529094-android-bootcamp"
+				}
+			},
+			{
+				"id" : "10529048",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/258",
+					"name" : "iOS Bootcamp",
+					"description" : "<p>Recordings of live sessions with RW mentors from our iOS Bootcamp program.</p>\n",
+					"released_at" : "2020-05-26T18:24:00.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 8356,
+					"popularity" : 706.5,
+					"technology_triple_string" : "",
+					"contributor_string" : "Jay Strawn, Bhagat Singh, Audrey Tam & Jeff Rames",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Recordings of live sessions with RW mentors from our iOS Bootcamp program.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/258/c6b848f6-09f4-427e-a139-70240de16212.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 2
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10529048-ios-bootcamp"
+				}
+			},
+			{
+				"id" : "10318291",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/248",
+					"name" : "Reusable iOS Frameworks",
+					"description" : "<p>If you have found yourself writing the same code over and over again for multiple different apps, then this is the course for you. Learn about the different ways to store your reusable code for a Swift project, how to write methods and functions in a reusable way, and how to think about your end user as a developer rather than a user by focusing on API design principles and access control.</p>\n",
+					"released_at" : "2020-05-26T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "intermediate",
+					"content_type" : "collection",
+					"duration" : 7539,
+					"popularity" : 134.75,
+					"technology_triple_string" : "Swift 5.2, iOS 13.4, Xcode 11.4",
+					"contributor_string" : "Adriana Kutenko & David Okun",
+					"ordinal" : null,
+					"professional" : true,
+					"description_plain_text" : "If you have found yourself writing the same code over and over again for multiple different apps, then this is the course for you. Learn about the different ways to store your reusable code for a Swift project, how to write methods and functions in a reusable way, and how to think about your end user as a developer rather than a user by focusing on API design principles and access control.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/248/d02b9fbf-97fb-4313-8d70-70c113329465.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 20
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10318291-reusable-ios-frameworks"
+				}
+			},
+			{
+				"id" : "10135609",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/247",
+					"name" : "Jetpack Security",
+					"description" : "<p>Learn how to use the AndroidX Jetpack Security library for managing security keys and encrypting file and preferences data.</p>\n",
+					"released_at" : "2020-05-19T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "intermediate",
+					"content_type" : "collection",
+					"duration" : 1602,
+					"popularity" : 104.857142857143,
+					"technology_triple_string" : "Kotlin 1.3, Android 6.0, Android Studio 3.6",
+					"contributor_string" : "Adriana Kutenko & Joe Howard",
+					"ordinal" : null,
+					"professional" : true,
+					"description_plain_text" : "Learn how to use the AndroidX Jetpack Security library for managing security keys and encrypting file and preferences data.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/247/3ad4b8ff-1f33-486d-911f-952b78fb6456.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 7
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10135609-jetpack-security"
+				}
+			},
+			{
+				"id" : "10528992",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/257",
+					"name" : "Android & Flutter Office Hours",
+					"description" : "<p>Recordings of our Android and Flutter Office Hours, where questions are answered by a panel of experts!</p>\n",
+					"released_at" : "2020-05-19T10:20:00.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 8704,
+					"popularity" : 137,
+					"technology_triple_string" : "",
+					"contributor_string" : "Harun Wangereka, Libranner Santos, Evana Margain Puig, Brian Kayfitz & Darryl Bayliss",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Recordings of our Android and Flutter Office Hours, where questions are answered by a panel of experts!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/257/21c45322-43e8-45f5-b32b-ed8c4907f0b1.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "9",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 3
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10528992-android-flutter-office-hours"
+				}
+			},
+			{
+				"id" : "10528878",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/256",
+					"name" : "iOS Office Hours",
+					"description" : "<p>Recordings of our iOS Office Hours, where questions are answered by a panel of experts!</p>\n",
+					"released_at" : "2020-05-18T13:50:00.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 10550,
+					"popularity" : 339.666666666667,
+					"technology_triple_string" : "",
+					"contributor_string" : "Libranner Santos, Chuck Krutsinger , Felipe Laso-Marsetti & Scott Gardner",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Recordings of our iOS Office Hours, where questions are answered by a panel of experts!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/256/ffd5bd9b-b445-4001-a959-326c1c79709e.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 3
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10528878-ios-office-hours"
+				}
+			},
+			{
+				"id" : "10527046",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/255",
+					"name" : "Review My Stuff",
+					"description" : "<p>In these recordings of livestreams, senior members of the raywenderlich.com Team (Marin and Adam) review &quot;stuff&quot; submitted by raywenderlich.com readers! They take a look at the submission, then share what&#39;s great about it, and what could be improved.</p>\n",
+					"released_at" : "2020-05-14T20:17:00.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 10569,
+					"popularity" : 275.666666666667,
+					"technology_triple_string" : "",
+					"contributor_string" : "Adam Rush & Marin Bencevic",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In these recordings of livestreams, senior members of the raywenderlich.com Team (Marin and Adam) review \"stuff\" submitted by raywenderlich.com readers! They take a look at the submission, then share what's great about it, and what could be improved.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/255/ee6ef7c9-4c8b-402f-97d5-0fad4e6b6f3e.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 3
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10527046-review-my-stuff"
+				}
+			},
+			{
+				"id" : "8458722",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/235",
+					"name" : "Testing in iOS",
+					"description" : "<p>Testing is a great way to help ensure the pieces of your app remain functionally correct and bug-free. Explore Unit Testing, UI Testing, Test-Driven Development, and more!</p>\n",
+					"released_at" : "2020-05-14T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "intermediate",
+					"content_type" : "collection",
+					"duration" : 7520,
+					"popularity" : 250.545454545455,
+					"technology_triple_string" : "Swift 5.2, iOS 13, Xcode 11.4",
+					"contributor_string" : "Christine Sweigart, Jessy Catterwaul & Adriana Kutenko",
+					"ordinal" : null,
+					"professional" : true,
+					"description_plain_text" : "Testing is a great way to help ensure the pieces of your app remain functionally correct and bug-free. Explore Unit Testing, UI Testing, Test-Driven Development, and more!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/235/ef30f1fa-6a11-4a16-b306-7fd52a0c4d2e.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 22
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8458722-testing-in-ios"
+				}
+			},
+			{
+				"id" : "9261991",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/241",
+					"name" : "Beginning Android Debugging",
+					"description" : "<p>Find out how to debug your Android apps using the many tools available on Android Studio. Learn how to create log statements, add breakpoints to your code, use the Android Studio profiling tools and much more.</p>\n",
+					"released_at" : "2020-05-12T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 2835,
+					"popularity" : 103,
+					"technology_triple_string" : "Kotlin 1.3, Android 5.1, Android Studio 3.6",
+					"contributor_string" : "Adriana Kutenko & Aldo Olivares",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Find out how to debug your Android apps using the many tools available on Android Studio. Learn how to create log statements, add breakpoints to your code, use the Android Studio profiling tools and much more.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/241/8195fbf8-a26d-41f6-b945-1965b43f934e.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 10
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9261991-beginning-android-debugging"
+				}
+			},
+			{
+				"id" : "9261385",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/239",
+					"name" : "Alamofire",
+					"description" : "<p>Learn the ins and outs of Alamofire from making requests to uploading files and how to pin certificates. This course uses Alamofire 5.</p>\n",
+					"released_at" : "2020-05-05T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "intermediate",
+					"content_type" : "collection",
+					"duration" : 2718,
+					"popularity" : 397,
+					"technology_triple_string" : "Swift 5.1, iOS 13.3, Xcode 11.3",
+					"contributor_string" : "Adriana Kutenko & Tim Condon",
+					"ordinal" : null,
+					"professional" : true,
+					"description_plain_text" : "Learn the ins and outs of Alamofire from making requests to uploading files and how to pin certificates. This course uses Alamofire 5.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/239/c840014a-98c5-40a2-bcf3-7f4cc8907401.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 10
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9261385-alamofire"
+				}
+			},
+			{
+				"id" : "4418",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/86",
+					"name" : "Beginning Git",
+					"description" : "<p>In this introduction to using Git for source control you&#39;ll learn everything from cloning and creating repos, through committing and ignoring files, to managing remotes and pull requests.</p>\n",
+					"released_at" : "2020-05-01T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 7353,
+					"popularity" : 3121.76923076923,
+					"technology_triple_string" : "macOS 10.15, Bash -",
+					"contributor_string" : "Sam Davies",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this introduction to using Git for source control you'll learn everything from cloning and creating repos, through committing and ignoring files, to managing remotes and pull requests.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/86/1948db88-41f3-415a-b516-b6ce08c29382.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "8",
+								"type" : "domains"
+							},
+							{
+								"id" : "3",
+								"type" : "domains"
+							},
+							{
+								"id" : "5",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 13
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/4418-beginning-git"
+				}
+			},
+			{
+				"id" : "8458165",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/233",
+					"name" : "Kotlin Coroutines: Fundamentals",
+					"description" : "<p>Learn the fundamentals about threads and coroutines, along with the basics of the Kotlin Coroutines framework.</p>\n",
+					"released_at" : "2020-04-30T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 2026,
+					"popularity" : 281.363636363636,
+					"technology_triple_string" : "Kotlin 1.3, Android 10, Studio 3.5",
+					"contributor_string" : "Katie Collins, Filip Babić & Adriana Kutenko",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn the fundamentals about threads and coroutines, along with the basics of the Kotlin Coroutines framework.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/233/4ec359ae-bddf-46b6-b829-7e476dafa72c.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 11
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8458165-kotlin-coroutines-fundamentals"
+				}
+			},
+			{
+				"id" : "5429634",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/199",
+					"name" : "Saving Data in iOS",
+					"description" : "<p>Find out where and how to save data in iOS! This course explores common methods for persisting user data, all from within Xcode Playgrounds.</p>\n",
+					"released_at" : "2020-04-28T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 6040,
+					"popularity" : 387.173913043478,
+					"technology_triple_string" : "Swift 5.1, iOS 13, Xcode 11",
+					"contributor_string" : "Ehab Yosry Amer, Christine Sweigart, Felipe Laso-Marsetti & Adriana Kutenko",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Find out where and how to save data in iOS! This course explores common methods for persisting user data, all from within Xcode Playgrounds.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/199/fe23530c-c86d-48ab-8d13-acc05477e1b6.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 23
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/5429634-saving-data-in-ios"
+				}
+			},
+			{
+				"id" : "8458472",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/234",
+					"name" : "Programming in Kotlin: Functions & Custom Types",
+					"description" : "<p>Take a deeper look at the Kotlin programming language! Explore the intricacies of functions, lambdas, classes, objects, interfaces, and more.</p>\n",
+					"released_at" : "2020-04-21T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 10726,
+					"popularity" : 152.323529411765,
+					"technology_triple_string" : "Kotlin 1.3, IntelliJ IDEA 2019.3",
+					"contributor_string" : "Christine Sweigart, Catie Catterwaul & Adriana Kutenko",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Take a deeper look at the Kotlin programming language! Explore the intricacies of functions, lambdas, classes, objects, interfaces, and more.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/234/34e28149-7f2e-44b8-bab4-5b716eee2bee.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 34
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8458472-programming-in-kotlin-functions-custom-types"
+				}
+			},
+			{
+				"id" : "7910496",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/230",
+					"name" : "Programming in Kotlin: Fundamentals",
+					"description" : "<p>Learn the fundamental building blocks of Kotlin, through hands-on exercises and challenges! Explore the world of data types, comparison and logical operators, loops, control flow, functions, classes as custom types, and more.</p>\n",
+					"released_at" : "2020-04-14T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 14778,
+					"popularity" : 249.787234042553,
+					"technology_triple_string" : "Kotlin 1.3, IntelliJ IDEA 2019.3",
+					"contributor_string" : "Filip Babić, Adriana Kutenko & Christine Sweigart",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn the fundamental building blocks of Kotlin, through hands-on exercises and challenges! Explore the world of data types, comparison and logical operators, loops, control flow, functions, classes as custom types, and more.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/230/98eefbb2-cc19-4f6e-ba35-b01837421c55.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 47
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/7910496-programming-in-kotlin-fundamentals"
+				}
+			},
+			{
+				"id" : "9310902",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/242",
+					"name" : "iPadOS Multitasking",
+					"description" : "<p>iPadOS Multitasking is new in iOS 13. Learn how to run multiple instances of your app and how to keep the data between these instances in sync. See how to implement state restoration, unique UIs across separate instances, and even drag and drop between two different apps in SwiftUI.</p>\n",
+					"released_at" : "2020-04-07T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "intermediate",
+					"content_type" : "collection",
+					"duration" : 1504,
+					"popularity" : 459,
+					"technology_triple_string" : "Swift 5.1, iOS 13, Xcode 11.4",
+					"contributor_string" : "Adriana Kutenko & Jonathan S Wong",
+					"ordinal" : null,
+					"professional" : true,
+					"description_plain_text" : "iPadOS Multitasking is new in iOS 13. Learn how to run multiple instances of your app and how to keep the data between these instances in sync. See how to implement state restoration, unique UIs across separate instances, and even drag and drop between two different apps in SwiftUI.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/242/d40a821c-0f90-4321-8f2e-43e5e2c070e1.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 6
+						}
+					},
+					"progression" : {
+						"data" : {
+							"id" : "143669621",
+							"type" : "progressions"
+						}
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9310902-ipados-multitasking"
+				}
+			},
+			{
+				"id" : "9149199",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/238",
+					"name" : "Publish to the Google Play Store",
+					"description" : "<p>Learn how to build a release-ready APK and upload it to the Google Play Store. Along the way, learn how to use the developer console and the guidelines to follow before publishing an app.</p>\n",
+					"released_at" : "2020-03-31T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "beginner",
+					"content_type" : "collection",
+					"duration" : 2384,
+					"popularity" : 280.75,
+					"technology_triple_string" : "Kotlin 1.3, Android 5.1, Studio 3.5",
+					"contributor_string" : "Adriana Kutenko & Aldo Olivares",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn how to build a release-ready APK and upload it to the Google Play Store. Along the way, learn how to use the developer console and the guidelines to follow before publishing an app.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/238/7dbcec5f-dc59-47f0-a6bd-1f7db08ff944.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 8
+						}
+					},
+					"progression" : {
+						"data" : {
+							"id" : "143671648",
+							"type" : "progressions"
+						}
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9149199-publish-to-the-google-play-store"
+				}
+			},
+			{
+				"id" : "9147615",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://betamax/collections/237",
+					"name" : "Kotlin Flow: Getting Started",
+					"description" : "<p>Kotlin Flow is a new asynchronous stream library from JetBrains, the company behind the Kotlin language. Sharing many similarities with Rx streams, Kotlin Flow is built on top of Kotlin Coroutines. Get started by learning the concepts and usage patterns for the Flow API within IntelliJ IDEA projects. Then, see Flow in action in an Android app. <em>Note: Flow is experimental in Kotlin 1.3 but will likely be stable in Kotlin 1.4.</em></p>\n",
+					"released_at" : "2020-03-26T13:00:00.000Z",
+					"free" : false,
+					"difficulty" : "advanced",
+					"content_type" : "collection",
+					"duration" : 3875,
+					"popularity" : 408.785714285714,
+					"technology_triple_string" : "Kotlin 1.3, Android 5.0, IntelliJ IDEA 2019.3",
+					"contributor_string" : "Adriana Kutenko & Joe Howard",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Kotlin Flow is a new asynchronous stream library from JetBrains, the company behind the Kotlin language. Sharing many similarities with Rx streams, Kotlin Flow is built on top of Kotlin Coroutines. Get started by learning the concepts and usage patterns for the Flow API within IntelliJ IDEA projects. Then, see Flow in action in an Android app. Note: Flow is experimental in Kotlin 1.3 but will likely be stable in Kotlin 1.4.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://files.betamax.raywenderlich.com/attachments/collections/237/dc035bfc-b3a4-49ec-971f-525be513430d.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 14
+						}
+					},
+					"progression" : {
+						"data" : {
+							"id" : "139795879",
+							"type" : "progressions"
+						}
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9147615-kotlin-flow-getting-started"
+				}
+			}
+		],
+		"included" : [
+			{
+				"id" : "9",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Flutter",
+					"slug" : "flutter",
+					"description" : "Learn multi-platform development with Flutter using our high-quality step-by-step tutorials!",
+					"level" : "beta",
+					"ordinal" : 5
+				}
+			},
+			{
+				"id" : "2",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Android & Kotlin",
+					"slug" : "android",
+					"description" : "Learn Android development in Kotlin",
+					"level" : "production",
+					"ordinal" : 2
+				}
+			},
+			{
+				"id" : "1",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "iOS & Swift",
+					"slug" : "ios",
+					"description" : "Learn iOS development in Swift",
+					"level" : "production",
+					"ordinal" : 1
+				}
+			},
+			{
+				"id" : "8",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Server-Side Swift",
+					"slug" : "server-side-swift",
+					"description" : "Learn web development with Swift",
+					"level" : "beta",
+					"ordinal" : 3
+				}
+			},
+			{
+				"id" : "3",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Unity",
+					"slug" : "unity",
+					"description" : "Learn how to create games in Unity, a powerful and popular game engine.",
+					"level" : "beta",
+					"ordinal" : 4
+				}
+			},
+			{
+				"id" : "5",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "macOS",
+					"slug" : "macos",
+					"description" : "Learn macOS development",
+					"level" : "archived",
+					"ordinal" : 7
+				}
+			},
+			{
+				"id" : "143669621",
+				"type" : "progressions",
+				"attributes" : {
+					"target" : 6,
+					"progress" : 2,
+					"finished" : false,
+					"percent_complete" : 33.3,
+					"created_at" : "2020-04-07T13:33:15.619Z",
+					"updated_at" : "2020-04-09T11:31:35.889Z"
+				},
+				"relationships" : {
+					"content" : {
+						"data" : {
+							"id" : "9310902",
+							"type" : "contents"
+						},
+						"links" : {
+							"self" : "http://api.raywenderlich.com/api/contents/9310902"
+						}
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/progressions/143669621"
+				}
+			},
+			{
+				"id" : "143671648",
+				"type" : "progressions",
+				"attributes" : {
+					"target" : 8,
+					"progress" : 7,
+					"finished" : false,
+					"percent_complete" : 87.5,
+					"created_at" : "2020-04-07T13:41:16.266Z",
+					"updated_at" : "2020-04-07T21:04:51.744Z"
+				},
+				"relationships" : {
+					"content" : {
+						"data" : {
+							"id" : "9149199",
+							"type" : "contents"
+						},
+						"links" : {
+							"self" : "http://api.raywenderlich.com/api/contents/9149199"
+						}
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/progressions/143671648"
+				}
+			},
+			{
+				"id" : "139795879",
+				"type" : "progressions",
+				"attributes" : {
+					"target" : 14,
+					"progress" : 9,
+					"finished" : false,
+					"percent_complete" : 64.3,
+					"created_at" : "2020-03-26T22:32:57.232Z",
+					"updated_at" : "2020-04-07T13:42:40.954Z"
+				},
+				"relationships" : {
+					"content" : {
+						"data" : {
+							"id" : "9147615",
+							"type" : "contents"
+						},
+						"links" : {
+							"self" : "http://api.raywenderlich.com/api/contents/9147615"
+						}
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/progressions/139795879"
+				}
+			}
+		],
+		"links" : {
+			"self" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=collection&page%5Bnumber%5D=1&page%5Bsize%5D=20",
+			"first" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=collection&page%5Bnumber%5D=1&page%5Bsize%5D=20",
+			"prev" : null,
+			"next" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=collection&page%5Bnumber%5D=2&page%5Bsize%5D=20",
+			"last" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=collection&page%5Bnumber%5D=8&page%5Bsize%5D=20"
+		},
+		"meta" : {
+			"total_result_count" : 156
+		}
+	}
