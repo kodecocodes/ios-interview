@@ -14,11 +14,11 @@ Check out the [official raywenderlich.com app](https://apps.apple.com/us/app/ray
 
 ### Data
 First, you're going to need some data.
+* Use the [Github API](https://docs.github.com/en/rest) to create networking requests to access the JSON files below
 * Articles JSON is available here https://github.com/raywenderlich/ios-interview/blob/master/Practical%20Example/articles.json.
 * Videos JSON is available here https://github.com/raywenderlich/ios-interview/blob/master/Practical%20Example/videos.json.
 * The data structure follows the [JSON API specification](https://jsonapi.org/).
 * Do not include the above files in your app! Instead, use a network request to download the JSON (:
-* Use the [Github API](https://docs.github.com/en/rest) instead
 
 ### App
 To pass the test, the app has to include the following:
