@@ -1,0 +1,1055 @@
+{
+		"data" : [
+			{
+				"id" : "10628623",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/255285",
+					"name" : "Mac Catalyst with Andy Pereira – Podcast S10 E7",
+					"description" : "Dru flips the switch on his 50th show with Andy Pereira telling us how easy Catalyst can be. After Dru talks about transitioning from developer to architect. \n",
+					"released_at" : "2020-05-20T18:01:43.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 60,
+					"popularity" : 1366,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Dru Freeman",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Dru flips the switch on his 50th show with Andy Pereira telling us how easy Catalyst can be. After Dru talks about transitioning from developer to architect. \n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2016/02/Logo.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "7",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10628623-mac-catalyst-with-andy-pereira-podcast-s10-e7"
+				}
+			},
+			{
+				"id" : "9577211",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/250572",
+					"name" : "Scoped Storage in Android 10: Getting Started",
+					"description" : "In this tutorial, you’ll learn how to use scoped storage in your Android 10 app by building a simple image gallery.\n",
+					"released_at" : "2020-05-20T12:30:01.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "article",
+					"duration" : 1080,
+					"popularity" : 2048,
+					"technology_triple_string" : "Kotlin 1.3, Android 4.4, Android Studio 3.6",
+					"contributor_string" : "Julia Zinchenko, Sandra Grauschopf, Fabio Bombardi, Eric Soto, Aldo Olivares & Anshdeep Singh",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this tutorial, you’ll learn how to use scoped storage in your Android 10 app by building a simple image gallery.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/ScopedStorage-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9577211-scoped-storage-in-android-10-getting-started"
+				}
+			},
+			{
+				"id" : "10269094",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/253539",
+					"name" : "Announcing Our Learn At Home Sale!",
+					"description" : "Save big with limited-time Advanced iOS and Android book bundles, plus 50% off every book in our store!\n",
+					"released_at" : "2020-05-19T16:59:24.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 1680,
+					"popularity" : 5049,
+					"technology_triple_string" : "",
+					"contributor_string" : "Tiffani Randolph",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Save big with limited-time Advanced iOS and Android book bundles, plus 50% off every book in our store!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/05/learn-at-home-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "3",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10269094-announcing-our-learn-at-home-sale"
+				}
+			},
+			{
+				"id" : "10557661",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/254940",
+					"name" : "raywenderlich.com Learn At Home Sale FAQ",
+					"description" : "The answers to your questions about the raywenderlich.com Learn At Home Sale!\n",
+					"released_at" : "2020-05-19T16:12:00.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 480,
+					"popularity" : 2121,
+					"technology_triple_string" : "",
+					"contributor_string" : "Tiffani Randolph",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "The answers to your questions about the raywenderlich.com Learn At Home Sale!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/03/creature_yeti_search.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10557661-raywenderlich-com-learn-at-home-sale-faq"
+				}
+			},
+			{
+				"id" : "9556022",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/250416",
+					"name" : "Drawing Custom Shapes in Android",
+					"description" : "Learn how to draw custom shapes and paths in Android by creating a neat curved profile card with gradient colors.\n",
+					"released_at" : "2020-05-18T15:30:59.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "article",
+					"duration" : 1860,
+					"popularity" : 2478,
+					"technology_triple_string" : "Kotlin 1.3, Android 4.4, Android Studio 3.6",
+					"contributor_string" : "Julia Zinchenko, April Rames, Fabio Bombardi, Jenn Bailey, Eric Soto & Ahmed Tarek",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn how to draw custom shapes and paths in Android by creating a neat curved profile card with gradient colors.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/DrawingCustomShapes-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9556022-drawing-custom-shapes-in-android"
+				}
+			},
+			{
+				"id" : "9296192",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/249656",
+					"name" : "Improving Storyboard Segues With IBSegueAction",
+					"description" : "In this iOS tutorial, you’ll learn how to use IBSegueAction for storyboard segues. You’ll understand the advantages and disadvantages of this new technique.\n",
+					"released_at" : "2020-05-18T12:59:44.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "article",
+					"duration" : 1020,
+					"popularity" : 2550,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Kevin Dickinson, Michael Gazdich, Mark Struzinski, Adriana Kutenko, Jean-Pierre Distler, Richard Critz & Chuck Krutsinger ",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this iOS tutorial, you’ll learn how to use IBSegueAction for storyboard segues. You’ll understand the advantages and disadvantages of this new technique.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/IBSegueAction-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9296192-improving-storyboard-segues-with-ibsegueaction"
+				}
+			},
+			{
+				"id" : "10222977",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/253335",
+					"name" : "Introducing Amazon Sumerian by Tutorials!",
+					"description" : "Create unique 3D, AR and VR experiences with our new book, Amazon Sumerian by Tutorials!\n",
+					"released_at" : "2020-05-14T16:59:47.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 840,
+					"popularity" : 2892,
+					"technology_triple_string" : "",
+					"contributor_string" : "Tiffani Randolph",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Create unique 3D, AR and VR experiences with our new book, Amazon Sumerian by Tutorials!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/Sumerian-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "3",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10222977-introducing-amazon-sumerian-by-tutorials"
+				}
+			},
+			{
+				"id" : "7960296",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/245029",
+					"name" : "Core ML and Vision Tutorial: On-device training on iOS",
+					"description" : "This tutorial introduces you to Core ML and Vision, two cutting-edge iOS frameworks, and how to fine-tune a model on the device.\n",
+					"released_at" : "2020-05-13T12:59:07.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 1920,
+					"popularity" : 5797,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Julia Zinchenko, Audrey Tam, Kelvin Lau, Anu Mittal, April Rames, Richard Critz & Christine Abernathy",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "This tutorial introduces you to Core ML and Vision, two cutting-edge iOS frameworks, and how to fine-tune a model on the device.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/03/CoreMLVisionMachineLearning-featur.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/7960296-core-ml-and-vision-tutorial-on-device-training-on-ios"
+				}
+			},
+			{
+				"id" : "10418006",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/254271",
+					"name" : "Introducing RW Community Care!",
+					"description" : "Introducing RW Community Care — a 3-month series of office hours, livestreams, bootcamps, and more — all 100% free!\n",
+					"released_at" : "2020-05-11T17:58:19.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 840,
+					"popularity" : 7438,
+					"technology_triple_string" : "",
+					"contributor_string" : "Ray Wenderlich",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Introducing RW Community Care — a 3-month series of office hours, livestreams, bootcamps, and more — all 100% free!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/05/RWCommunityCare-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "9",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10418006-introducing-rw-community-care"
+				}
+			},
+			{
+				"id" : "9384883",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/250103",
+					"name" : "Physics-Based Animations in Android with DynamicAnimation: Getting Started",
+					"description" : "In this tutorial, you’ll learn how to use realistic, physics-based animations like fling animations and spring animations in your Android apps. \n",
+					"released_at" : "2020-05-11T15:30:32.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "article",
+					"duration" : 1680,
+					"popularity" : 3442,
+					"technology_triple_string" : "Kotlin 1.3, Android 4.4, Android Studio 3.5",
+					"contributor_string" : "Aleksandra Kizevska, Vijay Sharma, Eric Soto, Sandra Grauschopf, Amanjeet Singh & Jemma Slater",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this tutorial, you’ll learn how to use realistic, physics-based animations like fling animations and spring animations in your Android apps. \n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/PhysicsBasedAnimations-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9384883-physics-based-animations-in-android-with-dynamicanimation-getting-started"
+				}
+			},
+			{
+				"id" : "8277640",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/246358",
+					"name" : "Push Notifications Tutorial for iOS: Rich Push Notifications",
+					"description" : "Learn how to modify and enhance push notifications before they are presented to the user, how to create custom UI around your push content, and more!\n",
+					"released_at" : "2020-05-11T12:59:17.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 1680,
+					"popularity" : 5453,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Michael Katz, Kevin Dickinson, Adriana Kutenko, Kelvin Lau, Antonio Bello, Richard Critz & Mark Struzinski",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn how to modify and enhance push notifications before they are presented to the user, how to create custom UI around your push content, and more!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/RichPushNotifications-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8277640-push-notifications-tutorial-for-ios-rich-push-notifications"
+				}
+			},
+			{
+				"id" : "10360944",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/253931",
+					"name" : "TDD for Android with Victoria Gonda – Podcast S10 E06",
+					"description" : "This episode we check our work before we do it, and Victoria Gonda gives gets us up to speed with Test driven development. Later Alex tells us what he’s learnt this season after he’s worked with coroutines.\n",
+					"released_at" : "2020-05-06T18:00:07.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 60,
+					"popularity" : 4935,
+					"technology_triple_string" : "Kotlin 1.3, Android 10.0, Android Studio 4.0",
+					"contributor_string" : "Dru Freeman",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "This episode we check our work before we do it, and Victoria Gonda gives gets us up to speed with Test driven development. Later Alex tells us what he’s learnt this season after he’s worked with coroutines.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2016/02/Logo.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							},
+							{
+								"id" : "7",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10360944-tdd-for-android-with-victoria-gonda-podcast-s10-e06"
+				}
+			},
+			{
+				"id" : "7630142",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/243598",
+					"name" : "Entity Component System for Unity: Getting Started",
+					"description" : "In this Unity tutorial you’ll learn how to efficiently leverage the Entity Component System for more performant gameplay code.\n",
+					"released_at" : "2020-05-06T16:00:36.000Z",
+					"free" : true,
+					"difficulty" : "advanced",
+					"content_type" : "article",
+					"duration" : 1920,
+					"popularity" : 9220,
+					"technology_triple_string" : "C# 7.3, Unity 2019.3, Unity",
+					"contributor_string" : "Aleksandra Kizevska, Harrison Ferrone, Sean Duffy, Eric Van de Kerckhove, April Rames & Wilmer Lin",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this Unity tutorial you’ll learn how to efficiently leverage the Entity Component System for more performant gameplay code.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/05/EntityComponentSystem-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "3",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/7630142-entity-component-system-for-unity-getting-started"
+				}
+			},
+			{
+				"id" : "9227276",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/249015",
+					"name" : "Firebase Cloud Messaging for Android: Sending Push Notifications",
+					"description" : "In this Firebase Cloud Messaging tutorial, you will learn how to add push notifications to Drink-It, an app that reminds you to drink water through the day. \n",
+					"released_at" : "2020-05-06T12:30:43.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 1680,
+					"popularity" : 5567,
+					"technology_triple_string" : "Kotlin 1.3, Android 4.4, Android Studio 3.6",
+					"contributor_string" : "Darryl Bayliss, Eric Soto, Julia Zinchenko, Sandra Grauschopf & Evana Margain Puig",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this Firebase Cloud Messaging tutorial, you will learn how to add push notifications to Drink-It, an app that reminds you to drink water through the day. \n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/FirebasePushNotifications-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9227276-firebase-cloud-messaging-for-android-sending-push-notifications"
+				}
+			},
+			{
+				"id" : "10351121",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/253868",
+					"name" : "Looking For Submissions for Review My Stuff!",
+					"description" : "Want some free feedback on your code, resume, or app from some senior developers? Sign up here! :]\n",
+					"released_at" : "2020-05-05T17:00:55.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 60,
+					"popularity" : 5851,
+					"technology_triple_string" : "",
+					"contributor_string" : "Ray Wenderlich",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Want some free feedback on your code, resume, or app from some senior developers? Sign up here! :]\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/05/ReviewMyStuff-feature-1.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10351121-looking-for-submissions-for-review-my-stuff"
+				}
+			},
+			{
+				"id" : "9376629",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/250099",
+					"name" : "SQLite in Flutter",
+					"description" : "Learn how to make an app by persisting data with Flutter and SQLite, using the sqflite plugin.\n",
+					"released_at" : "2020-05-05T15:50:00.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 960,
+					"popularity" : 7786,
+					"technology_triple_string" : "Dart 2.7, Flutter 1.12, Android Studio 3.6",
+					"contributor_string" : "Julia Zinchenko, Brian Kayfitz, Nam, Alex Sullivan, Brian Kayfitz, April Rames & JB Lorenzo",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Learn how to make an app by persisting data with Flutter and SQLite, using the sqflite plugin.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/04/SQLite-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "9",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9376629-sqlite-in-flutter"
+				}
+			},
+			{
+				"id" : "10350458",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/253846",
+					"name" : "Introducing RW Talks: First Talk Tomorrow!",
+					"description" : "We are starting free weekly livestreams on topics of interest to the mobile development community. Sign up here!\n",
+					"released_at" : "2020-05-05T12:00:00.000Z",
+					"free" : true,
+					"difficulty" : null,
+					"content_type" : "article",
+					"duration" : 300,
+					"popularity" : 7084,
+					"technology_triple_string" : "",
+					"contributor_string" : "Ray Wenderlich",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "We are starting free weekly livestreams on topics of interest to the mobile development community. Sign up here!\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/05/WWDCLivecastImpressions-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							},
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/10350458-introducing-rw-talks-first-talk-tomorrow"
+				}
+			},
+			{
+				"id" : "8574679",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/248552",
+					"name" : "Annotation Processing: Supercharge Your Development",
+					"description" : "Annotation processing is a powerful tool for generating code for Android apps. In this tutorial, you’ll create one that generates RecyclerView adapters.\n",
+					"released_at" : "2020-05-04T15:30:57.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 1560,
+					"popularity" : 5966,
+					"technology_triple_string" : "Kotlin 1.3, Android 4.4, Android Studio 3.6",
+					"contributor_string" : "Julia Zinchenko, Kevin Dickinson, Márton Braun, Eric Soto, Aldo Olivares & Gordan Glavaš",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "Annotation processing is a powerful tool for generating code for Android apps. In this tutorial, you’ll create one that generates RecyclerView adapters.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/03/AnnotationProcessor-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "2",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8574679-annotation-processing-supercharge-your-development"
+				}
+			},
+			{
+				"id" : "9218753",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/248952",
+					"name" : "What’s New With UISearchController and UISearchBar",
+					"description" : "In this UISearchController tutorial, you’ll learn about UISearchToken, UISearchTextField and other new APIs introduced in iOS 13.\n",
+					"released_at" : "2020-05-04T12:59:46.000Z",
+					"free" : true,
+					"difficulty" : "beginner",
+					"content_type" : "article",
+					"duration" : 1380,
+					"popularity" : 6496,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Julia Zinchenko, Mani Ramezan, Richard Turton, Richard Critz, Sandra Grauschopf & Corey Davis",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this UISearchController tutorial, you’ll learn about UISearchToken, UISearchTextField and other new APIs introduced in iOS 13.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/03/UISearchControllerUISearchBar-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/9218753-what-s-new-with-uisearchcontroller-and-uisearchbar"
+				}
+			},
+			{
+				"id" : "8003281",
+				"type" : "contents",
+				"attributes" : {
+					"uri" : "rw://koenig/post/245185",
+					"name" : "Core Graphics Tutorial: Getting Started",
+					"description" : "In this Core Graphics tutorial, you’ll learn about using Core Graphics to design pixel-perfect views and how to use Xcode’s interactive storyboards.\n",
+					"released_at" : "2020-04-29T12:59:58.000Z",
+					"free" : true,
+					"difficulty" : "intermediate",
+					"content_type" : "article",
+					"duration" : 2100,
+					"popularity" : 10864,
+					"technology_triple_string" : "Swift 5, iOS 13, Xcode 11",
+					"contributor_string" : "Luke Freeman, Kevin Dickinson, Felicity Johnson, Caroline Begbie, Soheil Azarpour, Richard Critz & Andrew Kharchyshyn",
+					"ordinal" : null,
+					"professional" : false,
+					"description_plain_text" : "In this Core Graphics tutorial, you’ll learn about using Core Graphics to design pixel-perfect views and how to use Xcode’s interactive storyboards.\n",
+					"video_identifier" : null,
+					"parent_name" : null,
+					"card_artwork_url" : "https://koenig-media.raywenderlich.com/uploads/2020/03/CoreGraphics-feature.png"
+				},
+				"relationships" : {
+					"domains" : {
+						"data" : [
+							{
+								"id" : "1",
+								"type" : "domains"
+							}
+						]
+					},
+					"child_contents" : {
+						"meta" : {
+							"count" : 0
+						}
+					},
+					"progression" : {
+						"data" : null
+					},
+					"bookmark" : {
+						"data" : null
+					}
+				},
+				"links" : {
+					"self" : "http://api.raywenderlich.com/api/contents/8003281-core-graphics-tutorial-getting-started"
+				}
+			}
+		],
+		"included" : [
+			{
+				"id" : "1",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "iOS & Swift",
+					"slug" : "ios",
+					"description" : "Learn iOS development in Swift",
+					"level" : "production",
+					"ordinal" : 1
+				}
+			},
+			{
+				"id" : "7",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "The raywenderlich.com Podcast",
+					"slug" : "podcast",
+					"description" : "Join Dru and Alex as they discuss every aspect of app development with well-known characters from the iOS and Android development community.",
+					"level" : "blog",
+					"ordinal" : 6
+				}
+			},
+			{
+				"id" : "2",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Android & Kotlin",
+					"slug" : "android",
+					"description" : "Learn Android development in Kotlin",
+					"level" : "production",
+					"ordinal" : 2
+				}
+			},
+			{
+				"id" : "3",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Unity",
+					"slug" : "unity",
+					"description" : "Learn how to create games in Unity, a powerful and popular game engine.",
+					"level" : "beta",
+					"ordinal" : 4
+				}
+			},
+			{
+				"id" : "9",
+				"type" : "domains",
+				"attributes" : {
+					"name" : "Flutter",
+					"slug" : "flutter",
+					"description" : "Learn multi-platform development with Flutter using our high-quality step-by-step tutorials!",
+					"level" : "beta",
+					"ordinal" : 5
+				}
+			}
+		],
+		"links" : {
+			"self" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=article&page%5Bnumber%5D=1&page%5Bsize%5D=20",
+			"first" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=article&page%5Bnumber%5D=1&page%5Bsize%5D=20",
+			"prev" : null,
+			"next" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=article&page%5Bnumber%5D=2&page%5Bsize%5D=20",
+			"last" : "https://api.raywenderlich.com/api/contents?filter%5Bcontent_types%5D%5B%5D=article&page%5Bnumber%5D=92&page%5Bsize%5D=20"
+		},
+		"meta" : {
+			"total_result_count" : 1834
+		}
+	}
