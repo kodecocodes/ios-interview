@@ -23,7 +23,7 @@ class CourseAPIServiceTests: XCTestCase {
 
   func testFetchArticles() {
     let expect = expectation(description: "Fetch Articles")
-    let articleUrl = "https://api.jsonbin.io/b/5ed679357741ef56a566a67f"
+    let articleUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/articles.json"
     var items = [Item]()
 
     courseAPIService.fetchContent(for: articleUrl) { results in
@@ -41,7 +41,7 @@ class CourseAPIServiceTests: XCTestCase {
 
   func testFetchVideos() {
     let expect = expectation(description: "Fetch Videos")
-    let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
+    let videoUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/videos.json"
     var items = [Item]()
 
     courseAPIService.fetchContent(for: videoUrl) { results in
