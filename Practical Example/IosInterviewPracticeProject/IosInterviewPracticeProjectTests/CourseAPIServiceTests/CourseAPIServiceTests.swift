@@ -82,21 +82,20 @@ class CourseAPIServiceTests: XCTestCase {
   }
 
   func testFetchCourseContent() {
-    var items = [Item]()
+    var item: Item?
     let contentUrl = "http://api.raywenderlich.com/api/contents/10628623-mac-catalyst-with-andy-pereira-podcast-s10-e7"
-    let expect = expectation(description: "Fetch content")
+    let expect = expectation(description: "Fetch item content")
 
-    courseAPIService.fetchContent(for: contentUrl) { results in
+    courseAPIService.fetchCourseContent(for: contentUrl) { results in
       switch results {
       case .success(let results):
-        items = results.data
-        print("Items: \(items)")
+        item = results.data
         expect.fulfill()
       case .failure(let error):
         XCTFail(error.localizedDescription)
       }
     }
     waitForExpectations(timeout: 3, handler: nil)
-    XCTAssertGreaterThan(items.count, 0, "Failed to fetch content")
+    XCTAssertNotNil(item, "Item is nil")
   }
 }

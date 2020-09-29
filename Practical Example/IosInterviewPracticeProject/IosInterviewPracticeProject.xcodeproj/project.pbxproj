@@ -25,6 +25,7 @@
 		7F80E94124E888BB0093F6C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F80E93F24E888BB0093F6C2 /* LaunchScreen.storyboard */; };
 		7F863B4524EF0445003F807E /* CourseAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F863B3424EF00EA003F807E /* CourseAPIServiceTests.swift */; };
 		7F863B4824EF04B0003F807E /* CourseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F863B4724EF04B0003F807E /* CourseAPIService.swift */; };
+		7FFCCA4A252265680049F6F8 /* CourseContentResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFCCA49252265680049F6F8 /* CourseContentResults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		7F863B3B24EF02ED003F807E /* IosInterviewPracticeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IosInterviewPracticeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F863B3F24EF02ED003F807E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F863B4724EF04B0003F807E /* CourseAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAPIService.swift; sourceTree = "<group>"; };
+		7FFCCA49252265680049F6F8 /* CourseContentResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseContentResults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				7F61530A2505C874006A6DE0 /* Link.swift */,
 				7F679C86250D6D9B0070AAF7 /* Included.swift */,
 				7F679C88250D6F700070AAF7 /* IncludedAttributes.swift */,
+				7FFCCA49252265680049F6F8 /* CourseContentResults.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				7F61530B2505C874006A6DE0 /* Link.swift in Sources */,
 				7F80E93524E888B60093F6C2 /* AppDelegate.swift in Sources */,
 				7F7C90C024F2DC9200ADC257 /* CourseAPIServiceError.swift in Sources */,
+				7FFCCA4A252265680049F6F8 /* CourseContentResults.swift in Sources */,
 				7F7ED67224ED86DA00E309D8 /* Item.swift in Sources */,
 				7F80E93724E888B60093F6C2 /* SceneDelegate.swift in Sources */,
 				7F3CFDC624E9AB8C00AA97D5 /* CourseListVC.swift in Sources */,

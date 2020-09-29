@@ -48,6 +48,29 @@ class CourseAPIService {
     .resume()
   }
 
+  func fetchCourseContent(for contentUrl: String, completion: @escaping(Result<CourseContentResults, CourseAPIServiceError>) -> Void) {
+    guard let contentUrl = URL(string: contentUrl) else { return }
+
+    URLSession.shared.dataTask(with: contentUrl) { data, _, error in
+      guard let data = data, error == nil else {
+        if error != nil {
+          completion(.failure(.domainError))
+        }
+        return
+      }
+
+      do {
+        self.decoder.dateDecodingStrategy = .formatted(self.dateFormatter)
+        let itemContentResults = try self.decoder.decode(CourseContentResults.self, from: data)
+        completion(.success(itemContentResults))
+      } catch {
+        print("Decoding Error: \(error)")
+        completion(.failure(.decodingError))
+      }
+    }
+    .resume()
+  }
+
   func fetchCardArtwork(for artworkUrl: URL, completion: @escaping(Result<UIImage, CourseAPIServiceError>) -> Void) {
     if let cachedArtwork = CourseAPIService.artworkCache.object(forKey: NSString(string: artworkUrl.absoluteString)) {
       //use cached artwork image
