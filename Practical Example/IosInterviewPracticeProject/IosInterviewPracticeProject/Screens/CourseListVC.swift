@@ -68,7 +68,7 @@ class CourseListVC: UITableViewController {
   }
 
   private func fetchArticles() {
-    let articleUrl = "https://api.jsonbin.io/b/5ed679357741ef56a566a67f"
+    let articleUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/articles.json"
 
     CourseAPIService.shared.fetchContent(for: articleUrl) { results in
       switch results {
@@ -81,7 +81,7 @@ class CourseListVC: UITableViewController {
   }
 
   private func fetchVideos() {
-    let videoUrl = "https://api.jsonbin.io/b/5ed67c667741ef56a566a831"
+    let videoUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/videos.json"
 
       CourseAPIService.shared.fetchContent(for: videoUrl) { results in
         switch results {
