@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum TutorialType: String, Decodable {
+enum TutorialType: String {
   case article
   case video
 }

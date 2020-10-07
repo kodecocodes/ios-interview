@@ -9,7 +9,7 @@ import Foundation
 
 class NetworkService {
 
-  let jsonDecoder = JSONDecoder()
+  private let jsonDecoder = JSONDecoder()
 
   private var SECRET_KEY: String {
     let env = ProcessInfo.processInfo.environment
@@ -35,7 +35,6 @@ class NetworkService {
     urlRequest.setValue(SECRET_KEY, forHTTPHeaderField: "secret-key")
 
     URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
-
 
       if let error = error {
         completion(.failure(error))
