@@ -7,13 +7,13 @@
 
 import Foundation
 
-class Networking {
+class NetworkService {
 
   let jsonDecoder = JSONDecoder()
 
   private var SECRET_KEY: String {
     let env = ProcessInfo.processInfo.environment
-    return env["SecretKey"] ?? "NO JSONBIN SECRET KEY FOUND"
+    return env["SecretKey"] ?? "NO JSON_BIN.IO SECRET KEY FOUND"
   }
 
   private func generateURLForTutorial(ofType type: TutorialType) -> URLRequest {
@@ -43,11 +43,11 @@ class Networking {
       }
 
       guard let response = response as? HTTPURLResponse, response.isOK else {
-        fatalError("Response is not 200")
+        fatalError("Response's status code is not 200")
       }
 
       guard let data = data else {
-        return
+        fatalError("No data coming back from backend")
       }
       
       do {

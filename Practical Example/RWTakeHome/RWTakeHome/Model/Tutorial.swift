@@ -25,12 +25,13 @@ struct DataTutorial: Decodable {
   }
 }
 
-struct Attributes: Decodable {
+struct Attributes {
   
   let name: String
   let artwork: URL
   let description: String
   let releaseDateString: String
+  let contentType: String
 
   var releaseDate: Date {
     let dateFormatter = DateFormatter()
@@ -40,14 +41,16 @@ struct Attributes: Decodable {
     return dateFormatter.date(from: releaseDateString) ?? Date()
   }
 
-  
   enum CodingKeys: String, CodingKey {
     case name = "name"
     case artwork = "card_artwork_url"
     case description = "description_plain_text"
     case releaseDate = "released_at"
+    case contentType = "content_type"
   }
+}
 
+extension Attributes: Decodable {
   init(from decoder: Decoder) throws {
     let container = try decoder.container(keyedBy: CodingKeys.self)
 
@@ -55,13 +58,23 @@ struct Attributes: Decodable {
     let artworkString = try container.decode(String.self, forKey: .artwork)
     let releaseDateString = try container.decode(String.self, forKey: .releaseDate)
     let description = try container.decode(String.self, forKey: .description)
+    let contentType = try container.decode(String.self, forKey: .contentType)
 
     self.name = name
     self.description = description
     self.artwork = URL(string: artworkString)!
     self.releaseDateString = releaseDateString
-
+    self.contentType = contentType
   }
 }
 
 
+extension Tutorial: Comparable {
+  static func == (lhs: Tutorial, rhs: Tutorial) -> Bool {
+    return lhs.attributes.releaseDate == rhs.attributes.releaseDate
+  }
+
+  static func < (lhs: Tutorial, rhs: Tutorial) -> Bool {
+    return lhs.attributes.releaseDate < rhs.attributes.releaseDate
+  }
+}
