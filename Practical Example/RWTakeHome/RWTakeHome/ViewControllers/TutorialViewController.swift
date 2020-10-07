@@ -90,7 +90,7 @@ extension TutorialViewController: UICollectionViewDelegate, UICollectionViewData
     }
 
     // Start an operation to fetch image data
-    let fetchOp = FetchPhotoOperation(photoReference: tutorial)
+    let fetchOp = FetchPhotoOperation(tutorial: tutorial)
     
     let cacheOp = BlockOperation {
       if let data = fetchOp.imageData {
