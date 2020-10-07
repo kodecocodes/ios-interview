@@ -50,9 +50,7 @@ class NetworkService {
       }
       
       do {
-
         let tutorials = try self.jsonDecoder.decode(DataTutorial.self, from: data)
-
         completion(.success(tutorials.tutorials))
       } catch {
         print(error.localizedDescription)

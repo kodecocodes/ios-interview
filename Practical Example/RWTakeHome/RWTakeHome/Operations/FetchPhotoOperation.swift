@@ -17,8 +17,8 @@ class FetchPhotoOperation: ConcurrentOperation {
   private var dataTask: URLSessionDataTask?
 
 
-  init(photoReference: Tutorial, session: URLSession = URLSession.shared) {
-    self.tutorial = photoReference
+  init(tutorial: Tutorial, session: URLSession = URLSession.shared) {
+    self.tutorial = tutorial
     self.session = session
     super.init()
   }
