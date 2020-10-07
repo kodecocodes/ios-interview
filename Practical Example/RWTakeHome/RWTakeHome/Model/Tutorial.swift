@@ -14,7 +14,7 @@ enum TutorialType: String, Decodable {
 
 struct Tutorial: Decodable {
 
-  let attributes: Attributes
+  var attributes: Attributes
 }
 
 struct DataTutorial: Decodable {
@@ -26,13 +26,21 @@ struct DataTutorial: Decodable {
 }
 
 struct Attributes: Decodable {
-
+  
   let name: String
   let artwork: URL
   let description: String
-  let releaseDate: String
+  let releaseDateString: String
 
+  var releaseDate: Date {
+    let dateFormatter = DateFormatter()
+    dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+    dateFormatter.timeZone = TimeZone.autoupdatingCurrent
+    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    return dateFormatter.date(from: releaseDateString) ?? Date()
+  }
 
+  
   enum CodingKeys: String, CodingKey {
     case name = "name"
     case artwork = "card_artwork_url"
@@ -51,7 +59,7 @@ struct Attributes: Decodable {
     self.name = name
     self.description = description
     self.artwork = URL(string: artworkString)!
-    self.releaseDate = releaseDateString
+    self.releaseDateString = releaseDateString
 
   }
 }

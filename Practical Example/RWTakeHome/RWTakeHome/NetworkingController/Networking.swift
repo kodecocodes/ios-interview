@@ -29,10 +29,12 @@ class Networking {
 
 
   func fetchTutorials(ofType type: TutorialType, completion: @escaping (Result<[Tutorial],Error>) -> Void) {
+
     var urlRequest = generateURLForTutorial(ofType: type)
     urlRequest.setValue(SECRET_KEY, forHTTPHeaderField: "secret-key")
 
     URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
+
 
       if let error = error {
         completion(.failure(error))
@@ -44,18 +46,19 @@ class Networking {
       }
 
       guard let data = data else {
-        
         return
       }
-
+      
       do {
 
         let tutorials = try self.jsonDecoder.decode(DataTutorial.self, from: data)
+       
         completion(.success(tutorials.tutorials))
       } catch {
         print(error.localizedDescription)
       }
     }.resume()
   }
+ 
 }
 

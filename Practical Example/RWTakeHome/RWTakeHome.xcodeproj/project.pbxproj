@@ -17,6 +17,10 @@
 		B6C2A477252DF82C00FEF700 /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A476252DF82C00FEF700 /* Tutorial.swift */; };
 		B6C2A47B252DFDC200FEF700 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A47A252DFDC200FEF700 /* Networking.swift */; };
 		B6C2A47E252E070100FEF700 /* HTTPURLResponse+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A47D252E070100FEF700 /* HTTPURLResponse+Ext.swift */; };
+		B6C2A486252E1A0C00FEF700 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A485252E1A0C00FEF700 /* Cache.swift */; };
+		B6C2A489252E1B6E00FEF700 /* CocurrentOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A488252E1B6E00FEF700 /* CocurrentOperation.swift */; };
+		B6C2A48C252E1B9000FEF700 /* FetchPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A48B252E1B9000FEF700 /* FetchPhotoOperation.swift */; };
+		B6C2A48F252E228300FEF700 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C2A48E252E228300FEF700 /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B6C2A476252DF82C00FEF700 /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		B6C2A47A252DFDC200FEF700 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B6C2A47D252E070100FEF700 /* HTTPURLResponse+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Ext.swift"; sourceTree = "<group>"; };
+		B6C2A485252E1A0C00FEF700 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		B6C2A488252E1B6E00FEF700 /* CocurrentOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocurrentOperation.swift; sourceTree = "<group>"; };
+		B6C2A48B252E1B9000FEF700 /* FetchPhotoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchPhotoOperation.swift; sourceTree = "<group>"; };
+		B6C2A48E252E228300FEF700 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +72,87 @@
 		B6C2A45D252DF2C700FEF700 /* RWTakeHome */ = {
 			isa = PBXGroup;
 			children = (
-				B6C2A45E252DF2C700FEF700 /* AppDelegate.swift */,
-				B6C2A460252DF2C700FEF700 /* SceneDelegate.swift */,
-				B6C2A462252DF2C700FEF700 /* ViewController.swift */,
-				B6C2A47A252DFDC200FEF700 /* Networking.swift */,
-				B6C2A47D252E070100FEF700 /* HTTPURLResponse+Ext.swift */,
-				B6C2A476252DF82C00FEF700 /* Tutorial.swift */,
-				B6C2A473252DF79E00FEF700 /* TutorialCell.swift */,
-				B6C2A464252DF2C700FEF700 /* Main.storyboard */,
+				B6C2A499252E27A900FEF700 /* Application */,
+				B6C2A49F252E27C400FEF700 /* ViewControllers */,
+				B6C2A49B252E27B100FEF700 /* Utilities */,
+				B6C2A49D252E27B700FEF700 /* NetworkingController */,
+				B6C2A493252E278200FEF700 /* Extenstion */,
+				B6C2A491252E277700FEF700 /* Operations */,
+				B6C2A495252E279100FEF700 /* Model */,
+				B6C2A497252E279800FEF700 /* Views */,
 				B6C2A467252DF2C800FEF700 /* Assets.xcassets */,
-				B6C2A469252DF2C800FEF700 /* LaunchScreen.storyboard */,
 				B6C2A46C252DF2C800FEF700 /* Info.plist */,
 			);
 			path = RWTakeHome;
+			sourceTree = "<group>";
+		};
+		B6C2A491252E277700FEF700 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A488252E1B6E00FEF700 /* CocurrentOperation.swift */,
+				B6C2A48B252E1B9000FEF700 /* FetchPhotoOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		B6C2A493252E278200FEF700 /* Extenstion */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A47D252E070100FEF700 /* HTTPURLResponse+Ext.swift */,
+				B6C2A48E252E228300FEF700 /* Date+Ext.swift */,
+			);
+			path = Extenstion;
+			sourceTree = "<group>";
+		};
+		B6C2A495252E279100FEF700 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A476252DF82C00FEF700 /* Tutorial.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6C2A497252E279800FEF700 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A473252DF79E00FEF700 /* TutorialCell.swift */,
+				B6C2A464252DF2C700FEF700 /* Main.storyboard */,
+				B6C2A469252DF2C800FEF700 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6C2A499252E27A900FEF700 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A45E252DF2C700FEF700 /* AppDelegate.swift */,
+				B6C2A460252DF2C700FEF700 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6C2A49B252E27B100FEF700 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A485252E1A0C00FEF700 /* Cache.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6C2A49D252E27B700FEF700 /* NetworkingController */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A47A252DFDC200FEF700 /* Networking.swift */,
+			);
+			path = NetworkingController;
+			sourceTree = "<group>";
+		};
+		B6C2A49F252E27C400FEF700 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6C2A462252DF2C700FEF700 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +227,14 @@
 			files = (
 				B6C2A463252DF2C700FEF700 /* ViewController.swift in Sources */,
 				B6C2A474252DF79E00FEF700 /* TutorialCell.swift in Sources */,
+				B6C2A486252E1A0C00FEF700 /* Cache.swift in Sources */,
+				B6C2A48C252E1B9000FEF700 /* FetchPhotoOperation.swift in Sources */,
 				B6C2A47E252E070100FEF700 /* HTTPURLResponse+Ext.swift in Sources */,
 				B6C2A45F252DF2C700FEF700 /* AppDelegate.swift in Sources */,
+				B6C2A48F252E228300FEF700 /* Date+Ext.swift in Sources */,
 				B6C2A47B252DFDC200FEF700 /* Networking.swift in Sources */,
 				B6C2A461252DF2C700FEF700 /* SceneDelegate.swift in Sources */,
+				B6C2A489252E1B6E00FEF700 /* CocurrentOperation.swift in Sources */,
 				B6C2A477252DF82C00FEF700 /* Tutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

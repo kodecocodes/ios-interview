@@ -5,10 +5,11 @@
 //  Created by Nick Nguyen on 10/7/20.
 //
 
-import Foundation
+import UIKit
 
 extension HTTPURLResponse {
   var isOK: Bool {
     return statusCode == 200
   }
 }
+
