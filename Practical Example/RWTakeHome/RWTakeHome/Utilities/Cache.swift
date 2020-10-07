@@ -21,7 +21,6 @@ class Cache<Key: Hashable, Value> {
     }
   }
 
-
   private var cache = [Key: Value]()
   private let queue = DispatchQueue(label: "com.nicknguyen.RWTakeHome.CacheQueue")
 }

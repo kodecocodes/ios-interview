@@ -13,10 +13,12 @@ class Networking {
 
   private var SECRET_KEY: String {
     let env = ProcessInfo.processInfo.environment
-    return env["SecretKey"] ?? "NO KEY"
+    return env["SecretKey"] ?? "NO JSONBIN SECRET KEY FOUND"
   }
 
   private func generateURLForTutorial(ofType type: TutorialType) -> URLRequest {
+    //https://api.jsonbin.io/b/5f7da8e57243cd7e824c263f // video
+    //https://api.jsonbin.io/b/5f7da6f065b18913fc5bfe74 // article
     switch type {
     case .article:
       let articleURL = URL(string: "https://api.jsonbin.io/b/5f7da6f065b18913fc5bfe74")!
@@ -26,7 +28,6 @@ class Networking {
       return URLRequest(url: videoUrl)
     }
   }
-
 
   func fetchTutorials(ofType type: TutorialType, completion: @escaping (Result<[Tutorial],Error>) -> Void) {
 
@@ -52,13 +53,12 @@ class Networking {
       do {
 
         let tutorials = try self.jsonDecoder.decode(DataTutorial.self, from: data)
-       
+
         completion(.success(tutorials.tutorials))
       } catch {
         print(error.localizedDescription)
       }
     }.resume()
   }
- 
 }
 

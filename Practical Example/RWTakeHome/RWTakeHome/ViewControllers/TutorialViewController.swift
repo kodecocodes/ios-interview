@@ -7,80 +7,72 @@
 
 import UIKit
 
-//https://api.jsonbin.io/b/5f7da8e57243cd7e824c263f // video
-//https://api.jsonbin.io/b/5f7da6f065b18913fc5bfe74 // article
-
-
-class ViewController: UIViewController {
+class TutorialViewController: UIViewController {
 
   let networkingController = Networking()
-
   private var tutorials: [Tutorial] = []
   private var videos: [Tutorial] = []
   private var articles: [Tutorial] = []
-
   private let cache = Cache<String, Data>()
   private let photoFetchQueue = OperationQueue()
   private var operations = [String: Operation]()
 
-
   @IBOutlet weak var collectionView: UICollectionView!
-
-
   @IBAction func segmentedControlValueChanged(_ sender: UISegmentedControl) {
+    
     switch sender.selectedSegmentIndex {
-    case 0:
-      networkingController.fetchTutorials(ofType: .article) {  (result) in
-        let result = try! result.get()
-        //      print(result.count)
-        self.articles = result
-        self.tutorials = result
-        DispatchQueue.main.async {
-          self.collectionView.reloadData()
-        }
-      }
-    case 1:
-      networkingController.fetchTutorials(ofType: .video) {  (result) in
-        let result = try! result.get()
-        //      print(result.count)
+    case 0: // Article
 
-        self.videos = result
-        self.tutorials = result
-        DispatchQueue.main.async {
-          self.collectionView.reloadData()
-        }
-      }
-    default:
-      networkingController.fetchTutorials(ofType: .video) {  (result) in
-        let result = try! result.get()
-        //      print(result.count)
-        self.videos = result
-        self.tutorials = result + self.articles
-        DispatchQueue.main.async {
-          self.collectionView.reloadData()
-        }
-      }
+      self.tutorials = self.articles
+
+      self.reloadDataOnMainThread()
+
+    case 1: // Video
+
+      self.tutorials = self.videos
+
+      self.reloadDataOnMainThread()
+
+    default: // All
+
+      self.tutorials = self.videos + self.articles
+
+      self.reloadDataOnMainThread()
     }
   }
 
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    collectionView.dataSource = self
-    collectionView.delegate = self
-    
+  private func getArticles() {
     networkingController.fetchTutorials(ofType: .article) {  (result) in
-      let result = try! result.get()
-      //      print(result.count)
+      guard let result = try? result.get() else { fatalError()}
+
+      self.articles = result
       self.tutorials = result
       DispatchQueue.main.async {
         self.collectionView.reloadData()
       }
     }
   }
+
+  private func getVideos() {
+    networkingController.fetchTutorials(ofType: .video) {  (result) in
+      guard let result = try? result.get() else { fatalError()}
+
+      self.videos = result
+    }
+  }
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    collectionView.dataSource = self
+    collectionView.delegate = self
+
+    getArticles()
+    getVideos()
+
+  }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension TutorialViewController: UICollectionViewDelegate, UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return tutorials.count
   }
@@ -88,11 +80,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TutorialCell", for: indexPath) as! TutorialCell
+
     let article = tutorials[indexPath.row]
+
     cell.descriptionLabel.text = article.attributes.description
 
     cell.releaseDate.text = "Release Date: \(article.attributes.releaseDate.toString())"
-    print(article.attributes.releaseDateString)
+
     cell.nameLabel.text = article.attributes.name
 
     loadImage(forCell: cell, forItemAt: indexPath)
