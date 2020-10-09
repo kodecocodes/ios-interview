@@ -9,6 +9,7 @@
 import UIKit
 
 class CourseListCell: UITableViewCell {
+  var links: Link?
   static let reuseId = "CourseListCell"
   @IBOutlet var artwork: UIImageView!
   @IBOutlet var courseName: UILabel!
