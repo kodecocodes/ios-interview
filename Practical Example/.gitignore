@@ -3,11 +3,15 @@ build/
 DerivedData/
 
 ## User Settings
+xcshareddata/
 xcuserdata/
 xcuserstate/
 project.xcworkspace/
 *.xcuserstate
 *.pbxuser
+*.DS_Store
+.gitignore.swp
+.swiftlint.yml
 
 ## Exclude the build directory
 build/*
