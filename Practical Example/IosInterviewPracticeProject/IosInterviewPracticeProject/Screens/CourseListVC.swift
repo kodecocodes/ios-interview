@@ -48,7 +48,7 @@ class CourseListVC: UITableViewController {
       cell.courseDescription.text = item.attributes.descriptionPlainText
       cell.duration.text = "(\(duration))"
       cell.courseType.text = item.attributes.contentType == "article" ? "Article Course" : "Video Course"
-      cell.releaseDate.text = item.attributes.releasedAt.description.formatDate()
+      cell.releaseDate.text = item.attributes.releasedAt.formatDateString()//.description.formatDate()
       cell.links = item.links
 
       if let cardArtworkUrl = URL(string: item.attributes.cardArtworkUrl) {
@@ -102,29 +102,11 @@ class CourseListVC: UITableViewController {
         switch results {
         case .success(let results):
           self.courses.append(contentsOf: results.data)
-          #warning("Move code to seperate function")
           let coursesSortedByDateDescending = self.courses.sorted(by: { $0.attributes.releasedAt > $1.attributes.releasedAt })
           self.createSnapshot(from: coursesSortedByDateDescending)
         case .failure(let error):
           print("Failed: \(error.localizedDescription)")
         }
       }
-  }
-}
-#warning("Move string extension to file")
-extension String {
-  func formatDate() -> String {
-    let iso8601DateFormatter = ISO8601DateFormatter()
-    iso8601DateFormatter.formatOptions = .withFullDate
-
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateStyle = .long
-    dateFormatter.timeStyle = .none
-
-    guard let isoDate = iso8601DateFormatter.date(from: self) else { return self }
-
-    let formattedDate = dateFormatter.string(from: isoDate)
-
-    return formattedDate
   }
 }
