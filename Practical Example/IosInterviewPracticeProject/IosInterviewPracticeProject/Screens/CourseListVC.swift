@@ -1,17 +1,18 @@
 //
-//  CourseListVC.swift
+//  CourseListViewController.swift
 //  IosInterviewPracticeProject
 //
-//  Created by Robert Ramirez on 8/16/20.
+//  Created by Robert Ramirez on 10/16/20.
 //  Copyright © 2020 me.robert.ramirez. All rights reserved.
 //
 
 import UIKit
 
-class CourseListVC: UITableViewController {
+class CourseListVC: UIViewController {
   private var courseContentUrl: String?
   private var courses = [Item]()
   private var dataSource: UITableViewDiffableDataSource<Section, Item>?
+  private  let utilityQueue = DispatchQueue(label: "utilityQueue", qos: .utility)
   private let courseManager = CourseAPIService()
   private let timeFormatter: DateComponentsFormatter = {
     let timeFormatter = DateComponentsFormatter()
@@ -19,35 +20,44 @@ class CourseListVC: UITableViewController {
     timeFormatter.unitsStyle = .short
     return timeFormatter
   }()
+  @IBOutlet var courseList: UITableView!
+  @IBAction func filterCourses(_ sender: UISegmentedControl) {
+    var filteredContent = [Item]()
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    configureDataSource()
-    fetchArticles()
-    fetchVideos()
-  }
+    switch sender.selectedSegmentIndex {
+    case 0:
+      filteredContent = courses
+    case 1:
+      filteredContent = courses.filter { $0.attributes.contentType == ContentType.article }
+    case 2:
+      filteredContent = courses.filter { $0.attributes.contentType == ContentType.collection }
+    default:
+      filteredContent = courses
+    }
 
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    guard let courseListCell = sender as? CourseListCell else { return }
-
-    if let courseContentUrl = courseListCell.links?.current {
-      if segue.identifier == "CourseDetailsSegue" {
-        if let courseDetailsVC = segue.destination as? CourseDetailsVC {
-          courseDetailsVC.courseContentUrl = courseContentUrl
-        }
-      }
+    utilityQueue.async {
+      self.createSnapshot(from: filteredContent.sorted { $0.attributes.releasedAt > $1.attributes.releasedAt })
     }
   }
 
+    override func viewDidLoad() {
+      super.viewDidLoad()
+      courseList.delegate = self
+      courseList.dataSource = dataSource
+      configureDataSource()
+      fetchArticles()
+      fetchVideos()
+    }
+
   private func configureDataSource() {
-    dataSource = UITableViewDiffableDataSource<Section, Item>(tableView: tableView) { tableView, indexPath, item -> UITableViewCell in
+    dataSource = UITableViewDiffableDataSource<Section, Item>(tableView: courseList) { tableView, indexPath, item -> UITableViewCell in
       guard let cell = tableView.dequeueReusableCell(withIdentifier: CourseListCell.reuseId, for: indexPath) as? CourseListCell else { return UITableViewCell() }
       let duration = self.timeFormatter.string(from: TimeInterval(Double(item.attributes.duration))) ?? ""
 
       cell.courseName.text = item.attributes.name
       cell.courseDescription.text = item.attributes.descriptionPlainText
       cell.duration.text = "(\(duration))"
-      cell.courseType.text = item.attributes.contentType == "article" ? "Article Course" : "Video Course"
+      cell.courseType.text = item.attributes.contentType == ContentType.article ? "Article Course" : "Video Course"
       cell.releaseDate.text = item.attributes.releasedAt.formatDateString()//.description.formatDate()
       cell.links = item.links
 
@@ -108,5 +118,27 @@ class CourseListVC: UITableViewController {
           print("Failed: \(error.localizedDescription)")
         }
       }
+  }
+}
+
+extension CourseListVC: UITableViewDelegate {
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    guard let courseListCell = sender as? CourseListCell else { return }
+
+    if let courseContentUrl = courseListCell.links?.current {
+      if segue.identifier == StoryboardSegue.CourseDetailsSegue {
+        if let courseDetailsVC = segue.destination as? CourseDetailsVC {
+          courseDetailsVC.courseContentUrl = courseContentUrl
+        }
+      }
+    }
+  }
+
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if courseList.contentOffset.y > 0 {
+      navigationController?.navigationBar.prefersLargeTitles = false
+    } else {
+      navigationController?.navigationBar.prefersLargeTitles = true
+    }
   }
 }

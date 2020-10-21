@@ -17,6 +17,7 @@ class CourseListCell: UITableViewCell {
   @IBOutlet var releaseDate: UILabel!
   @IBOutlet var courseType: UILabel!
   @IBOutlet var duration: UILabel!
+
   override func awakeFromNib() {
     super.awakeFromNib()
     }
