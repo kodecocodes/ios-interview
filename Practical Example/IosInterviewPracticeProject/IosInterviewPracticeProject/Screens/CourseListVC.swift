@@ -45,8 +45,7 @@ class CourseListVC: UIViewController {
       courseList.delegate = self
       courseList.dataSource = dataSource
       configureDataSource()
-      fetchArticles()
-      fetchVideos()
+      fetchContent()
     }
 
   private func configureDataSource() {
@@ -92,32 +91,37 @@ class CourseListVC: UIViewController {
     dataSource?.apply(snapshot, animatingDifferences: true, completion: nil)
   }
 
-  private func fetchArticles() {
+  private func fetchContent() {
     let articleUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/articles.json"
+    let videoUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/videos.json"
+    let fetchContentDispatchGroup = DispatchGroup()
 
+    fetchContentDispatchGroup.enter()
     CourseAPIService.shared.fetchContent(for: articleUrl) { results in
       switch results {
       case .success(let results):
         self.courses.append(contentsOf: results.data)
+        fetchContentDispatchGroup.leave()
       case .failure(let error):
         print("Failed: \(error.localizedDescription)")
       }
     }
-  }
 
-  private func fetchVideos() {
-    let videoUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/videos.json"
-
-      CourseAPIService.shared.fetchContent(for: videoUrl) { results in
-        switch results {
-        case .success(let results):
-          self.courses.append(contentsOf: results.data)
-          let coursesSortedByDateDescending = self.courses.sorted(by: { $0.attributes.releasedAt > $1.attributes.releasedAt })
-          self.createSnapshot(from: coursesSortedByDateDescending)
-        case .failure(let error):
-          print("Failed: \(error.localizedDescription)")
-        }
+    fetchContentDispatchGroup.enter()
+    CourseAPIService.shared.fetchContent(for: videoUrl) { results in
+      switch results {
+      case .success(let results):
+        self.courses.append(contentsOf: results.data)
+        fetchContentDispatchGroup.leave()
+      case .failure(let error):
+        print("Failed: \(error.localizedDescription)")
       }
+    }
+
+    fetchContentDispatchGroup.notify(queue: .main) {
+      let coursesSortedByDateDescending = self.courses.sorted { $0.attributes.releasedAt > $1.attributes.releasedAt }
+      self.createSnapshot(from: coursesSortedByDateDescending)
+    }
   }
 }
 
