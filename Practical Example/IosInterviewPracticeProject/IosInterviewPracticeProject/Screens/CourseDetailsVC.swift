@@ -32,11 +32,13 @@ class CourseDetailsVC: UIViewController {
         let item = courseContentResults.data
         DispatchQueue.main.async {
           itemName = item.attributes.name
-          if let htmlContent = item.attributes.body {
-            let htmlData = Data(htmlContent.utf8)
-            self.courseBody.attributedText = try? NSAttributedString(data: htmlData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
-          } else {
-            self.courseBody.text = item.attributes.descriptionPlainText
+          let htmlContent = item.attributes.body ?? ""
+          let htmlData = Data(htmlContent.utf8)
+          let attributes = [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
+
+          if let courseContent = try? NSMutableAttributedString(data: htmlData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
+            courseContent.addAttributes(attributes, range: _NSRange(location: 0, length: courseContent.length))
+            self.courseBody.attributedText = courseContent
           }
         }
         guard let cardArtWorkUrl = URL(string: item.attributes.cardArtworkUrl) else { return }
