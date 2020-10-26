@@ -44,7 +44,7 @@ class CourseDetailsVC: UIViewController {
           let attributes = [NSAttributedString.Key.foregroundColor: UIColor.label, NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .body)]
 
           if let body = try? NSMutableAttributedString(data: htmlData, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
-            courseContent?.addAttributes(attributes, range: _NSRange(location: 0, length: body.length))
+            body.addAttributes(attributes, range: _NSRange(location: 0, length: body.length))
             courseContent = body
           }
           fetchCourseContentDispatchGroup.leave()
