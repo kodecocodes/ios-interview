@@ -12,7 +12,6 @@ class CourseListVC: UIViewController {
   private var courseContentUrl: String?
   private var courses = [Item]()
   private var dataSource: UITableViewDiffableDataSource<Section, Item>?
-  private  let utilityQueue = DispatchQueue(label: "utilityQueue", qos: .utility)
   private let courseManager = CourseAPIService()
   private let timeFormatter: DateComponentsFormatter = {
     let timeFormatter = DateComponentsFormatter()
@@ -35,7 +34,7 @@ class CourseListVC: UIViewController {
       filteredContent = courses
     }
 
-    utilityQueue.async {
+    DispatchQueue.main.async {
       self.createSnapshot(from: filteredContent.sorted { $0.attributes.releasedAt > $1.attributes.releasedAt })
     }
   }
