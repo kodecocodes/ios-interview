@@ -132,10 +132,6 @@ extension CourseListVC: UITableViewDelegate {
   }
 
   func scrollViewDidScroll(_ scrollView: UIScrollView) {
-    if courseList.contentOffset.y > 0 {
-      navigationController?.navigationBar.prefersLargeTitles = false
-    } else {
-      navigationController?.navigationBar.prefersLargeTitles = true
-    }
+    navigationController?.navigationBar.prefersLargeTitles = courseList.contentOffset.y <= 0
   }
 }
