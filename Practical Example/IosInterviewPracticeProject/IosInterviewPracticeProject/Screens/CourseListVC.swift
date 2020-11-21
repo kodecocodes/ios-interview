@@ -23,12 +23,12 @@ class CourseListVC: UIViewController {
   @IBAction func filterCourses(_ sender: UISegmentedControl) {
     var filteredContent = [Item]()
 
-    switch sender.selectedSegmentIndex {
-    case 0:
+    switch Filter(rawValue: sender.selectedSegmentIndex) {
+    case .all:
       filteredContent = courses
-    case 1:
+    case .article:
       filteredContent = courses.filter { $0.attributes.contentType == ContentType.article }
-    case 2:
+    case .collection:
       filteredContent = courses.filter { $0.attributes.contentType == ContentType.collection }
     default:
       filteredContent = courses
@@ -56,7 +56,7 @@ class CourseListVC: UIViewController {
       cell.courseDescription.text = item.attributes.descriptionPlainText
       cell.duration.text = "(\(duration))"
       cell.courseType.text = item.attributes.contentType == ContentType.article ? "Article Course" : "Video Course"
-      cell.releaseDate.text = item.attributes.releasedAt.formatDateString()//.description.formatDate()
+      cell.releaseDate.text = item.attributes.releasedAt.formatDateString()
       cell.links = item.links
 
       if let cardArtworkUrl = URL(string: item.attributes.cardArtworkUrl) {
@@ -91,8 +91,6 @@ class CourseListVC: UIViewController {
   }
 
   private func fetchContent() {
-    let articleUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/articles.json"
-    let videoUrl = "https://raw.githubusercontent.com/raywenderlich/ios-interview/master/Practical%20Example/videos.json"
     let fetchContentDispatchGroup = DispatchGroup()
 
     fetchContentDispatchGroup.enter()
@@ -128,12 +126,8 @@ extension CourseListVC: UITableViewDelegate {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     guard let courseListCell = sender as? CourseListCell else { return }
 
-    if let courseContentUrl = courseListCell.links?.current {
-      if segue.identifier == StoryboardSegue.CourseDetailsSegue {
-        if let courseDetailsVC = segue.destination as? CourseDetailsVC {
-          courseDetailsVC.courseContentUrl = courseContentUrl
-        }
-      }
+    if let courseContentUrl = courseListCell.links?.current, segue.identifier == StoryboardSegue.CourseDetailsSegue, let courseDetailsVC = segue.destination as? CourseDetailsVC {
+      courseDetailsVC.courseContentUrl = courseContentUrl
     }
   }
 

@@ -9,6 +9,6 @@
 import Foundation
 
 enum ContentType {
-  static var article = "article"
-  static var collection = "collection"
+  static let article = "article"
+  static let collection = "collection"
 }

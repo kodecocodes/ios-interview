@@ -14,13 +14,6 @@ struct Item: Codable, Hashable {
   let attributes: Attribute
   let links: Link?
 
-  init(from decoder: Decoder) throws {
-    let values = try decoder.container(keyedBy: CodingKeys.self)
-    type = try values.decode(String.self, forKey: .type)
-    attributes = try values.decode(Attribute.self, forKey: .attributes)
-    links = try values.decode(Link.self, forKey: .links)
-  }
-
   enum CodingKeys: CodingKey {
     case type
     case attributes
