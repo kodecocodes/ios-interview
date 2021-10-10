@@ -33,6 +33,12 @@ Below is a list of some of the core competencies an interviewer might be looking
  - Offers Help
  - Bias for Action 
  - Breadth of View
+ - Detail Oriented
+ - Results Oriented
+ - Negotiation
+ - Organization
+ - Resilience
+ - Empathy
  
 ## Resources
 Use Gayle Laakmann's, [Behavioral Preparation Grid](http://www.thegoogleresume.com/uploads/6/5/2/8/6528028/behavior_preparation_grid.xlsx) from [Cracking the Coding Interview](http://www.crackingthecodinginterview.com/), or use the slightly more modern version we adapted from her example.
