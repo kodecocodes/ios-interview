@@ -1,0 +1,1149 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14345C20281DE2F500C0AE0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C1F281DE2F500C0AE0A /* AppDelegate.swift */; };
+		14345C22281DE2F500C0AE0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C21281DE2F500C0AE0A /* SceneDelegate.swift */; };
+		14345C24281DE2F500C0AE0A /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C23281DE2F500C0AE0A /* LibraryViewController.swift */; };
+		14345C27281DE2F500C0AE0A /* LibraryView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14345C25281DE2F500C0AE0A /* LibraryView.storyboard */; };
+		14345C29281DE2F700C0AE0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14345C28281DE2F700C0AE0A /* Assets.xcassets */; };
+		14345C2C281DE2F700C0AE0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14345C2A281DE2F700C0AE0A /* LaunchScreen.storyboard */; };
+		14345C37281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C36281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.swift */; };
+		14345C41281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C40281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.swift */; };
+		14345C43281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C42281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift */; };
+		14345C51281DE59500C0AE0A /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C50281DE59500C0AE0A /* LibraryViewModel.swift */; };
+		14345C55281DE73F00C0AE0A /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C54281DE73F00C0AE0A /* Color+Ext.swift */; };
+		14345C59281DEB6700C0AE0A /* LibraryViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C57281DEB6700C0AE0A /* LibraryViewTableViewCell.swift */; };
+		14345C5A281DEB6700C0AE0A /* LibraryViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14345C58281DEB6700C0AE0A /* LibraryViewTableViewCell.xib */; };
+		14345C5C281DEE0F00C0AE0A /* LibraryViewTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C5B281DEE0F00C0AE0A /* LibraryViewTableViewCellViewModel.swift */; };
+		14345C5F281E238500C0AE0A /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14345C5E281E238500C0AE0A /* UITableView+Ext.swift */; };
+		149043EE28203A7F00A44EFD /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043ED28203A7F00A44EFD /* SpinnerViewController.swift */; };
+		149043F128204CC800A44EFD /* CourseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043F028204CC800A44EFD /* CourseInfo.swift */; };
+		149043F328204CF300A44EFD /* GithubResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043F228204CF300A44EFD /* GithubResponseBody.swift */; };
+		149043F528204D1500A44EFD /* CourseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043F428204D1500A44EFD /* CourseType.swift */; };
+		149043F728204D2C00A44EFD /* TechnologyDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043F628204D2C00A44EFD /* TechnologyDomain.swift */; };
+		149043FA28204E0A00A44EFD /* CourseInfo+ArrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043F928204E0A00A44EFD /* CourseInfo+ArrExt.swift */; };
+		149043FC28204FB300A44EFD /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149043FB28204FB300A44EFD /* TimeInterval+Ext.swift */; };
+		149044042820594100A44EFD /* SortStyleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149044022820594100A44EFD /* SortStyleTableViewCell.swift */; };
+		149044052820594100A44EFD /* SortStyleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 149044032820594100A44EFD /* SortStyleTableViewCell.xib */; };
+		1490440728205F5F00A44EFD /* SortStyleTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490440628205F5F00A44EFD /* SortStyleTableViewCellViewModel.swift */; };
+		1490440B2820688000A44EFD /* CourseFiltersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149044092820688000A44EFD /* CourseFiltersTableViewCell.swift */; };
+		1490440C2820688000A44EFD /* CourseFiltersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1490440A2820688000A44EFD /* CourseFiltersTableViewCell.xib */; };
+		149044102820698E00A44EFD /* FilterOptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1490440E2820698E00A44EFD /* FilterOptionCollectionViewCell.swift */; };
+		149044112820698E00A44EFD /* FilterOptionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1490440F2820698E00A44EFD /* FilterOptionCollectionViewCell.xib */; };
+		14904413282071F200A44EFD /* FilterOptionCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14904412282071F200A44EFD /* FilterOptionCollectionViewCellViewModel.swift */; };
+		149044152820733C00A44EFD /* CourseFiltersTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149044142820733C00A44EFD /* CourseFiltersTableViewCellViewModel.swift */; };
+		149044172820782200A44EFD /* CourseFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149044162820782200A44EFD /* CourseFilter.swift */; };
+		1490441B2820BEF100A44EFD /* SearchBarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149044192820BEF100A44EFD /* SearchBarTableViewCell.swift */; };
+		1490441C2820BEF100A44EFD /* SearchBarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1490441A2820BEF100A44EFD /* SearchBarTableViewCell.xib */; };
+		1498E5DB281F2E2B00938735 /* GithubRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498E5DA281F2E2B00938735 /* GithubRestService.swift */; };
+		1498E5DD282031E000938735 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1498E5DC282031E000938735 /* Date+Ext.swift */; };
+		149CEA1528222DAE004DE6AB /* CourseFilter+ArrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149CEA1428222DAE004DE6AB /* CourseFilter+ArrExt.swift */; };
+		149CEA1728222DF4004DE6AB /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149CEA1628222DF4004DE6AB /* UICollectionView+Ext.swift */; };
+		149CEA1A28222FFC004DE6AB /* TechnologyDomain+ArrExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149CEA1928222FFC004DE6AB /* TechnologyDomain+ArrExt.swift */; };
+		14B10037282437A70003250F /* UIImpactFeedbackGenerator+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B10036282437A70003250F /* UIImpactFeedbackGenerator+Ext.swift */; };
+		14B1003928245D390003250F /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1003828245D390003250F /* URLSession+Ext.swift */; };
+		14B1003C28245D6D0003250F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1003B28245D6C0003250F /* HTTPMethod.swift */; };
+		14B1003E28245D8A0003250F /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B1003D28245D8A0003250F /* HTTPHeader.swift */; };
+		14F4BEBF2820C61F00245166 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEBE2820C61F00245166 /* UITextField+Ext.swift */; };
+		14F4BEC12820C66B00245166 /* SearchBarTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEC02820C66B00245166 /* SearchBarTableViewCellViewModel.swift */; };
+		14F4BEC32820C9E400245166 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEC22820C9E400245166 /* String+Ext.swift */; };
+		14F4BEC52820CA0500245166 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEC42820CA0500245166 /* Array+Ext.swift */; };
+		14F4BEC92821674B00245166 /* ToggleFiltersView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F4BEC82821674B00245166 /* ToggleFiltersView.storyboard */; };
+		14F4BECB2821676C00245166 /* ToggleFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BECA2821676C00245166 /* ToggleFiltersViewController.swift */; };
+		14F4BED028216F0300245166 /* FilterTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BECE28216F0300245166 /* FilterTypeTableViewCell.swift */; };
+		14F4BED128216F0300245166 /* FilterTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F4BECF28216F0300245166 /* FilterTypeTableViewCell.xib */; };
+		14F4BED32821709800245166 /* ToggleFiltersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BED22821709800245166 /* ToggleFiltersViewModel.swift */; };
+		14F4BED5282179EF00245166 /* FilterTypeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BED4282179EF00245166 /* FilterTypeTableViewCellViewModel.swift */; };
+		14F4BEDA282199A900245166 /* FilterSubtypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BED8282199A900245166 /* FilterSubtypeTableViewCell.swift */; };
+		14F4BEDB282199A900245166 /* FilterSubtypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14F4BED9282199A900245166 /* FilterSubtypeTableViewCell.xib */; };
+		14F4BEDD28219E4B00245166 /* FilterSubtypeTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEDC28219E4B00245166 /* FilterSubtypeTableViewCellViewModel.swift */; };
+		14F4BEDF2821CF0800245166 /* Storyboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4BEDE2821CF0800245166 /* Storyboard+Ext.swift */; };
+		6E466E4F1216CF07B7F8DBDB /* Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2498E7AF0872C8263F503AC /* Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework */; };
+		B2BFDD93D19BD05FF583698C /* Pods_RayaWenderlichiOSPracticeProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FB29EBCE2B3CD0881C23E0 /* Pods_RayaWenderlichiOSPracticeProj.framework */; };
+		CB82388E5E1ECAA3B3512458 /* Pods_RayaWenderlichiOSPracticeProjTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7D15EB32C4726F785AC561 /* Pods_RayaWenderlichiOSPracticeProjTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14345C33281DE2F700C0AE0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14345C14281DE2F500C0AE0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14345C1B281DE2F500C0AE0A;
+			remoteInfo = RayaWenderlichiOSPracticeProj;
+		};
+		14345C3D281DE2F700C0AE0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14345C14281DE2F500C0AE0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14345C1B281DE2F500C0AE0A;
+			remoteInfo = RayaWenderlichiOSPracticeProj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1299FE1E242AEB74EA7F56E6 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.release.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.release.xcconfig"; sourceTree = "<group>"; };
+		14345C1C281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayaWenderlichiOSPracticeProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14345C1F281DE2F500C0AE0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14345C21281DE2F500C0AE0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		14345C23281DE2F500C0AE0A /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		14345C26281DE2F500C0AE0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LibraryView.storyboard; sourceTree = "<group>"; };
+		14345C28281DE2F700C0AE0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14345C2B281DE2F700C0AE0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14345C2D281DE2F700C0AE0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14345C32281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayaWenderlichiOSPracticeProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14345C36281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayaWenderlichiOSPracticeProjTests.swift; sourceTree = "<group>"; };
+		14345C3C281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayaWenderlichiOSPracticeProjUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14345C40281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayaWenderlichiOSPracticeProjUITests.swift; sourceTree = "<group>"; };
+		14345C42281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		14345C50281DE59500C0AE0A /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		14345C54281DE73F00C0AE0A /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		14345C57281DEB6700C0AE0A /* LibraryViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewTableViewCell.swift; sourceTree = "<group>"; };
+		14345C58281DEB6700C0AE0A /* LibraryViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryViewTableViewCell.xib; sourceTree = "<group>"; };
+		14345C5B281DEE0F00C0AE0A /* LibraryViewTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		14345C5E281E238500C0AE0A /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		149043ED28203A7F00A44EFD /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		149043F028204CC800A44EFD /* CourseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfo.swift; sourceTree = "<group>"; };
+		149043F228204CF300A44EFD /* GithubResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubResponseBody.swift; sourceTree = "<group>"; };
+		149043F428204D1500A44EFD /* CourseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseType.swift; sourceTree = "<group>"; };
+		149043F628204D2C00A44EFD /* TechnologyDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechnologyDomain.swift; sourceTree = "<group>"; };
+		149043F928204E0A00A44EFD /* CourseInfo+ArrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseInfo+ArrExt.swift"; sourceTree = "<group>"; };
+		149043FB28204FB300A44EFD /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
+		149044022820594100A44EFD /* SortStyleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortStyleTableViewCell.swift; sourceTree = "<group>"; };
+		149044032820594100A44EFD /* SortStyleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortStyleTableViewCell.xib; sourceTree = "<group>"; };
+		1490440628205F5F00A44EFD /* SortStyleTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortStyleTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		149044092820688000A44EFD /* CourseFiltersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseFiltersTableViewCell.swift; sourceTree = "<group>"; };
+		1490440A2820688000A44EFD /* CourseFiltersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CourseFiltersTableViewCell.xib; sourceTree = "<group>"; };
+		1490440E2820698E00A44EFD /* FilterOptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		1490440F2820698E00A44EFD /* FilterOptionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterOptionCollectionViewCell.xib; sourceTree = "<group>"; };
+		14904412282071F200A44EFD /* FilterOptionCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOptionCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		149044142820733C00A44EFD /* CourseFiltersTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseFiltersTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		149044162820782200A44EFD /* CourseFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseFilter.swift; sourceTree = "<group>"; };
+		149044192820BEF100A44EFD /* SearchBarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCell.swift; sourceTree = "<group>"; };
+		1490441A2820BEF100A44EFD /* SearchBarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarTableViewCell.xib; sourceTree = "<group>"; };
+		1498E5DA281F2E2B00938735 /* GithubRestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRestService.swift; sourceTree = "<group>"; };
+		1498E5DC282031E000938735 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		149CEA1428222DAE004DE6AB /* CourseFilter+ArrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CourseFilter+ArrExt.swift"; sourceTree = "<group>"; };
+		149CEA1628222DF4004DE6AB /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
+		149CEA1928222FFC004DE6AB /* TechnologyDomain+ArrExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TechnologyDomain+ArrExt.swift"; sourceTree = "<group>"; };
+		14B10036282437A70003250F /* UIImpactFeedbackGenerator+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImpactFeedbackGenerator+Ext.swift"; sourceTree = "<group>"; };
+		14B1003828245D390003250F /* URLSession+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
+		14B1003B28245D6C0003250F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		14B1003D28245D8A0003250F /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		14F4BEBE2820C61F00245166 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		14F4BEC02820C66B00245166 /* SearchBarTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		14F4BEC22820C9E400245166 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		14F4BEC42820CA0500245166 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		14F4BEC82821674B00245166 /* ToggleFiltersView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToggleFiltersView.storyboard; sourceTree = "<group>"; };
+		14F4BECA2821676C00245166 /* ToggleFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFiltersViewController.swift; sourceTree = "<group>"; };
+		14F4BECE28216F0300245166 /* FilterTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTypeTableViewCell.swift; sourceTree = "<group>"; };
+		14F4BECF28216F0300245166 /* FilterTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTypeTableViewCell.xib; sourceTree = "<group>"; };
+		14F4BED22821709800245166 /* ToggleFiltersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleFiltersViewModel.swift; sourceTree = "<group>"; };
+		14F4BED4282179EF00245166 /* FilterTypeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTypeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		14F4BED8282199A900245166 /* FilterSubtypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSubtypeTableViewCell.swift; sourceTree = "<group>"; };
+		14F4BED9282199A900245166 /* FilterSubtypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterSubtypeTableViewCell.xib; sourceTree = "<group>"; };
+		14F4BEDC28219E4B00245166 /* FilterSubtypeTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSubtypeTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		14F4BEDE2821CF0800245166 /* Storyboard+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Ext.swift"; sourceTree = "<group>"; };
+		1CE5EAD59F4E97DD31FF4924 /* Pods-RayaWenderlichiOSPracticeProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProj.debug.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProj/Pods-RayaWenderlichiOSPracticeProj.debug.xcconfig"; sourceTree = "<group>"; };
+		213B8B63876D8ECBFCEF9A80 /* Pods-RayaWenderlichiOSPracticeProjTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProjTests.debug.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProjTests/Pods-RayaWenderlichiOSPracticeProjTests.debug.xcconfig"; sourceTree = "<group>"; };
+		71FB29EBCE2B3CD0881C23E0 /* Pods_RayaWenderlichiOSPracticeProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RayaWenderlichiOSPracticeProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C59BA8EDF2DEFCC300AA23 /* Pods-RayaWenderlichiOSPracticeProjTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProjTests.release.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProjTests/Pods-RayaWenderlichiOSPracticeProjTests.release.xcconfig"; sourceTree = "<group>"; };
+		A9EDA06945E30E135EFF3956 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.debug.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD7D15EB32C4726F785AC561 /* Pods_RayaWenderlichiOSPracticeProjTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RayaWenderlichiOSPracticeProjTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2498E7AF0872C8263F503AC /* Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA189265C78309E3E91FE37 /* Pods-RayaWenderlichiOSPracticeProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RayaWenderlichiOSPracticeProj.release.xcconfig"; path = "Target Support Files/Pods-RayaWenderlichiOSPracticeProj/Pods-RayaWenderlichiOSPracticeProj.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14345C19281DE2F500C0AE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2BFDD93D19BD05FF583698C /* Pods_RayaWenderlichiOSPracticeProj.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C2F281DE2F700C0AE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB82388E5E1ECAA3B3512458 /* Pods_RayaWenderlichiOSPracticeProjTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C39281DE2F700C0AE0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E466E4F1216CF07B7F8DBDB /* Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14345C13281DE2F500C0AE0A = {
+			isa = PBXGroup;
+			children = (
+				14345C1E281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */,
+				14345C35281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests */,
+				14345C3F281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests */,
+				14345C1D281DE2F500C0AE0A /* Products */,
+				9D9A96F9A9EA1F8806BBCC67 /* Pods */,
+				8A0D493BBD67D5039E4533C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		14345C1D281DE2F500C0AE0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14345C1C281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj.app */,
+				14345C32281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.xctest */,
+				14345C3C281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14345C1E281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */ = {
+			isa = PBXGroup;
+			children = (
+				149043EF28204CBC00A44EFD /* Model */,
+				14F4BEC62820CFB400245166 /* Views */,
+				14345C63281F034D00C0AE0A /* Services */,
+				14345C52281DE73000C0AE0A /* Utils */,
+				14345C1F281DE2F500C0AE0A /* AppDelegate.swift */,
+				14345C21281DE2F500C0AE0A /* SceneDelegate.swift */,
+				14345C28281DE2F700C0AE0A /* Assets.xcassets */,
+				14345C2A281DE2F700C0AE0A /* LaunchScreen.storyboard */,
+				14345C2D281DE2F700C0AE0A /* Info.plist */,
+			);
+			path = RayaWenderlichiOSPracticeProj;
+			sourceTree = "<group>";
+		};
+		14345C35281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests */ = {
+			isa = PBXGroup;
+			children = (
+				14345C36281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.swift */,
+			);
+			path = RayaWenderlichiOSPracticeProjTests;
+			sourceTree = "<group>";
+		};
+		14345C3F281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14345C40281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.swift */,
+				14345C42281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift */,
+			);
+			path = RayaWenderlichiOSPracticeProjUITests;
+			sourceTree = "<group>";
+		};
+		14345C4F281DE33900C0AE0A /* LibraryView */ = {
+			isa = PBXGroup;
+			children = (
+				14345C25281DE2F500C0AE0A /* LibraryView.storyboard */,
+				14345C23281DE2F500C0AE0A /* LibraryViewController.swift */,
+				14345C50281DE59500C0AE0A /* LibraryViewModel.swift */,
+				14345C56281DEB5000C0AE0A /* TableViewCell */,
+			);
+			path = LibraryView;
+			sourceTree = "<group>";
+		};
+		14345C52281DE73000C0AE0A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				14345C53281DE73500C0AE0A /* Extensions */,
+				149043EC28203A6F00A44EFD /* ReusableViews */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		14345C53281DE73500C0AE0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				149043FD2820501900A44EFD /* Foundation */,
+				149043FE2820502200A44EFD /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		14345C56281DEB5000C0AE0A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				149044182820BEBB00A44EFD /* SearchBarTableViewCell */,
+				149044082820686000A44EFD /* CourseFiltersTableViewCell */,
+				149044012820590900A44EFD /* SortStyleTableViewCell */,
+				14904400282058FF00A44EFD /* LibraryViewTableViewCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		14345C63281F034D00C0AE0A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1498E5DA281F2E2B00938735 /* GithubRestService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		149043EC28203A6F00A44EFD /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				149043ED28203A7F00A44EFD /* SpinnerViewController.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		149043EF28204CBC00A44EFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				149CEA1328222D9C004DE6AB /* CourseFilter */,
+				149043F828204DFA00A44EFD /* CourseInfo */,
+				149CEA1828222FE9004DE6AB /* TechnologyDomain */,
+				14B1003A28245D610003250F /* HTTP */,
+				149043F228204CF300A44EFD /* GithubResponseBody.swift */,
+				149043F428204D1500A44EFD /* CourseType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		149043F828204DFA00A44EFD /* CourseInfo */ = {
+			isa = PBXGroup;
+			children = (
+				149043F028204CC800A44EFD /* CourseInfo.swift */,
+				149043F928204E0A00A44EFD /* CourseInfo+ArrExt.swift */,
+			);
+			path = CourseInfo;
+			sourceTree = "<group>";
+		};
+		149043FD2820501900A44EFD /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				1498E5DC282031E000938735 /* Date+Ext.swift */,
+				149043FB28204FB300A44EFD /* TimeInterval+Ext.swift */,
+				14F4BEC22820C9E400245166 /* String+Ext.swift */,
+				14F4BEC42820CA0500245166 /* Array+Ext.swift */,
+				14B1003828245D390003250F /* URLSession+Ext.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		149043FE2820502200A44EFD /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				14345C54281DE73F00C0AE0A /* Color+Ext.swift */,
+				14345C5E281E238500C0AE0A /* UITableView+Ext.swift */,
+				14F4BEBE2820C61F00245166 /* UITextField+Ext.swift */,
+				14F4BEDE2821CF0800245166 /* Storyboard+Ext.swift */,
+				149CEA1628222DF4004DE6AB /* UICollectionView+Ext.swift */,
+				14B10036282437A70003250F /* UIImpactFeedbackGenerator+Ext.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		14904400282058FF00A44EFD /* LibraryViewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14345C58281DEB6700C0AE0A /* LibraryViewTableViewCell.xib */,
+				14345C57281DEB6700C0AE0A /* LibraryViewTableViewCell.swift */,
+				14345C5B281DEE0F00C0AE0A /* LibraryViewTableViewCellViewModel.swift */,
+			);
+			path = LibraryViewTableViewCell;
+			sourceTree = "<group>";
+		};
+		149044012820590900A44EFD /* SortStyleTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				149044032820594100A44EFD /* SortStyleTableViewCell.xib */,
+				149044022820594100A44EFD /* SortStyleTableViewCell.swift */,
+				1490440628205F5F00A44EFD /* SortStyleTableViewCellViewModel.swift */,
+			);
+			path = SortStyleTableViewCell;
+			sourceTree = "<group>";
+		};
+		149044082820686000A44EFD /* CourseFiltersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1490440A2820688000A44EFD /* CourseFiltersTableViewCell.xib */,
+				149044092820688000A44EFD /* CourseFiltersTableViewCell.swift */,
+				149044142820733C00A44EFD /* CourseFiltersTableViewCellViewModel.swift */,
+				1490440D2820696000A44EFD /* CollectionViewCell */,
+			);
+			path = CourseFiltersTableViewCell;
+			sourceTree = "<group>";
+		};
+		1490440D2820696000A44EFD /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1490440F2820698E00A44EFD /* FilterOptionCollectionViewCell.xib */,
+				1490440E2820698E00A44EFD /* FilterOptionCollectionViewCell.swift */,
+				14904412282071F200A44EFD /* FilterOptionCollectionViewCellViewModel.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		149044182820BEBB00A44EFD /* SearchBarTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1490441A2820BEF100A44EFD /* SearchBarTableViewCell.xib */,
+				149044192820BEF100A44EFD /* SearchBarTableViewCell.swift */,
+				14F4BEC02820C66B00245166 /* SearchBarTableViewCellViewModel.swift */,
+			);
+			path = SearchBarTableViewCell;
+			sourceTree = "<group>";
+		};
+		149CEA1328222D9C004DE6AB /* CourseFilter */ = {
+			isa = PBXGroup;
+			children = (
+				149044162820782200A44EFD /* CourseFilter.swift */,
+				149CEA1428222DAE004DE6AB /* CourseFilter+ArrExt.swift */,
+			);
+			path = CourseFilter;
+			sourceTree = "<group>";
+		};
+		149CEA1828222FE9004DE6AB /* TechnologyDomain */ = {
+			isa = PBXGroup;
+			children = (
+				149043F628204D2C00A44EFD /* TechnologyDomain.swift */,
+				149CEA1928222FFC004DE6AB /* TechnologyDomain+ArrExt.swift */,
+			);
+			path = TechnologyDomain;
+			sourceTree = "<group>";
+		};
+		14B1003A28245D610003250F /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				14B1003B28245D6C0003250F /* HTTPMethod.swift */,
+				14B1003D28245D8A0003250F /* HTTPHeader.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		14F4BEC62820CFB400245166 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14345C4F281DE33900C0AE0A /* LibraryView */,
+				14F4BEC72820D13E00245166 /* ToggleFiltersView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14F4BEC72820D13E00245166 /* ToggleFiltersView */ = {
+			isa = PBXGroup;
+			children = (
+				14F4BEC82821674B00245166 /* ToggleFiltersView.storyboard */,
+				14F4BECA2821676C00245166 /* ToggleFiltersViewController.swift */,
+				14F4BED22821709800245166 /* ToggleFiltersViewModel.swift */,
+				14F4BECC28216EB700245166 /* TableViewCell */,
+			);
+			path = ToggleFiltersView;
+			sourceTree = "<group>";
+		};
+		14F4BECC28216EB700245166 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14F4BECD28216EC500245166 /* FilterTypeTableViewCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		14F4BECD28216EC500245166 /* FilterTypeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14F4BECF28216F0300245166 /* FilterTypeTableViewCell.xib */,
+				14F4BECE28216F0300245166 /* FilterTypeTableViewCell.swift */,
+				14F4BED4282179EF00245166 /* FilterTypeTableViewCellViewModel.swift */,
+				14F4BED62821997200245166 /* TableViewCell */,
+			);
+			path = FilterTypeTableViewCell;
+			sourceTree = "<group>";
+		};
+		14F4BED62821997200245166 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14F4BED72821998300245166 /* FilterSubtypeTableViewCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		14F4BED72821998300245166 /* FilterSubtypeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				14F4BED9282199A900245166 /* FilterSubtypeTableViewCell.xib */,
+				14F4BED8282199A900245166 /* FilterSubtypeTableViewCell.swift */,
+				14F4BEDC28219E4B00245166 /* FilterSubtypeTableViewCellViewModel.swift */,
+			);
+			path = FilterSubtypeTableViewCell;
+			sourceTree = "<group>";
+		};
+		8A0D493BBD67D5039E4533C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71FB29EBCE2B3CD0881C23E0 /* Pods_RayaWenderlichiOSPracticeProj.framework */,
+				D2498E7AF0872C8263F503AC /* Pods_RayaWenderlichiOSPracticeProj_RayaWenderlichiOSPracticeProjUITests.framework */,
+				CD7D15EB32C4726F785AC561 /* Pods_RayaWenderlichiOSPracticeProjTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D9A96F9A9EA1F8806BBCC67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CE5EAD59F4E97DD31FF4924 /* Pods-RayaWenderlichiOSPracticeProj.debug.xcconfig */,
+				FDA189265C78309E3E91FE37 /* Pods-RayaWenderlichiOSPracticeProj.release.xcconfig */,
+				A9EDA06945E30E135EFF3956 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.debug.xcconfig */,
+				1299FE1E242AEB74EA7F56E6 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.release.xcconfig */,
+				213B8B63876D8ECBFCEF9A80 /* Pods-RayaWenderlichiOSPracticeProjTests.debug.xcconfig */,
+				81C59BA8EDF2DEFCC300AA23 /* Pods-RayaWenderlichiOSPracticeProjTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14345C1B281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14345C46281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProj" */;
+			buildPhases = (
+				E2BB7329FC27047CA352A9B0 /* [CP] Check Pods Manifest.lock */,
+				14345C18281DE2F500C0AE0A /* Sources */,
+				14345C19281DE2F500C0AE0A /* Frameworks */,
+				14345C1A281DE2F500C0AE0A /* Resources */,
+				46B56785EC3713D8F220FF82 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayaWenderlichiOSPracticeProj;
+			productName = RayaWenderlichiOSPracticeProj;
+			productReference = 14345C1C281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14345C31281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14345C49281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProjTests" */;
+			buildPhases = (
+				48E0195578136FC155DE9B1E /* [CP] Check Pods Manifest.lock */,
+				14345C2E281DE2F700C0AE0A /* Sources */,
+				14345C2F281DE2F700C0AE0A /* Frameworks */,
+				14345C30281DE2F700C0AE0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14345C34281DE2F700C0AE0A /* PBXTargetDependency */,
+			);
+			name = RayaWenderlichiOSPracticeProjTests;
+			productName = RayaWenderlichiOSPracticeProjTests;
+			productReference = 14345C32281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14345C3B281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14345C4C281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProjUITests" */;
+			buildPhases = (
+				1F1E96BBA5F714B47942F45B /* [CP] Check Pods Manifest.lock */,
+				14345C38281DE2F700C0AE0A /* Sources */,
+				14345C39281DE2F700C0AE0A /* Frameworks */,
+				14345C3A281DE2F700C0AE0A /* Resources */,
+				204155EECE86DFB2187A8179 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14345C3E281DE2F700C0AE0A /* PBXTargetDependency */,
+			);
+			name = RayaWenderlichiOSPracticeProjUITests;
+			productName = RayaWenderlichiOSPracticeProjUITests;
+			productReference = 14345C3C281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14345C14281DE2F500C0AE0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					14345C1B281DE2F500C0AE0A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					14345C31281DE2F700C0AE0A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 14345C1B281DE2F500C0AE0A;
+					};
+					14345C3B281DE2F700C0AE0A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 14345C1B281DE2F500C0AE0A;
+					};
+				};
+			};
+			buildConfigurationList = 14345C17281DE2F500C0AE0A /* Build configuration list for PBXProject "RayaWenderlichiOSPracticeProj" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14345C13281DE2F500C0AE0A;
+			productRefGroup = 14345C1D281DE2F500C0AE0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14345C1B281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */,
+				14345C31281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests */,
+				14345C3B281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14345C1A281DE2F500C0AE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14345C5A281DEB6700C0AE0A /* LibraryViewTableViewCell.xib in Resources */,
+				1490441C2820BEF100A44EFD /* SearchBarTableViewCell.xib in Resources */,
+				14F4BEC92821674B00245166 /* ToggleFiltersView.storyboard in Resources */,
+				149044112820698E00A44EFD /* FilterOptionCollectionViewCell.xib in Resources */,
+				14345C2C281DE2F700C0AE0A /* LaunchScreen.storyboard in Resources */,
+				14F4BEDB282199A900245166 /* FilterSubtypeTableViewCell.xib in Resources */,
+				14345C29281DE2F700C0AE0A /* Assets.xcassets in Resources */,
+				1490440C2820688000A44EFD /* CourseFiltersTableViewCell.xib in Resources */,
+				14F4BED128216F0300245166 /* FilterTypeTableViewCell.xib in Resources */,
+				149044052820594100A44EFD /* SortStyleTableViewCell.xib in Resources */,
+				14345C27281DE2F500C0AE0A /* LibraryView.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C30281DE2F700C0AE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C3A281DE2F700C0AE0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F1E96BBA5F714B47942F45B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		204155EECE86DFB2187A8179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests/Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B56785EC3713D8F220FF82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj/Pods-RayaWenderlichiOSPracticeProj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj/Pods-RayaWenderlichiOSPracticeProj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RayaWenderlichiOSPracticeProj/Pods-RayaWenderlichiOSPracticeProj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E0195578136FC155DE9B1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RayaWenderlichiOSPracticeProjTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BB7329FC27047CA352A9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RayaWenderlichiOSPracticeProj-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14345C18281DE2F500C0AE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14345C59281DEB6700C0AE0A /* LibraryViewTableViewCell.swift in Sources */,
+				14F4BED028216F0300245166 /* FilterTypeTableViewCell.swift in Sources */,
+				14345C24281DE2F500C0AE0A /* LibraryViewController.swift in Sources */,
+				1498E5DD282031E000938735 /* Date+Ext.swift in Sources */,
+				14B1003928245D390003250F /* URLSession+Ext.swift in Sources */,
+				149CEA1A28222FFC004DE6AB /* TechnologyDomain+ArrExt.swift in Sources */,
+				14F4BED5282179EF00245166 /* FilterTypeTableViewCellViewModel.swift in Sources */,
+				149044152820733C00A44EFD /* CourseFiltersTableViewCellViewModel.swift in Sources */,
+				14B1003E28245D8A0003250F /* HTTPHeader.swift in Sources */,
+				149044172820782200A44EFD /* CourseFilter.swift in Sources */,
+				14B10037282437A70003250F /* UIImpactFeedbackGenerator+Ext.swift in Sources */,
+				14F4BEC52820CA0500245166 /* Array+Ext.swift in Sources */,
+				149043F328204CF300A44EFD /* GithubResponseBody.swift in Sources */,
+				14F4BEDD28219E4B00245166 /* FilterSubtypeTableViewCellViewModel.swift in Sources */,
+				14345C20281DE2F500C0AE0A /* AppDelegate.swift in Sources */,
+				149043F128204CC800A44EFD /* CourseInfo.swift in Sources */,
+				14F4BEC32820C9E400245166 /* String+Ext.swift in Sources */,
+				149CEA1728222DF4004DE6AB /* UICollectionView+Ext.swift in Sources */,
+				14345C51281DE59500C0AE0A /* LibraryViewModel.swift in Sources */,
+				14B1003C28245D6D0003250F /* HTTPMethod.swift in Sources */,
+				14F4BEBF2820C61F00245166 /* UITextField+Ext.swift in Sources */,
+				1490440728205F5F00A44EFD /* SortStyleTableViewCellViewModel.swift in Sources */,
+				14F4BECB2821676C00245166 /* ToggleFiltersViewController.swift in Sources */,
+				14F4BEC12820C66B00245166 /* SearchBarTableViewCellViewModel.swift in Sources */,
+				14F4BED32821709800245166 /* ToggleFiltersViewModel.swift in Sources */,
+				149044042820594100A44EFD /* SortStyleTableViewCell.swift in Sources */,
+				14345C22281DE2F500C0AE0A /* SceneDelegate.swift in Sources */,
+				149043F728204D2C00A44EFD /* TechnologyDomain.swift in Sources */,
+				149043F528204D1500A44EFD /* CourseType.swift in Sources */,
+				149043FC28204FB300A44EFD /* TimeInterval+Ext.swift in Sources */,
+				1498E5DB281F2E2B00938735 /* GithubRestService.swift in Sources */,
+				14345C5F281E238500C0AE0A /* UITableView+Ext.swift in Sources */,
+				14904413282071F200A44EFD /* FilterOptionCollectionViewCellViewModel.swift in Sources */,
+				14345C5C281DEE0F00C0AE0A /* LibraryViewTableViewCellViewModel.swift in Sources */,
+				14F4BEDF2821CF0800245166 /* Storyboard+Ext.swift in Sources */,
+				149043EE28203A7F00A44EFD /* SpinnerViewController.swift in Sources */,
+				149043FA28204E0A00A44EFD /* CourseInfo+ArrExt.swift in Sources */,
+				14F4BEDA282199A900245166 /* FilterSubtypeTableViewCell.swift in Sources */,
+				149044102820698E00A44EFD /* FilterOptionCollectionViewCell.swift in Sources */,
+				1490441B2820BEF100A44EFD /* SearchBarTableViewCell.swift in Sources */,
+				14345C55281DE73F00C0AE0A /* Color+Ext.swift in Sources */,
+				149CEA1528222DAE004DE6AB /* CourseFilter+ArrExt.swift in Sources */,
+				1490440B2820688000A44EFD /* CourseFiltersTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C2E281DE2F700C0AE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14345C37281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14345C38281DE2F700C0AE0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14345C43281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITestsLaunchTests.swift in Sources */,
+				14345C41281DE2F700C0AE0A /* RayaWenderlichiOSPracticeProjUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14345C34281DE2F700C0AE0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14345C1B281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */;
+			targetProxy = 14345C33281DE2F700C0AE0A /* PBXContainerItemProxy */;
+		};
+		14345C3E281DE2F700C0AE0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14345C1B281DE2F500C0AE0A /* RayaWenderlichiOSPracticeProj */;
+			targetProxy = 14345C3D281DE2F700C0AE0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14345C25281DE2F500C0AE0A /* LibraryView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14345C26281DE2F500C0AE0A /* Base */,
+			);
+			name = LibraryView.storyboard;
+			sourceTree = "<group>";
+		};
+		14345C2A281DE2F700C0AE0A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14345C2B281DE2F700C0AE0A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14345C44281DE2F700C0AE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14345C45281DE2F700C0AE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14345C47281DE2F700C0AE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE5EAD59F4E97DD31FF4924 /* Pods-RayaWenderlichiOSPracticeProj.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RayaWenderlichiOSPracticeProj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LibraryView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14345C48281DE2F700C0AE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA189265C78309E3E91FE37 /* Pods-RayaWenderlichiOSPracticeProj.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RayaWenderlichiOSPracticeProj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LibraryView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14345C4A281DE2F700C0AE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213B8B63876D8ECBFCEF9A80 /* Pods-RayaWenderlichiOSPracticeProjTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayaWenderlichiOSPracticeProj.app/RayaWenderlichiOSPracticeProj";
+			};
+			name = Debug;
+		};
+		14345C4B281DE2F700C0AE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C59BA8EDF2DEFCC300AA23 /* Pods-RayaWenderlichiOSPracticeProjTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayaWenderlichiOSPracticeProj.app/RayaWenderlichiOSPracticeProj";
+			};
+			name = Release;
+		};
+		14345C4D281DE2F700C0AE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9EDA06945E30E135EFF3956 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RayaWenderlichiOSPracticeProj;
+			};
+			name = Debug;
+		};
+		14345C4E281DE2F700C0AE0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1299FE1E242AEB74EA7F56E6 /* Pods-RayaWenderlichiOSPracticeProj-RayaWenderlichiOSPracticeProjUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7SSA5W6D77;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.columbia.RayaWenderlichiOSPracticeProjUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RayaWenderlichiOSPracticeProj;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14345C17281DE2F500C0AE0A /* Build configuration list for PBXProject "RayaWenderlichiOSPracticeProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14345C44281DE2F700C0AE0A /* Debug */,
+				14345C45281DE2F700C0AE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14345C46281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14345C47281DE2F700C0AE0A /* Debug */,
+				14345C48281DE2F700C0AE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14345C49281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProjTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14345C4A281DE2F700C0AE0A /* Debug */,
+				14345C4B281DE2F700C0AE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14345C4C281DE2F700C0AE0A /* Build configuration list for PBXNativeTarget "RayaWenderlichiOSPracticeProjUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14345C4D281DE2F700C0AE0A /* Debug */,
+				14345C4E281DE2F700C0AE0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14345C14281DE2F500C0AE0A /* Project object */;
+}

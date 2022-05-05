@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FilterSubtypeTableViewCell" customModule="RayaWenderlichiOSPracticeProj" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQG-Gb-1u1">
+                        <rect key="frame" x="25" y="13" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9G-dA-mjm">
+                        <rect key="frame" x="282" y="11" width="22" height="22"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="Jxk-L9-4at">
+                                <rect key="frame" x="4" y="4" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jxk-L9-4at" secondAttribute="height" multiplier="1:1" id="23C-u9-ReA"/>
+                                    <constraint firstAttribute="width" constant="14" id="cZG-cj-SRT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jxk-L9-4at" firstAttribute="centerY" secondItem="X9G-dA-mjm" secondAttribute="centerY" id="24o-cP-0W1"/>
+                            <constraint firstAttribute="width" secondItem="X9G-dA-mjm" secondAttribute="height" multiplier="1:1" id="Qh9-Fj-dGo"/>
+                            <constraint firstItem="Jxk-L9-4at" firstAttribute="centerX" secondItem="X9G-dA-mjm" secondAttribute="centerX" id="Z1m-ms-mTu"/>
+                            <constraint firstAttribute="width" constant="22" id="jJE-aQ-8CR"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" alpha="0.29999999999999999" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFO-s5-fP9">
+                        <rect key="frame" x="271" y="5" width="44" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="09H-Jr-5iT"/>
+                            <constraint firstAttribute="height" constant="34" id="WEO-0m-gDv"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="radioButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Bv8-Ga-Tvd"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LFO-s5-fP9" secondAttribute="trailing" constant="5" id="D73-q2-FEu"/>
+                    <constraint firstItem="pQG-Gb-1u1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="KWs-Vs-rIe"/>
+                    <constraint firstItem="X9G-dA-mjm" firstAttribute="centerX" secondItem="LFO-s5-fP9" secondAttribute="centerX" id="bYo-n4-S46"/>
+                    <constraint firstItem="pQG-Gb-1u1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dZI-g8-rLb"/>
+                    <constraint firstItem="LFO-s5-fP9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="duM-fZ-NYQ"/>
+                    <constraint firstItem="LFO-s5-fP9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="pQG-Gb-1u1" secondAttribute="trailing" constant="25" id="nrr-7O-kaw"/>
+                    <constraint firstItem="X9G-dA-mjm" firstAttribute="centerY" secondItem="LFO-s5-fP9" secondAttribute="centerY" id="toS-6h-Ytx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="radioButton" destination="LFO-s5-fP9" id="VMU-Sy-2jp"/>
+                <outlet property="radioButtonImageView" destination="Jxk-L9-4at" id="BQc-jF-LE7"/>
+                <outlet property="radioButtonView" destination="X9G-dA-mjm" id="G9p-kG-Wjp"/>
+                <outlet property="titleLabel" destination="pQG-Gb-1u1" id="vU3-Fb-I2D"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" width="9" height="7"/>
+    </resources>
+</document>
