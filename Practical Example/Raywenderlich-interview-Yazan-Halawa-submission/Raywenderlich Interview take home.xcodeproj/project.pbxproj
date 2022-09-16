@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC9A457A28D125B10032DD02 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A457928D125B10032DD02 /* Resource.swift */; };
+		AC9A457D28D129980032DD02 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A457C28D129980032DD02 /* Endpoint.swift */; };
+		AC9A457F28D12C350032DD02 /* RayWenderlich.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A457E28D12C350032DD02 /* RayWenderlich.swift */; };
+		AC9A458228D130660032DD02 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A458128D130660032DD02 /* NetworkManager.swift */; };
+		AC9A458528D13B500032DD02 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A458428D13B500032DD02 /* Logging.swift */; };
+		AC9A458728D140630032DD02 /* ReachabilityMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A458628D140630032DD02 /* ReachabilityMonitor.swift */; };
+		AC9A458A28D14A180032DD02 /* ResourceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A458928D14A180032DD02 /* ResourceListViewModel.swift */; };
+		AC9A458C28D192790032DD02 /* ResourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A458B28D192790032DD02 /* ResourceView.swift */; };
+		AC9A458E28D193350032DD02 /* ResourceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC9A458D28D193350032DD02 /* ResourceView.xib */; };
+		AC9A459228D3BBAB0032DD02 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9A459128D3BBAB0032DD02 /* UIImageExtensions.swift */; };
+		ACBDD07728D1201B0075927E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDD07628D1201B0075927E /* AppDelegate.swift */; };
+		ACBDD07928D1201B0075927E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDD07828D1201B0075927E /* SceneDelegate.swift */; };
+		ACBDD07B28D1201B0075927E /* ResourceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDD07A28D1201B0075927E /* ResourceListViewController.swift */; };
+		ACBDD08128D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACBDD07F28D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodeld */; };
+		ACBDD08328D1201C0075927E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACBDD08228D1201C0075927E /* Assets.xcassets */; };
+		ACBDD08628D1201C0075927E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACBDD08428D1201C0075927E /* LaunchScreen.storyboard */; };
+		ACBDD09128D1201C0075927E /* Raywenderlich_Interview_take_homeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBDD09028D1201C0075927E /* Raywenderlich_Interview_take_homeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACBDD08D28D1201C0075927E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBDD06B28D1201A0075927E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBDD07228D1201B0075927E;
+			remoteInfo = "Raywenderlich Interview take home";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AC9A457928D125B10032DD02 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		AC9A457C28D129980032DD02 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AC9A457E28D12C350032DD02 /* RayWenderlich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayWenderlich.swift; sourceTree = "<group>"; };
+		AC9A458128D130660032DD02 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AC9A458428D13B500032DD02 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		AC9A458628D140630032DD02 /* ReachabilityMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityMonitor.swift; sourceTree = "<group>"; };
+		AC9A458928D14A180032DD02 /* ResourceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListViewModel.swift; sourceTree = "<group>"; };
+		AC9A458B28D192790032DD02 /* ResourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceView.swift; sourceTree = "<group>"; };
+		AC9A458D28D193350032DD02 /* ResourceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResourceView.xib; sourceTree = "<group>"; };
+		AC9A459128D3BBAB0032DD02 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		ACBDD07328D1201B0075927E /* Raywenderlich Interview take home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Raywenderlich Interview take home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDD07628D1201B0075927E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBDD07828D1201B0075927E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACBDD07A28D1201B0075927E /* ResourceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceListViewController.swift; sourceTree = "<group>"; };
+		ACBDD08028D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Raywenderlich_Interview_take_home.xcdatamodel; sourceTree = "<group>"; };
+		ACBDD08228D1201C0075927E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACBDD08528D1201C0075927E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACBDD08728D1201C0075927E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACBDD08C28D1201C0075927E /* Raywenderlich Interview take homeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Raywenderlich Interview take homeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBDD09028D1201C0075927E /* Raywenderlich_Interview_take_homeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raywenderlich_Interview_take_homeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACBDD07028D1201B0075927E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDD08928D1201C0075927E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC9A457828D1258E0032DD02 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A457928D125B10032DD02 /* Resource.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC9A457B28D129880032DD02 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A458028D12DB70032DD02 /* Endpoints */,
+				AC9A457C28D129980032DD02 /* Endpoint.swift */,
+				AC9A458128D130660032DD02 /* NetworkManager.swift */,
+				AC9A458628D140630032DD02 /* ReachabilityMonitor.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AC9A458028D12DB70032DD02 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A457E28D12C350032DD02 /* RayWenderlich.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		AC9A458328D13B480032DD02 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A458428D13B500032DD02 /* Logging.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		AC9A458828D1489B0032DD02 /* ResourceList */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDD07A28D1201B0075927E /* ResourceListViewController.swift */,
+				AC9A458928D14A180032DD02 /* ResourceListViewModel.swift */,
+				AC9A458B28D192790032DD02 /* ResourceView.swift */,
+				AC9A458D28D193350032DD02 /* ResourceView.xib */,
+			);
+			path = ResourceList;
+			sourceTree = "<group>";
+		};
+		AC9A458F28D3BB980032DD02 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A459028D3BB9F0032DD02 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AC9A459028D3BB9F0032DD02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A459128D3BBAB0032DD02 /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACBDD06A28D1201A0075927E = {
+			isa = PBXGroup;
+			children = (
+				ACBDD07528D1201B0075927E /* Raywenderlich Interview take home */,
+				ACBDD08F28D1201C0075927E /* Raywenderlich Interview take homeTests */,
+				ACBDD07428D1201B0075927E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACBDD07428D1201B0075927E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDD07328D1201B0075927E /* Raywenderlich Interview take home.app */,
+				ACBDD08C28D1201C0075927E /* Raywenderlich Interview take homeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACBDD07528D1201B0075927E /* Raywenderlich Interview take home */ = {
+			isa = PBXGroup;
+			children = (
+				AC9A458F28D3BB980032DD02 /* Core */,
+				AC9A458828D1489B0032DD02 /* ResourceList */,
+				AC9A458328D13B480032DD02 /* Logging */,
+				AC9A457B28D129880032DD02 /* Networking */,
+				AC9A457828D1258E0032DD02 /* Models */,
+				ACBDD07628D1201B0075927E /* AppDelegate.swift */,
+				ACBDD07828D1201B0075927E /* SceneDelegate.swift */,
+				ACBDD08228D1201C0075927E /* Assets.xcassets */,
+				ACBDD08428D1201C0075927E /* LaunchScreen.storyboard */,
+				ACBDD08728D1201C0075927E /* Info.plist */,
+				ACBDD07F28D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodeld */,
+			);
+			path = "Raywenderlich Interview take home";
+			sourceTree = "<group>";
+		};
+		ACBDD08F28D1201C0075927E /* Raywenderlich Interview take homeTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBDD09028D1201C0075927E /* Raywenderlich_Interview_take_homeTests.swift */,
+			);
+			path = "Raywenderlich Interview take homeTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACBDD07228D1201B0075927E /* Raywenderlich Interview take home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDD0A028D1201C0075927E /* Build configuration list for PBXNativeTarget "Raywenderlich Interview take home" */;
+			buildPhases = (
+				ACBDD06F28D1201B0075927E /* Sources */,
+				ACBDD07028D1201B0075927E /* Frameworks */,
+				ACBDD07128D1201B0075927E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Raywenderlich Interview take home";
+			productName = "Raywenderlich Interview take home";
+			productReference = ACBDD07328D1201B0075927E /* Raywenderlich Interview take home.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACBDD08B28D1201C0075927E /* Raywenderlich Interview take homeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBDD0A328D1201C0075927E /* Build configuration list for PBXNativeTarget "Raywenderlich Interview take homeTests" */;
+			buildPhases = (
+				ACBDD08828D1201C0075927E /* Sources */,
+				ACBDD08928D1201C0075927E /* Frameworks */,
+				ACBDD08A28D1201C0075927E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBDD08E28D1201C0075927E /* PBXTargetDependency */,
+			);
+			name = "Raywenderlich Interview take homeTests";
+			productName = "Raywenderlich Interview take homeTests";
+			productReference = ACBDD08C28D1201C0075927E /* Raywenderlich Interview take homeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACBDD06B28D1201A0075927E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					ACBDD07228D1201B0075927E = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					ACBDD08B28D1201C0075927E = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = ACBDD07228D1201B0075927E;
+					};
+				};
+			};
+			buildConfigurationList = ACBDD06E28D1201A0075927E /* Build configuration list for PBXProject "Raywenderlich Interview take home" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACBDD06A28D1201A0075927E;
+			productRefGroup = ACBDD07428D1201B0075927E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACBDD07228D1201B0075927E /* Raywenderlich Interview take home */,
+				ACBDD08B28D1201C0075927E /* Raywenderlich Interview take homeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACBDD07128D1201B0075927E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9A458E28D193350032DD02 /* ResourceView.xib in Resources */,
+				ACBDD08628D1201C0075927E /* LaunchScreen.storyboard in Resources */,
+				ACBDD08328D1201C0075927E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDD08A28D1201C0075927E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACBDD06F28D1201B0075927E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC9A457F28D12C350032DD02 /* RayWenderlich.swift in Sources */,
+				ACBDD07B28D1201B0075927E /* ResourceListViewController.swift in Sources */,
+				ACBDD07728D1201B0075927E /* AppDelegate.swift in Sources */,
+				AC9A458A28D14A180032DD02 /* ResourceListViewModel.swift in Sources */,
+				ACBDD07928D1201B0075927E /* SceneDelegate.swift in Sources */,
+				AC9A459228D3BBAB0032DD02 /* UIImageExtensions.swift in Sources */,
+				AC9A458228D130660032DD02 /* NetworkManager.swift in Sources */,
+				ACBDD08128D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodeld in Sources */,
+				AC9A457D28D129980032DD02 /* Endpoint.swift in Sources */,
+				AC9A458C28D192790032DD02 /* ResourceView.swift in Sources */,
+				AC9A458528D13B500032DD02 /* Logging.swift in Sources */,
+				AC9A457A28D125B10032DD02 /* Resource.swift in Sources */,
+				AC9A458728D140630032DD02 /* ReachabilityMonitor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBDD08828D1201C0075927E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACBDD09128D1201C0075927E /* Raywenderlich_Interview_take_homeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBDD08E28D1201C0075927E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBDD07228D1201B0075927E /* Raywenderlich Interview take home */;
+			targetProxy = ACBDD08D28D1201C0075927E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACBDD08428D1201C0075927E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACBDD08528D1201C0075927E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACBDD09E28D1201C0075927E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACBDD09F28D1201C0075927E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACBDD0A128D1201C0075927E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 486TSQPHB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raywenderlich Interview take home/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yazanhalawa.Raywenderlich-Interview-take-home";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACBDD0A228D1201C0075927E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 486TSQPHB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Raywenderlich Interview take home/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yazanhalawa.Raywenderlich-Interview-take-home";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ACBDD0A428D1201C0075927E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 486TSQPHB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yazanhalawa.Raywenderlich-Interview-take-homeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raywenderlich Interview take home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Raywenderlich Interview take home";
+			};
+			name = Debug;
+		};
+		ACBDD0A528D1201C0075927E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 486TSQPHB9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yazanhalawa.Raywenderlich-Interview-take-homeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Raywenderlich Interview take home.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Raywenderlich Interview take home";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACBDD06E28D1201A0075927E /* Build configuration list for PBXProject "Raywenderlich Interview take home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDD09E28D1201C0075927E /* Debug */,
+				ACBDD09F28D1201C0075927E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBDD0A028D1201C0075927E /* Build configuration list for PBXNativeTarget "Raywenderlich Interview take home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDD0A128D1201C0075927E /* Debug */,
+				ACBDD0A228D1201C0075927E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBDD0A328D1201C0075927E /* Build configuration list for PBXNativeTarget "Raywenderlich Interview take homeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBDD0A428D1201C0075927E /* Debug */,
+				ACBDD0A528D1201C0075927E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACBDD07F28D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACBDD08028D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodel */,
+			);
+			currentVersion = ACBDD08028D1201B0075927E /* Raywenderlich_Interview_take_home.xcdatamodel */;
+			path = Raywenderlich_Interview_take_home.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACBDD06B28D1201A0075927E /* Project object */;
+}
